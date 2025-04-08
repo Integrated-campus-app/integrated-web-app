@@ -25,6 +25,7 @@ INSTALLED_APPS = [
     'channels',
     'drf_spectacular',
     'rest_framework_simplejwt',
+    
 ]
 
 #Configuring DFR settings
