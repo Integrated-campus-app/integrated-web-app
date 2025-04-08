@@ -21,7 +21,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'myapp',
+    'authentication',
     'channels',
     'drf_spectacular',
     'rest_framework_simplejwt',
@@ -99,16 +99,14 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'mydjangodb',  # Database name
-        'USER': 'postgres',     # PostgreSQL username
-        'PASSWORD': '1635',  # PostgreSQL password
+        'USER': 'mydjangouser',     # PostgreSQL username
+        'PASSWORD': '123123',  # PostgreSQL password
         'HOST': 'localhost',
-        'PORT': '5432',
+        'PORT': '6432',
     }
 }
 
-AUTH_USER_MODEL = 'myapp.CustomUser'
-
-
+AUTH_USER_MODEL = 'authentication.CustomUser'  # If you have a custom user model
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',

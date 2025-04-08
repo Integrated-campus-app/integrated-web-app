@@ -1,7 +1,7 @@
 from django.urls import path, include
 from .views import api_root, TaskViewSet, NoticeViewSet
 from rest_framework.routers import DefaultRouter
-from myapp.views import UserRegistrationView
+from authentication.views import TaskViewSet, NoticeViewSet, api_root, UserRegistrationView
 # Create a router and register viewsets
 router = DefaultRouter()
 router.register(r'tasks', TaskViewSet)
