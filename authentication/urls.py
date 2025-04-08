@@ -1,14 +1,9 @@
-from django.urls import path, include
-from .views import api_root, TaskViewSet, NoticeViewSet
-from rest_framework.routers import DefaultRouter
-from authentication.views import TaskViewSet, NoticeViewSet, api_root, UserRegistrationView
-# Create a router and register viewsets
-router = DefaultRouter()
-router.register(r'tasks', TaskViewSet)
-router.register(r'notices', NoticeViewSet)
+from django.urls import path
+from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
+from .views import UserRegistrationView
 
 urlpatterns = [
-    path('api/', api_root),  # Custom API root view
-    path('api/', include(router.urls)),  # Include router URLs
-    path('api/register/', UserRegistrationView.as_view(), name='register'),
+    path('register/', UserRegistrationView.as_view(), name='register'),
+    path('login/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
 ]
