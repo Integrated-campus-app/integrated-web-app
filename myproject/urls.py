@@ -1,14 +1,21 @@
 from django.contrib import admin
 from django.urls import path, include
-from rest_framework.routers import DefaultRouter
-from authentication.views import TaskViewSet, NoticeViewSet, api_root, UserRegistrationView
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView
-
-# Create a router and register viewsets
-router = DefaultRouter()
-router.register(r'tasks', TaskViewSet)
-router.register(r'notices', NoticeViewSet)
+from authentication.views import (
+    TaskListView,
+    TaskDetailView,
+    NoticeListView,
+    NoticeDetailView,
+    RegisterView,  # Changed from UserRegistrationView to RegisterView
+    NotificationTestView,
+    MessageCreateView,
+    MessageListView,
+    FeedbackCreateView,
+    IssueReportCreateView,
+    IssueReportListView,
+    IssueReportUpdateView
+)
 
 urlpatterns = [
     # Admin
@@ -18,14 +25,31 @@ urlpatterns = [
     path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
     path('api/docs/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),
     
-    # API Endpoints
-    path('api/', api_root),
-    path('api/', include(router.urls)),
+    # Tasks Endpoints
+    path('api/tasks/', TaskListView.as_view(), name='task-list'),
+    path('api/tasks/<int:pk>/', TaskDetailView.as_view(), name='task-detail'),
     
-    # Authentication Endpoints (grouped under api/auth/)
-    path('api/auth/', include([
-        path('register/', UserRegistrationView.as_view(), name='register'),
-        path('login/', TokenObtainPairView.as_view(), name='login'),
-        path('token/refresh/', TokenRefreshView.as_view(), name='token-refresh'),
-    ])),
+    # Notices Endpoints
+    path('api/notices/', NoticeListView.as_view(), name='notice-list'),
+    path('api/notices/<int:pk>/', NoticeDetailView.as_view(), name='notice-detail'),
+    
+    # Authentication Endpoints
+    path('api/auth/register/', RegisterView.as_view(), name='register'),  # Changed here
+    path('api/auth/login/', TokenObtainPairView.as_view(), name='login'),
+    path('api/auth/token/refresh/', TokenRefreshView.as_view(), name='token-refresh'),
+    
+    # Notification Test
+    path('api/notifications/test/', NotificationTestView.as_view(), name='notification-test'),
+    
+    # Messaging
+    path('api/messages/', MessageCreateView.as_view(), name='message-create'),
+    path('api/messages/list/', MessageListView.as_view(), name='message-list'),
+    
+    # Feedback
+    path('api/feedback/', FeedbackCreateView.as_view(), name='feedback-create'),
+    
+    # Issue Reports
+    path('api/issues/', IssueReportCreateView.as_view(), name='issue-create'),
+    path('api/issues/list/', IssueReportListView.as_view(), name='issue-list'),
+    path('api/issues/<int:pk>/', IssueReportUpdateView.as_view(), name='issue-update'),
 ]
