@@ -1,14 +1,22 @@
 from rest_framework import serializers
 from django.contrib.auth import get_user_model
-from .models import Task, Notice, Message, Feedback, IssueReport, CustomUser
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 from django.contrib.auth.password_validation import validate_password
 from rest_framework.validators import UniqueValidator
 from django.utils.translation import gettext_lazy as _
 from django.contrib.auth import authenticate
-from .models import Department
-# =====================User MODEL=====================
-
+from django.db import models
+from .models import (
+    Question, Answer, Tag, 
+    QuestionVote, AnswerVote
+)
+from django.db.models import Count, Sum 
+from .models import LocationCategory, Task, Notice, Message, Feedback, IssueReport, CustomUser, Department, CampusLocation, UserFavoriteLocation
+# =====================User Map MODEL=====================
+class DepartmentSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Department
+        fields = ['id', 'name', 'code']
 # ================= AUTHENTICATION SERIALIZERS =================
 User = get_user_model()
 class UserRegistrationSerializer(serializers.ModelSerializer):
@@ -80,6 +88,47 @@ class CustomTokenObtainPairSerializer(TokenObtainPairSerializer):
             }
         })
         return data
+    
+    #=================LOCATION SERIALIZERS=================
+    # serializers.py
+class LocationCategorySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = LocationCategory
+        fields = ['id', 'name', 'icon_class']
+
+class CampusLocationSerializer(serializers.ModelSerializer):
+    category = LocationCategorySerializer(read_only=True)
+    category_id = serializers.PrimaryKeyRelatedField(
+        queryset=LocationCategory.objects.all(),
+        source='category',
+        write_only=True,
+        required=True  # Category remains required
+    )
+    department = DepartmentSerializer(read_only=True)
+    department_id = serializers.PrimaryKeyRelatedField(
+        queryset=Department.objects.all(),
+        source='department',
+        write_only=True,
+        required=False,  # Make department optional
+        allow_null=True  # Explicitly allow null
+    )
+    
+    class Meta:
+        model = CampusLocation
+        fields = [
+            'id', 'name', 'description', 
+            'longitude', 'latitude', 'category',
+            'category_id', 'department', 'department_id',
+            'floor_level', 'is_accessible', 'created_at'
+        ]
+        read_only_fields = ['created_by', 'created_at', 'updated_at']
+
+class UserFavoriteLocationSerializer(serializers.ModelSerializer):
+    location = CampusLocationSerializer(read_only=True)
+    
+    class Meta:
+        model = UserFavoriteLocation
+        fields = ['id', 'location', 'created_at']
 # ================= APPLICATION SERIALIZERS =================
 
 class TaskSerializer(serializers.ModelSerializer):
@@ -173,3 +222,64 @@ class IssueReportSerializer(serializers.ModelSerializer):
             'resolved_at'
         ]
         read_only_fields = ['reporter', 'created_at']
+
+        #=================Group discussion SERIALIZERS=================
+class TagSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Tag
+        fields = ['id', 'name']
+
+class QuestionSerializer(serializers.ModelSerializer):
+    user = serializers.StringRelatedField()
+    tags = TagSerializer(many=True, read_only=True)
+    answers_count = serializers.SerializerMethodField()
+    views = serializers.IntegerField(read_only=True)
+    
+    class Meta:
+        model = Question
+        fields = [
+            'id', 'user', 'title', 'content', 
+            'tags', 'created_at', 'updated_at',
+            'views', 'answers_count', 'is_closed'
+        ]
+    
+    def get_answers_count(self, obj):
+        return obj.answers.count()
+
+class AnswerSerializer(serializers.ModelSerializer):
+    user = serializers.StringRelatedField()
+    vote_count = serializers.SerializerMethodField()
+    
+    class Meta:
+        model = Answer
+        fields = [
+            'id', 'user', 'question', 'content',
+            'created_at', 'updated_at', 'is_accepted',
+            'vote_count'
+        ]
+        extra_kwargs = {
+            'question': {'write_only': True}
+        }
+    
+    def get_vote_count(self, obj):
+        return obj.answervote_set.aggregate(
+            total_votes=models.Sum('vote')
+        )['total_votes'] or 0
+
+class QuestionVoteSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = QuestionVote
+        fields = ['id', 'user', 'question', 'vote']
+        extra_kwargs = {
+            'user': {'read_only': True},
+            'question': {'write_only': True}
+        }
+
+class AnswerVoteSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = AnswerVote
+        fields = ['id', 'user', 'answer', 'vote']
+        extra_kwargs = {
+            'user': {'read_only': True},
+            'answer': {'write_only': True}
+        }

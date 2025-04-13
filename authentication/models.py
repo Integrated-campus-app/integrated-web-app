@@ -3,7 +3,7 @@ from django.conf import settings
 from django.contrib.auth.models import AbstractUser, BaseUserManager
 from django.utils.translation import gettext_lazy as _
 from django.core.exceptions import ValidationError  
-
+from django.db.models import Sum, Count  
 # Custom User Manager
 class CustomUserManager(BaseUserManager):
     def create_user(self, username, university_email, password=None, **extra_fields):
@@ -150,6 +150,53 @@ class Task(models.Model):
         
     def __str__(self):
         return f"{self.title} ({self.get_status_display()})"
+#=========MAP MODELS=========
+class LocationCategory(models.Model):
+    name = models.CharField(max_length=50, unique=True)
+    icon_class = models.CharField(max_length=50)  # Stores FontAwesome icon class
+    
+    def __str__(self):
+        return self.name
+
+class CampusLocation(models.Model):
+    name = models.CharField(max_length=200)
+    description = models.TextField(blank=True)
+    longitude = models.DecimalField(max_digits=22, decimal_places=16)
+    latitude = models.DecimalField(max_digits=22, decimal_places=16)
+    category = models.ForeignKey(LocationCategory, on_delete=models.PROTECT)
+    department = models.ForeignKey(
+        Department, 
+        on_delete=models.SET_NULL, 
+        null=True,
+        blank=True
+    )
+    floor_level = models.IntegerField(default=0)
+    is_accessible = models.BooleanField(default=True)
+    created_by = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.SET_NULL,
+        null=True
+    )
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ['name']
+        indexes = [
+            models.Index(fields=['longitude', 'latitude']),
+            models.Index(fields=['category']),
+        ]
+        
+    def __str__(self):
+        return f"{self.name} ({self.category})"
+
+class UserFavoriteLocation(models.Model):
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    location = models.ForeignKey(CampusLocation, on_delete=models.CASCADE)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        unique_together = [['user', 'location']]
 
 # Feedback System
 class Feedback(models.Model):
@@ -211,3 +258,67 @@ class IssueReport(models.Model):
         
     def __str__(self):
         return f"{self.title} [{self.get_status_display()}]"
+    
+
+    #==========Group Discussion==========
+class Question(models.Model):
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='questions')
+    title = models.CharField(max_length=200)
+    content = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    views = models.PositiveIntegerField(default=0)
+    is_closed = models.BooleanField(default=False)
+
+    class Meta:
+        ordering = ['-created_at']
+        indexes = [
+            models.Index(fields=['created_at']),
+            models.Index(fields=['views']),
+        ]
+
+    def __str__(self):
+        return f"{self.title[:50]} by {self.user.username}"
+
+class Answer(models.Model):
+    question = models.ForeignKey(Question, on_delete=models.CASCADE, related_name='answers')
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='answers')
+    content = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    is_accepted = models.BooleanField(default=False)
+
+    class Meta:
+        ordering = ['-is_accepted', '-created_at']
+
+    def __str__(self):
+        return f"Answer to {self.question.title[:30]} by {self.user.username}"
+
+class Tag(models.Model):
+    name = models.CharField(max_length=50, unique=True)
+    questions = models.ManyToManyField(Question, related_name='tags')
+
+    def __str__(self):
+        return self.name
+
+class QuestionVote(models.Model):
+    VOTE_CHOICES = [(1, 'Upvote'), (-1, 'Downvote')]
+    
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    question = models.ForeignKey(Question, on_delete=models.CASCADE)
+    vote = models.SmallIntegerField(choices=VOTE_CHOICES)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        unique_together = [['user', 'question']]
+
+class AnswerVote(models.Model):
+    VOTE_CHOICES = [(1, 'Upvote'), (-1, 'Downvote')]
+    
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    answer = models.ForeignKey(Answer, on_delete=models.CASCADE)
+    vote = models.SmallIntegerField(choices=VOTE_CHOICES)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        unique_together = [['user', 'answer']]

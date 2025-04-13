@@ -7,14 +7,16 @@ from authentication.views import (
     TaskDetailView,
     NoticeListView,
     NoticeDetailView,
-    RegisterView,  # Changed from UserRegistrationView to RegisterView
+    RegisterView,
     NotificationTestView,
     MessageCreateView,
     MessageListView,
     FeedbackCreateView,
     IssueReportCreateView,
     IssueReportListView,
-    IssueReportUpdateView
+    IssueReportUpdateView,
+    QuestionListView
+    
 )
 
 urlpatterns = [
@@ -25,6 +27,9 @@ urlpatterns = [
     path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
     path('api/docs/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),
     
+    # Include authentication app URLs without duplicate 'api/' prefix
+    path('api/', include('authentication.urls')),
+    
     # Tasks Endpoints
     path('api/tasks/', TaskListView.as_view(), name='task-list'),
     path('api/tasks/<int:pk>/', TaskDetailView.as_view(), name='task-detail'),
@@ -33,10 +38,7 @@ urlpatterns = [
     path('api/notices/', NoticeListView.as_view(), name='notice-list'),
     path('api/notices/<int:pk>/', NoticeDetailView.as_view(), name='notice-detail'),
     
-    # Authentication Endpoints
-    path('api/auth/register/', RegisterView.as_view(), name='register'),  # Changed here
-    path('api/auth/login/', TokenObtainPairView.as_view(), name='login'),
-    path('api/auth/token/refresh/', TokenRefreshView.as_view(), name='token-refresh'),
+    # Authentication Endpoints (moved to authentication/urls.py)
     
     # Notification Test
     path('api/notifications/test/', NotificationTestView.as_view(), name='notification-test'),

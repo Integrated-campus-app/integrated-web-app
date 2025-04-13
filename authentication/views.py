@@ -6,7 +6,20 @@ from channels.layers import get_channel_layer
 from asgiref.sync import async_to_sync
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import filters
-from .models import Notice, Task, Message, Feedback, IssueReport
+from rest_framework import generics, permissions, status
+from rest_framework.response import Response
+from django.db.models import Count, Sum
+from .models import (
+    Notice, 
+    Task, 
+    Message, 
+    Feedback, 
+    IssueReport,
+    LocationCategory,
+    CampusLocation,
+    UserFavoriteLocation,Question, Answer, Tag, QuestionVote, AnswerVote
+
+)
 from rest_framework_simplejwt.views import TokenObtainPairView
 from .serializers import (
     UserRegistrationSerializer,
@@ -15,7 +28,14 @@ from .serializers import (
     MessageSerializer,
     FeedbackSerializer,
     IssueReportSerializer,
-    CustomTokenObtainPairSerializer
+    CustomTokenObtainPairSerializer,
+    DepartmentSerializer,
+    LocationCategorySerializer,
+    CampusLocationSerializer,
+    UserFavoriteLocationSerializer,
+    QuestionSerializer, AnswerSerializer,
+    TagSerializer, QuestionVoteSerializer,
+    AnswerVoteSerializer
 )
 
 User = get_user_model()
@@ -174,3 +194,121 @@ class IssueReportUpdateView(generics.UpdateAPIView):
     serializer_class = IssueReportSerializer
     permission_classes = [permissions.IsAdminUser]
     queryset = IssueReport.objects.all()
+
+    #===================LOCATION VIEWS====================
+    # views.py
+class LocationCategoryListView(generics.ListAPIView):
+    queryset = LocationCategory.objects.all()
+    serializer_class = LocationCategorySerializer
+    permission_classes = [permissions.AllowAny]
+
+class CampusLocationListView(generics.ListCreateAPIView):
+    serializer_class = CampusLocationSerializer
+    filter_backends = [DjangoFilterBackend, filters.SearchFilter]
+    filterset_fields = ['category', 'department', 'floor_level']
+    search_fields = ['name', 'description']
+    
+    def get_queryset(self):
+        return CampusLocation.objects.select_related('category', 'department').all()
+
+    def perform_create(self, serializer):
+        serializer.save(created_by=self.request.user)
+
+class CampusLocationDetailView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = CampusLocation.objects.all()
+    serializer_class = CampusLocationSerializer
+    permission_classes = [permissions.IsAdminUser]
+
+class UserFavoriteLocationView(generics.ListCreateAPIView):
+    serializer_class = UserFavoriteLocationSerializer
+    
+    def get_queryset(self):
+        return UserFavoriteLocation.objects.filter(
+            user=self.request.user
+        ).select_related('location', 'location__category')
+    
+    def perform_create(self, serializer):
+        serializer.save(user=self.request.user)
+
+class RemoveFavoriteView(generics.DestroyAPIView):
+    serializer_class = UserFavoriteLocationSerializer
+    
+    def get_queryset(self):
+        return UserFavoriteLocation.objects.filter(user=self.request.user)
+    
+
+
+    #===================GROUP DISCUSSION QUESTION VIEWS====================
+    
+class QuestionListView(generics.ListCreateAPIView):
+    serializer_class = QuestionSerializer
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
+    filter_backends = [filters.SearchFilter, DjangoFilterBackend]
+    search_fields = ['title', 'content']
+    filterset_fields = ['tags', 'user', 'is_closed']
+
+    def get_queryset(self):
+        queryset = Question.objects.annotate(
+            answers_count=Count('answers')
+        ).select_related('user').prefetch_related('tags')
+        
+        # Order by most recent or most viewed
+        ordering = self.request.query_params.get('ordering', '-created_at')
+        if ordering in ['-created_at', '-views', '-answers_count']:
+            queryset = queryset.order_by(ordering)
+            
+        return queryset
+
+    def perform_create(self, serializer):
+        serializer.save(user=self.request.user)
+class QuestionDetailView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Question.objects.all()
+    serializer_class = QuestionSerializer
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
+
+    def retrieve(self, request, *args, **kwargs):
+        instance = self.get_object()
+        instance.views += 1
+        instance.save()
+        serializer = self.get_serializer(instance)
+        return Response(serializer.data)
+
+class AnswerCreateView(generics.CreateAPIView):
+    serializer_class = AnswerSerializer
+    permission_classes = [permissions.IsAuthenticated]
+
+    def perform_create(self, serializer):
+        serializer.save(user=self.request.user)
+
+class AnswerDetailView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Answer.objects.all()
+    serializer_class = AnswerSerializer
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
+
+class TagListView(generics.ListAPIView):
+    queryset = Tag.objects.annotate(questions_count=Count('questions'))
+    serializer_class = TagSerializer
+    permission_classes = [permissions.AllowAny]
+    pagination_class = None
+
+class QuestionVoteView(generics.CreateAPIView):
+    serializer_class = QuestionVoteSerializer
+    permission_classes = [permissions.IsAuthenticated]
+
+    def perform_create(self, serializer):
+        question_id = self.kwargs['question_id']
+        serializer.save(
+            user=self.request.user,
+            question_id=question_id
+        )
+
+class AnswerVoteView(generics.CreateAPIView):
+    serializer_class = AnswerVoteSerializer
+    permission_classes = [permissions.IsAuthenticated]
+
+    def perform_create(self, serializer):
+        answer_id = self.kwargs['answer_id']
+        serializer.save(
+            user=self.request.user,
+            answer_id=answer_id
+        )
