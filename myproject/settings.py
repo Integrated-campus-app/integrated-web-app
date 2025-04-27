@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 from datetime import timedelta
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -21,12 +22,15 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_extensions',
+    'discussion.apps.DiscussionConfig',
+    'location.apps.LocationConfig',
     'rest_framework',
     'authentication',
     'channels',
     'drf_spectacular',
     'rest_framework_simplejwt',
     'corsheaders',
+    'chatbot',
     
 ]
 AUTHENTICATION_BACKENDS = [
@@ -185,3 +189,7 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOW_ALL_ORIGINS = True  # For development only!
 CORS_ALLOW_CREDENTIALS = True
+from dotenv import load_dotenv
+load_dotenv()
+
+HUGGINGFACEHUB_API_TOKEN = os.getenv('HUGGINGFACEHUB_API_TOKEN')

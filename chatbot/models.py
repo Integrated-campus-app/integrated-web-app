@@ -1,0 +1,19 @@
+from django.db import models
+from django.conf import settings
+
+class Conversation(models.Model):
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    created_at = models.DateTimeField(auto_now_add=True)
+    title = models.CharField(max_length=255, default="Chat Conversation")
+    
+    def __str__(self):
+        return f"{self.user.username} - {self.title}"
+
+class Message(models.Model):
+    conversation = models.ForeignKey(Conversation, on_delete=models.CASCADE)
+    content = models.TextField()
+    is_user = models.BooleanField()
+    timestamp = models.DateTimeField(auto_now_add=True)
+    
+    class Meta:
+        ordering = ['timestamp']
