@@ -18,19 +18,27 @@ class QAConsumer(AsyncWebsocketConsumer):
             self.room_group_name,
             self.channel_name
         )
-
     async def receive(self, text_data):
         data = json.loads(text_data)
-        event_type = data.get('type')
-
-        if event_type == 'new_answer':
+        if data['type'] == 'new_answer':
             await self.channel_layer.group_send(
-                self.room_group_name,
-                {
-                    'type': 'send_answer',
-                    'answer': data['answer']
-                }
-            )
+            self.room_group_name,
+            {
+                'type': 'send_answer',
+                'answer': data['answer'],
+                'sender_id': str(self.scope["user"].id),
+                'question_user_id': data['answer']['question_user_id']  # Now available
+            }
+        )
+
+        # Notify question author only
+        await self.channel_layer.group_send(
+            f"user_{data['answer']['question_user_id']}",  # Requires question_user_id in answer data
+            {
+                'type': 'send_notification',
+                'message': f"New answer on your question: {data['answer']['content'][:50]}..."
+            }
+        )
 
     async def send_answer(self, event):
         await self.send(text_data=json.dumps(event))

@@ -1,15 +1,18 @@
 from rest_framework import generics, permissions, status, serializers
+from rest_framework.exceptions import PermissionDenied
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from django.contrib.auth import get_user_model
 from channels.layers import get_channel_layer
 from asgiref.sync import async_to_sync
 from django_filters.rest_framework import DjangoFilterBackend
+from django.db.models import Count
 from rest_framework import filters
 from rest_framework import generics, permissions, status
-from rest_framework.response import Response
-from django.db.models import Count, Sum
 from django.shortcuts import get_object_or_404
+from rest_framework.decorators import api_view, permission_classes
+from rest_framework.permissions import IsAuthenticated
+
 from .models import (
     Notice, 
     Task, 
@@ -38,6 +41,7 @@ from .serializers import (
     TagSerializer, QuestionVoteSerializer,
     AnswerVoteSerializer
 )
+from authentication import models
 
 User = get_user_model()
 
@@ -247,9 +251,18 @@ class QuestionListView(generics.ListCreateAPIView):
     
     def get_queryset(self):
         queryset = Question.objects.annotate(
-            answers_count=Count('answer')  # Changed from 'answers' to match model
+            answers_count=Count('answers', distinct=True)
         ).select_related('user').prefetch_related('tags')
         
+        # Search functionality
+        search_query = self.request.query_params.get('search')
+        if search_query:
+            queryset = queryset.filter(
+                models.Q(title__icontains=search_query) |
+                models.Q(content__icontains=search_query)
+            )
+        
+        # Ordering
         ordering = self.request.query_params.get('ordering', '-created_at')
         if ordering in ['-created_at', '-views', '-answers_count']:
             queryset = queryset.order_by(ordering)
@@ -261,7 +274,16 @@ class QuestionListView(generics.ListCreateAPIView):
 class QuestionDetailView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Question.objects.all()
     serializer_class = QuestionSerializer
-    permission_classes = [permissions.AllowAny]
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
+
+    def perform_update(self, serializer):
+        serializer.save(user=self.request.user)
+
+    def perform_destroy(self, instance):
+        if instance.user == self.request.user:
+            instance.delete()
+        else:
+            raise PermissionDenied("You can only delete your own questions")
 
     def retrieve(self, request, *args, **kwargs):
         instance = self.get_object()
@@ -284,6 +306,15 @@ class AnswerDetailView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Answer.objects.all()
     serializer_class = AnswerSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
+
+    def perform_update(self, serializer):
+        serializer.save(user=self.request.user)
+
+    def perform_destroy(self, instance):
+        if instance.user == self.request.user:
+            instance.delete()
+        else:
+            raise PermissionDenied("You can only delete your own answers")
 
 class TagListView(generics.ListAPIView):
     queryset = Tag.objects.annotate(questions_count=Count('questions'))
@@ -337,12 +368,11 @@ class AnswerSerializer(serializers.ModelSerializer):
         return value
 class AnswerListView(generics.ListAPIView):
     serializer_class = AnswerSerializer
-
     def get_queryset(self):
         return Answer.objects.filter(
-            question_id=self.kwargs['question_id']
+        question_id=self.kwargs['question_id']
         ).annotate(
-            weighted_score=Sum('answervote__vote')
+        weighted_score=Sum('answervote__vote')
         ).order_by('-weighted_score', '-created_at')
 class AnswerCreateView(generics.CreateAPIView):
     serializer_class = AnswerSerializer
@@ -351,3 +381,14 @@ class AnswerCreateView(generics.CreateAPIView):
     def perform_create(self, serializer):
         question_id = self.kwargs['question_id']
         serializer.save(user=self.request.user, question_id=question_id)
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def current_user(request):
+    user = request.user
+    return Response({
+        'username': user.username,
+        'email': user.university_email,  # Match your user model
+        'id': user.id,
+        'is_admin': user.is_admin
+    })

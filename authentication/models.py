@@ -281,18 +281,22 @@ class Question(models.Model):
         return f"{self.title[:50]} by {self.user.username}"
 
 class Answer(models.Model):
-    question = models.ForeignKey(Question, on_delete=models.CASCADE, related_name='answer')
+    question = models.ForeignKey(Question, on_delete=models.CASCADE, related_name='answers')
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     content = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     is_accepted = models.BooleanField(default=False)
+    weighted_score = models.IntegerField(default=0) 
 
     class Meta:
         ordering = ['-is_accepted', '-created_at']
 
     def __str__(self):
         return f"Answer to {self.question.title[:30]} by {self.user.username}"
+    def update_score(self):
+        self.weighted_score = self.answervote_set.aggregate(Sum('vote'))['vote__sum'] or 0
+        self.save()
 
 class Tag(models.Model):
     name = models.CharField(max_length=50, unique=True)

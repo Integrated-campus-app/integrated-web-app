@@ -16,7 +16,7 @@ from .views import (
     RemoveFavoriteView, QuestionListView, QuestionDetailView,
     AnswerCreateView, AnswerDetailView, AnswerListView,
     TagListView, QuestionVoteView,
-    AnswerVoteView
+    AnswerVoteView, current_user
 )
 
 urlpatterns = [
@@ -46,6 +46,7 @@ urlpatterns = [
     path('questions/<int:question_id>/vote/', QuestionVoteView.as_view(), name='question-vote'),
     # urls.py
     path('answers/<int:answer_id>/vote/', AnswerVoteView.as_view(), name='answer-vote'),
+   
 ]
 # Note: The 'api/' prefix is already included in the main urls.py, so we don't need to repeat it here.
 # This keeps the URLs clean and avoids redundancy.

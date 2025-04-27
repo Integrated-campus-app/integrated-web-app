@@ -230,17 +230,26 @@ class TagSerializer(serializers.ModelSerializer):
         fields = ['id', 'name']
 
 class QuestionSerializer(serializers.ModelSerializer):
-    user = serializers.StringRelatedField()
-    tags = TagSerializer(many=True, read_only=True)
-    answers_count = serializers.IntegerField(read_only=True)  # Changed from SerializerMethodField
+    user = serializers.SerializerMethodField()
+    tags = serializers.SerializerMethodField()
+    answers_count = serializers.IntegerField(read_only=True)
+    question_user_id = serializers.SerializerMethodField()  # Add this for notifications
     
     class Meta:
         model = Question
         fields = [
-            'id', 'user', 'title', 'content', 
-            'tags', 'created_at', 'updated_at',
-            'views', 'answers_count', 'is_closed'
+            'id', 'user', 'question_user_id', 'title', 'content',
+            'tags', 'created_at', 'views', 'answers_count', 'is_closed'
         ]
+
+    def get_user(self, obj):
+        return obj.user.username if obj.user else "Anonymous"
+
+    def get_tags(self, obj):
+        return [tag.name for tag in obj.tags.all()]  # Return array of tag names
+
+    def get_question_user_id(self, obj):
+        return obj.user.id if obj.user else None
     
     def get_answers_count(self, obj):
         return obj.answers.count()
