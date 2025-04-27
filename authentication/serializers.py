@@ -232,8 +232,7 @@ class TagSerializer(serializers.ModelSerializer):
 class QuestionSerializer(serializers.ModelSerializer):
     user = serializers.StringRelatedField()
     tags = TagSerializer(many=True, read_only=True)
-    answers_count = serializers.SerializerMethodField()
-    views = serializers.IntegerField(read_only=True)
+    answers_count = serializers.IntegerField(read_only=True)  # Changed from SerializerMethodField
     
     class Meta:
         model = Question
@@ -247,25 +246,25 @@ class QuestionSerializer(serializers.ModelSerializer):
         return obj.answers.count()
 
 class AnswerSerializer(serializers.ModelSerializer):
-    user = serializers.StringRelatedField()
-    vote_count = serializers.SerializerMethodField()
-    
+    user = serializers.StringRelatedField(read_only=True)
+    weighted_score = serializers.IntegerField(read_only=True)
+
     class Meta:
         model = Answer
-        fields = [
-            'id', 'user', 'question', 'content',
-            'created_at', 'updated_at', 'is_accepted',
-            'vote_count'
-        ]
+        fields = ['id', 'user', 'content', 'created_at', 'weighted_score']
         extra_kwargs = {
-            'question': {'write_only': True}
+            'content': {'required': True},
+            'question': {'write_only': True},
         }
-    
+
+    def validate_content(self, value):
+        if len(value.strip()) < 10:
+            raise serializers.ValidationError("Answer must be at least 10 characters.")
+        return value
     def get_vote_count(self, obj):
         return obj.answervote_set.aggregate(
-            total_votes=models.Sum('vote')
+            total_votes=Sum('vote')
         )['total_votes'] or 0
-
 class QuestionVoteSerializer(serializers.ModelSerializer):
     class Meta:
         model = QuestionVote

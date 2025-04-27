@@ -1,7 +1,39 @@
+
 from channels.generic.websocket import AsyncWebsocketConsumer
 import json
 from django.contrib.auth.models import AnonymousUser
+class QAConsumer(AsyncWebsocketConsumer):
+    async def connect(self):
+        self.question_id = self.scope['url_route']['kwargs']['question_id']
+        self.room_group_name = f'question_{self.question_id}'
+        
+        await self.channel_layer.group_add(
+            self.room_group_name,
+            self.channel_name
+        )
+        await self.accept()
 
+    async def disconnect(self, close_code):
+        await self.channel_layer.group_discard(
+            self.room_group_name,
+            self.channel_name
+        )
+
+    async def receive(self, text_data):
+        data = json.loads(text_data)
+        event_type = data.get('type')
+
+        if event_type == 'new_answer':
+            await self.channel_layer.group_send(
+                self.room_group_name,
+                {
+                    'type': 'send_answer',
+                    'answer': data['answer']
+                }
+            )
+
+    async def send_answer(self, event):
+        await self.send(text_data=json.dumps(event))
 class NotificationConsumer(AsyncWebsocketConsumer):
     async def connect(self):
         # Authenticate user (reject if not logged in)

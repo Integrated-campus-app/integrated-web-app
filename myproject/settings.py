@@ -139,7 +139,7 @@ DATABASES = {
         'USER': 'mydjangouser',     # PostgreSQL username
         'PASSWORD': '123123',  # PostgreSQL password
         'HOST': 'localhost',
-        'PORT': '6432',
+        'PORT': '5432',
     }
 }
 

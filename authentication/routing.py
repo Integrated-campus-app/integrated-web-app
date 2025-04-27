@@ -3,4 +3,5 @@ from . import consumers
 
 websocket_urlpatterns = [
     re_path(r'ws/notifications/$', consumers.NotificationConsumer.as_asgi()),
+    re_path(r'ws/questions/(?P<question_id>\d+)/$', consumers.QAConsumer.as_asgi()),
 ]

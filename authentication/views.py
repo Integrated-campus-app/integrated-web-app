@@ -1,4 +1,4 @@
-from rest_framework import generics, permissions, status
+from rest_framework import generics, permissions, status, serializers
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from django.contrib.auth import get_user_model
@@ -9,6 +9,7 @@ from rest_framework import filters
 from rest_framework import generics, permissions, status
 from rest_framework.response import Response
 from django.db.models import Count, Sum
+from django.shortcuts import get_object_or_404
 from .models import (
     Notice, 
     Task, 
@@ -243,16 +244,12 @@ class RemoveFavoriteView(generics.DestroyAPIView):
 class QuestionListView(generics.ListCreateAPIView):
     serializer_class = QuestionSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
-    filter_backends = [filters.SearchFilter, DjangoFilterBackend]
-    search_fields = ['title', 'content']
-    filterset_fields = ['tags', 'user', 'is_closed']
-
+    
     def get_queryset(self):
         queryset = Question.objects.annotate(
-            answers_count=Count('answers')
+            answers_count=Count('answer')  # Changed from 'answers' to match model
         ).select_related('user').prefetch_related('tags')
         
-        # Order by most recent or most viewed
         ordering = self.request.query_params.get('ordering', '-created_at')
         if ordering in ['-created_at', '-views', '-answers_count']:
             queryset = queryset.order_by(ordering)
@@ -264,7 +261,7 @@ class QuestionListView(generics.ListCreateAPIView):
 class QuestionDetailView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Question.objects.all()
     serializer_class = QuestionSerializer
-    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
+    permission_classes = [permissions.AllowAny]
 
     def retrieve(self, request, *args, **kwargs):
         instance = self.get_object()
@@ -278,8 +275,11 @@ class AnswerCreateView(generics.CreateAPIView):
     permission_classes = [permissions.IsAuthenticated]
 
     def perform_create(self, serializer):
-        serializer.save(user=self.request.user)
-
+        question = get_object_or_404(Question, id=self.kwargs['question_id'])
+        serializer.save(
+            user=self.request.user,
+            question=question  # Directly assign the question object
+        )
 class AnswerDetailView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Answer.objects.all()
     serializer_class = AnswerSerializer
@@ -297,10 +297,19 @@ class QuestionVoteView(generics.CreateAPIView):
 
     def perform_create(self, serializer):
         question_id = self.kwargs['question_id']
+        question = Question.objects.get(id=question_id)
+        
+        # Delete existing vote if exists
+        QuestionVote.objects.filter(
+            user=self.request.user,
+            question=question
+        ).delete()
+        
         serializer.save(
             user=self.request.user,
-            question_id=question_id
+            question=question
         )
+        return Response({"status": "Vote recorded"}, status=status.HTTP_201_CREATED)
 
 class AnswerVoteView(generics.CreateAPIView):
     serializer_class = AnswerVoteSerializer
@@ -312,3 +321,33 @@ class AnswerVoteView(generics.CreateAPIView):
             user=self.request.user,
             answer_id=answer_id
         )
+class AnswerSerializer(serializers.ModelSerializer):
+    user = serializers.StringRelatedField(read_only=True)
+    
+    class Meta:
+        model = Answer
+        fields = ['id', 'user', 'question', 'content', 'created_at']
+        extra_kwargs = {
+            'question': {'write_only': True},  # Hide in responses
+        }
+
+    def validate_content(self, value):
+        if len(value.strip()) < 10:
+            raise serializers.ValidationError("Answer must be at least 10 characters.")
+        return value
+class AnswerListView(generics.ListAPIView):
+    serializer_class = AnswerSerializer
+
+    def get_queryset(self):
+        return Answer.objects.filter(
+            question_id=self.kwargs['question_id']
+        ).annotate(
+            weighted_score=Sum('answervote__vote')
+        ).order_by('-weighted_score', '-created_at')
+class AnswerCreateView(generics.CreateAPIView):
+    serializer_class = AnswerSerializer
+    permission_classes = [permissions.IsAuthenticated]
+
+    def perform_create(self, serializer):
+        question_id = self.kwargs['question_id']
+        serializer.save(user=self.request.user, question_id=question_id)

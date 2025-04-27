@@ -14,7 +14,7 @@ from .views import (
     CampusLocationDetailView,
     UserFavoriteLocationView,
     RemoveFavoriteView, QuestionListView, QuestionDetailView,
-    AnswerCreateView, AnswerDetailView,
+    AnswerCreateView, AnswerDetailView, AnswerListView,
     TagListView, QuestionVoteView,
     AnswerVoteView
 )
@@ -36,12 +36,15 @@ urlpatterns = [
     path('map/favorites/', UserFavoriteLocationView.as_view(), name='user-favorites'),
     path('map/favorites/<int:pk>/', RemoveFavoriteView.as_view(), name='remove-favorite'),
     # Discussion Forum Endpoints
-    path('questions/', QuestionListView.as_view(), name='question-list'),
     path('questions/<int:pk>/', QuestionDetailView.as_view(), name='question-detail'),
-    path('questions/<int:question_id>/answers/', AnswerCreateView.as_view(), name='answer-create'),
+    path('questions/', QuestionListView.as_view(), name='question-list'),
+
+    path('questions/<int:question_id>/answers/create/', AnswerCreateView.as_view(), name='answer-create'),
+    path('questions/<int:question_id>/answers/', AnswerListView.as_view(), name='answer-list'),
     path('answers/<int:pk>/', AnswerDetailView.as_view(), name='answer-detail'),
     path('tags/', TagListView.as_view(), name='tag-list'),
     path('questions/<int:question_id>/vote/', QuestionVoteView.as_view(), name='question-vote'),
+    # urls.py
     path('answers/<int:answer_id>/vote/', AnswerVoteView.as_view(), name='answer-vote'),
 ]
 # Note: The 'api/' prefix is already included in the main urls.py, so we don't need to repeat it here.
