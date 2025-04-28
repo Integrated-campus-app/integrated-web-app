@@ -51,25 +51,29 @@ class UserRegistrationSerializer(serializers.ModelSerializer):
             password=validated_data['password']
         )
         return user
-
 class CustomTokenObtainPairSerializer(TokenObtainPairSerializer):
+    university_email = serializers.EmailField(required=False)
+    username = serializers.CharField(required=False)
+
     def validate(self, attrs):
+        email = attrs.get('university_email')
         username = attrs.get('username')
-        if '@' in username:  # If input looks like email
-            try:
-                user = User.objects.get(university_email=username)
-                attrs['username'] = user.username
-            except User.DoesNotExist:
-                pass
-        
-        data = super().validate(attrs)
-        
-        data.update({
-            'user': {
-                'id': self.user.id,
-                'username': self.user.username,
-                'email': self.user.university_email,
-                'is_admin': self.user.is_admin
-            }
-        })
-        return data
+
+        if not email and not username:
+            raise serializers.ValidationError({
+                "university_email": "Email or username is required"
+            })
+
+        try:
+            if email:
+                user = User.objects.get(university_email=email)
+            else:
+                user = User.objects.get(username=username)
+                
+            attrs['username'] = user.username  # Required for JWT
+        except User.DoesNotExist:
+            raise serializers.ValidationError({
+                "university_email": "Invalid credentials"
+            })
+
+        return super().validate(attrs)

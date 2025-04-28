@@ -5,11 +5,35 @@ from .auth_serializers import UserRegistrationSerializer, CustomTokenObtainPairS
 from django.contrib.auth import get_user_model
 from django.contrib.auth.decorators import login_required
 from django.http import JsonResponse
-
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
 User = get_user_model()
 
 class CustomTokenObtainPairView(TokenObtainPairView):
     serializer_class = CustomTokenObtainPairSerializer
+
+    def post(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
+        try:
+            serializer.is_valid(raise_exception=True)
+        except Exception as e:
+            return Response({
+                "university_email": ["Invalid email or password"]
+            }, status=status.HTTP_400_BAD_REQUEST)
+
+        user = serializer.user
+        refresh = serializer.validated_data.get('refresh')
+        access = serializer.validated_data.get('access')
+
+        return Response({
+            "access": access,
+            "refresh": refresh,
+            "user": {
+                "username": user.username,
+                "university_email": user.university_email,
+                "is_admin": user.is_admin
+            }
+        })
 
 class RegisterView(generics.CreateAPIView):
     serializer_class = UserRegistrationSerializer
@@ -22,22 +46,28 @@ class RegisterView(generics.CreateAPIView):
         refresh = CustomTokenObtainPairSerializer.get_token(user)
         return Response({
             "success": True,
-            "user": {
-                "username": user.username,
-                "email": user.university_email,
+             "user": {
+              "username": user.username,
+             "email": user.university_email,
                 "is_admin": user.is_admin
-            },
+                },
             "tokens": {
-                "refresh": str(refresh),
-                "access": str(refresh.access_token),
-            }
-        }, status=status.HTTP_201_CREATED)
+            "refresh": str(refresh),
+            "access": str(refresh.access_token),
+    }
+}, status=status.HTTP_201_CREATED)
 
 @login_required
 def current_user(request):
     user = request.user
     return JsonResponse({
         'username': user.username,
-        'email': user.email,
-        # Add other user fields you need
+        'email': user.university_email,  # Changed from user.email
+        'is_admin': user.is_admin
+    })
+@api_view(['GET'])
+def api_root(request):
+    return Response({
+        'login': request.build_absolute_uri('api/auth/login/'),
+        'register': request.build_absolute_uri('api/auth/register/')
     })
