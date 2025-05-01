@@ -47,6 +47,9 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',
     ),
     'EXCEPTION_HANDLER': 'rest_framework.views.exception_handler',
+    'DEFAULT_THROTTLE_RATES': {
+        'anon': '10/minute',  # 10 requests/minute for anonymous users
+    }
 }
 
 SPECTACULAR_SETTINGS = {

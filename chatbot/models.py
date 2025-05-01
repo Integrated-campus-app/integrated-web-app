@@ -1,19 +1,15 @@
 from django.db import models
-from django.conf import settings
 
 class Conversation(models.Model):
-    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
-    title = models.CharField(max_length=255, default="Chat Conversation")
-    
-    def __str__(self):
-        return f"{self.user.username} - {self.title}"
+    title = models.CharField(max_length=255, default="New Chat")
 
 class Message(models.Model):
     conversation = models.ForeignKey(Conversation, on_delete=models.CASCADE)
     content = models.TextField()
-    is_user = models.BooleanField()
+    is_user = models.BooleanField()  # True for user, False for AI
     timestamp = models.DateTimeField(auto_now_add=True)
-    
+    is_deleted = models.BooleanField(default=False)  # Soft delete
+
     class Meta:
-        ordering = ['timestamp']
+        ordering = ['timestamp']  # Oldest first
