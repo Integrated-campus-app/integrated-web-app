@@ -1,8 +1,38 @@
 
+import asyncio
 from channels.generic.websocket import AsyncWebsocketConsumer
 import json
 from django.contrib.auth.models import AnonymousUser
 
+
+from channels.generic.websocket import AsyncWebsocketConsumer
+import json
+from .llm_integration import generate_response
+
+class ChatbotConsumer(AsyncWebsocketConsumer):
+    async def connect(self):
+        await self.accept()
+
+    async def disconnect(self, close_code):
+        pass
+
+async def receive(self, text_data):
+    try:
+        data = json.loads(text_data)
+        user_query = data["message"]
+        
+        if not user_query.strip():
+            await self.send(json.dumps({"error": "Empty query"}))
+            return
+
+        response = generate_response(user_query)
+        if not response:
+            await self.send(json.dumps({"error": "Knowledge base not loaded"}))
+            return
+
+        # ... streaming logic ...
+    except Exception as e:
+        await self.send(json.dumps({"error": str(e)}))# Typing effect
 
 class QAConsumer(AsyncWebsocketConsumer):
     async def connect(self):

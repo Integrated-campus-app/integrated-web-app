@@ -1,0 +1,636 @@
+2025-05-01 14:41:09,112 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-01 14:42:10,228 - INFO - Loading faiss with AVX2 support.
+2025-05-01 14:42:10,246 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-01 14:42:10,251 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-01 14:42:10,264 - INFO - Knowledge base reloaded
+2025-05-01 14:42:28,829 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-01 14:43:31,492 - INFO - Loading faiss with AVX2 support.
+2025-05-01 14:43:31,582 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-01 14:43:31,589 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-01 14:43:31,602 - INFO - Knowledge base reloaded
+2025-05-01 14:43:49,038 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-01 14:45:00,211 - INFO - Loading faiss with AVX2 support.
+2025-05-01 14:45:00,273 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-01 14:45:00,294 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-01 14:45:00,448 - INFO - Knowledge base reloaded
+2025-05-01 14:45:26,738 - ERROR - Internal Server Error: /api/messages/
+Traceback (most recent call last):
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\chatbot\chatbot_views.py", line 39, in create
+    ai_response = generate_response(request.data.get('content'))
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\chatbot\llm_integration.py", line 91, in generate_response
+    if len(context) > max_context_length:
+           ^^^^^^^
+UnboundLocalError: cannot access local variable 'context' where it is not associated with a value
+2025-05-01 14:52:24,973 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\chatbot\llm_integration.py changed, reloading.
+2025-05-01 14:52:50,172 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-01 14:53:57,949 - INFO - Loading faiss with AVX2 support.
+2025-05-01 14:53:57,968 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-01 14:53:57,974 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-01 14:53:57,987 - INFO - Knowledge base reloaded
+2025-05-01 15:32:29,660 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\chatbot\chatbot_views.py changed, reloading.
+2025-05-01 15:33:11,071 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-01 15:34:25,810 - INFO - Loading faiss with AVX2 support.
+2025-05-01 15:34:25,832 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-01 15:34:25,837 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-01 15:34:25,851 - INFO - Knowledge base reloaded
+2025-05-01 15:34:35,448 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\chatbot\chatbot_views.py changed, reloading.
+2025-05-01 15:35:42,370 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-01 15:37:17,072 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-01 15:38:25,357 - INFO - Loading faiss with AVX2 support.
+2025-05-01 15:38:25,409 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-01 15:38:25,428 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-01 15:38:25,476 - INFO - Knowledge base reloaded
+2025-05-01 15:40:38,207 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\chatbot\llm_integration.py changed, reloading.
+2025-05-01 15:40:59,789 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-01 15:41:03,678 - INFO - Embeddings initialized successfully
+2025-05-01 15:50:01,786 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-01 15:50:07,543 - INFO - Embeddings initialized successfully
+2025-05-01 15:51:09,016 - INFO - Loading faiss with AVX2 support.
+2025-05-01 15:51:09,083 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-01 15:51:09,102 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-01 15:51:09,147 - INFO - Knowledge base reloaded
+2025-05-01 15:54:08,636 - ERROR - DeepSeek API call failed: 402 Client Error: Payment Required for url: https://api.deepseek.com/v1/chat/completions
+2025-05-01 15:54:49,185 - ERROR - DeepSeek API call failed: 402 Client Error: Payment Required for url: https://api.deepseek.com/v1/chat/completions
+2025-05-01 16:05:29,506 - ERROR - DeepSeek API call failed: 402 Client Error: Payment Required for url: https://api.deepseek.com/v1/chat/completions
+2025-05-01 16:06:28,781 - WARNING - Not Found: /api/new_chat/
+2025-05-01 16:22:58,726 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\chatbot\chatbot_views.py changed, reloading.
+2025-05-01 16:23:06,593 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-01 16:23:09,823 - INFO - Embeddings initialized successfully
+2025-05-01 16:23:29,947 - INFO - Loading faiss with AVX2 support.
+2025-05-01 16:23:29,967 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-01 16:23:29,972 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-01 16:23:29,983 - INFO - Knowledge base reloaded
+2025-05-01 16:23:34,230 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\chatbot\chatbot_views.py changed, reloading.
+2025-05-01 16:23:42,791 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-01 16:23:46,058 - INFO - Embeddings initialized successfully
+2025-05-01 16:24:13,027 - INFO - Loading faiss with AVX2 support.
+2025-05-01 16:24:13,062 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-01 16:24:13,071 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-01 16:24:13,088 - INFO - Knowledge base reloaded
+2025-05-01 16:26:05,717 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\chatbot\chatbot_views.py changed, reloading.
+2025-05-01 16:26:14,075 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-01 16:26:17,982 - INFO - Embeddings initialized successfully
+2025-05-01 16:26:50,160 - INFO - Loading faiss with AVX2 support.
+2025-05-01 16:26:50,214 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-01 16:26:50,230 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-01 16:26:50,266 - INFO - Knowledge base reloaded
+2025-05-01 16:27:25,456 - WARNING - Unauthorized: /api/messages/
+2025-05-01 16:27:25,467 - WARNING - Bad Request: /api/auth/token/refresh/
+2025-05-01 16:27:46,341 - WARNING - Not Found: /api/conversations/recent/
+2025-05-01 16:27:46,419 - WARNING - Unauthorized: /api/messages/
+2025-05-01 16:27:46,426 - WARNING - Bad Request: /api/auth/token/refresh/
+2025-05-01 16:30:47,569 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\chatbot\llm_integration.py changed, reloading.
+2025-05-01 16:30:55,173 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-01 16:30:56,256 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-01 16:30:58,506 - INFO - Embeddings initialized successfully
+2025-05-01 16:30:59,719 - INFO - Embeddings initialized successfully
+2025-05-01 16:31:47,829 - INFO - Loading faiss with AVX2 support.
+2025-05-01 16:31:47,912 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-01 16:31:47,934 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-01 16:31:47,994 - INFO - Knowledge base reloaded
+2025-05-01 16:31:53,820 - INFO - Loading faiss with AVX2 support.
+2025-05-01 16:31:53,865 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-01 16:31:53,877 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-01 16:31:53,899 - INFO - Knowledge base reloaded
+2025-05-01 16:31:57,953 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\chatbot\llm_integration.py changed, reloading.
+2025-05-01 16:31:58,061 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\chatbot\llm_integration.py changed, reloading.
+2025-05-01 16:32:09,732 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-01 16:32:09,744 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-01 16:32:22,413 - INFO - Embeddings initialized successfully
+2025-05-01 16:32:22,616 - INFO - Embeddings initialized successfully
+2025-05-01 16:33:18,468 - INFO - Loading faiss with AVX2 support.
+2025-05-01 16:33:18,553 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-01 16:33:18,579 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-01 16:33:18,631 - INFO - Knowledge base reloaded
+2025-05-01 16:33:19,443 - INFO - Loading faiss with AVX2 support.
+2025-05-01 16:33:19,481 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-01 16:33:19,494 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-01 16:33:19,516 - INFO - Knowledge base reloaded
+2025-05-01 16:35:32,771 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\chatbot\llm_integration.py changed, reloading.
+2025-05-01 16:35:32,898 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\chatbot\llm_integration.py changed, reloading.
+2025-05-01 16:36:15,242 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-01 16:36:15,291 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-01 16:36:18,651 - INFO - Embeddings initialized successfully
+2025-05-01 16:36:18,858 - INFO - Embeddings initialized successfully
+2025-05-01 16:37:13,631 - INFO - Loading faiss with AVX2 support.
+2025-05-01 16:37:13,695 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-01 16:37:13,718 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-01 16:37:13,771 - INFO - Knowledge base reloaded
+2025-05-01 16:37:14,279 - INFO - Loading faiss with AVX2 support.
+2025-05-01 16:37:14,314 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-01 16:37:14,324 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-01 16:37:14,345 - INFO - Knowledge base reloaded
+2025-05-01 16:37:19,767 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\chatbot\llm_integration.py changed, reloading.
+2025-05-01 16:37:19,884 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\chatbot\llm_integration.py changed, reloading.
+2025-05-01 16:37:37,450 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-01 16:37:37,472 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-01 16:37:41,182 - INFO - Embeddings initialized successfully
+2025-05-01 16:37:41,182 - INFO - Embeddings initialized successfully
+2025-05-01 16:38:46,080 - INFO - Loading faiss with AVX2 support.
+2025-05-01 16:38:46,164 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-01 16:38:46,233 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-01 16:38:46,283 - INFO - Knowledge base reloaded
+2025-05-01 16:38:46,379 - INFO - Loading faiss with AVX2 support.
+2025-05-01 16:38:46,425 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-01 16:38:46,440 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-01 16:38:46,463 - INFO - Knowledge base reloaded
+2025-05-01 16:48:42,659 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\chatbot\chatbot_views.py changed, reloading.
+2025-05-01 16:48:43,165 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\chatbot\chatbot_views.py changed, reloading.
+2025-05-01 16:48:53,680 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-01 16:48:53,989 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-01 16:48:58,133 - INFO - Embeddings initialized successfully
+2025-05-01 16:48:58,262 - INFO - Embeddings initialized successfully
+2025-05-01 16:49:46,446 - INFO - Loading faiss with AVX2 support.
+2025-05-01 16:49:46,501 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-01 16:49:46,519 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-01 16:49:46,556 - INFO - Knowledge base reloaded
+2025-05-01 16:49:46,884 - INFO - Loading faiss with AVX2 support.
+2025-05-01 16:49:46,929 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-01 16:49:46,941 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-01 16:49:46,961 - INFO - Knowledge base reloaded
+2025-05-01 16:52:35,915 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\chatbot\llm_integration.py changed, reloading.
+2025-05-01 16:52:36,021 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\chatbot\llm_integration.py changed, reloading.
+2025-05-01 16:52:45,458 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-01 16:52:45,458 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-01 16:52:49,146 - INFO - Embeddings initialized successfully
+2025-05-01 16:52:49,957 - INFO - Embeddings initialized successfully
+2025-05-01 16:52:54,109 - INFO - Successfully loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-01 16:52:54,914 - INFO - Successfully loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-01 16:53:00,681 - INFO - Successfully loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-01 16:53:01,072 - INFO - Successfully loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-01 16:53:01,461 - INFO - Successfully loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-01 16:53:01,731 - INFO - Successfully loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-01 16:53:02,700 - INFO - Successfully loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-01 16:53:03,615 - INFO - Successfully loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-01 16:55:42,222 - INFO - Loading faiss with AVX2 support.
+2025-05-01 16:55:42,306 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-01 16:55:42,325 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-01 16:55:42,571 - INFO - Knowledge base reloaded with 1970 chunks from 853 documents
+2025-05-01 16:55:45,069 - INFO - Loading faiss with AVX2 support.
+2025-05-01 16:55:45,105 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-01 16:55:45,120 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-01 16:55:45,202 - INFO - Knowledge base reloaded with 1970 chunks from 853 documents
+2025-05-01 16:58:10,596 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\chatbot\urls.py changed, reloading.
+2025-05-01 16:58:10,728 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\chatbot\urls.py changed, reloading.
+2025-05-01 16:58:20,722 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-01 16:58:20,879 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-01 16:58:24,138 - INFO - Embeddings initialized successfully
+2025-05-01 16:58:24,241 - INFO - Embeddings initialized successfully
+2025-05-01 16:58:29,293 - INFO - Successfully loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-01 16:58:29,380 - INFO - Successfully loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-01 16:58:35,999 - INFO - Successfully loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-01 16:58:36,191 - INFO - Successfully loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-01 16:58:36,315 - INFO - Successfully loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-01 16:58:36,513 - INFO - Successfully loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-01 16:58:36,641 - INFO - Successfully loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-01 16:58:36,849 - INFO - Successfully loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-01 17:00:55,622 - INFO - Loading faiss with AVX2 support.
+2025-05-01 17:00:55,701 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-01 17:00:55,718 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-01 17:00:55,904 - INFO - Knowledge base reloaded with 1970 chunks from 853 documents
+2025-05-01 17:00:56,704 - INFO - Loading faiss with AVX2 support.
+2025-05-01 17:00:56,737 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-01 17:00:56,745 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-01 17:00:56,822 - INFO - Knowledge base reloaded with 1970 chunks from 853 documents
+2025-05-01 17:06:29,357 - WARNING - Not Found: /api/conversations/recent/
+2025-05-01 17:06:29,475 - WARNING - Unauthorized: /api/messages/
+2025-05-01 17:06:29,482 - WARNING - Bad Request: /api/auth/token/refresh/
+2025-05-01 17:09:40,099 - WARNING - Not Found: /api/api/conversations/recent/
+2025-05-01 17:09:40,111 - WARNING - Not Found: /api/api/conversations/recent/
+2025-05-01 17:09:40,185 - WARNING - Unauthorized: /api/messages/
+2025-05-01 17:09:40,187 - WARNING - Unauthorized: /api/messages/
+2025-05-01 17:09:40,195 - WARNING - Bad Request: /api/auth/token/refresh/
+2025-05-01 17:09:40,199 - WARNING - Bad Request: /api/auth/token/refresh/
+2025-05-01 17:10:08,045 - WARNING - Not Found: /api/api/conversations/recent/
+2025-05-01 17:10:08,054 - WARNING - Not Found: /api/api/conversations/recent/
+2025-05-01 17:10:08,180 - WARNING - Unauthorized: /api/messages/
+2025-05-01 17:10:08,182 - WARNING - Unauthorized: /api/messages/
+2025-05-01 17:10:08,334 - WARNING - Bad Request: /api/auth/token/refresh/
+2025-05-01 17:10:08,336 - WARNING - Bad Request: /api/auth/token/refresh/
+2025-05-01 17:11:39,286 - WARNING - Not Found: /api/api/conversations/recent/
+2025-05-01 17:11:39,300 - WARNING - Not Found: /api/api/conversations/recent/
+2025-05-01 17:11:39,468 - WARNING - Unauthorized: /api/messages/
+2025-05-01 17:11:39,473 - WARNING - Unauthorized: /api/messages/
+2025-05-01 17:11:39,486 - WARNING - Bad Request: /api/auth/token/refresh/
+2025-05-01 17:11:39,488 - WARNING - Bad Request: /api/auth/token/refresh/
+2025-05-01 17:11:56,517 - WARNING - Not Found: /api/api/conversations/recent/
+2025-05-01 17:11:56,526 - WARNING - Not Found: /api/api/conversations/recent/
+2025-05-01 17:11:56,706 - WARNING - Unauthorized: /api/messages/
+2025-05-01 17:11:56,708 - WARNING - Unauthorized: /api/messages/
+2025-05-01 17:11:56,954 - WARNING - Bad Request: /api/auth/token/refresh/
+2025-05-01 17:11:56,956 - WARNING - Bad Request: /api/auth/token/refresh/
+2025-05-01 17:12:04,914 - WARNING - Too Many Requests: /api/conversations/
+2025-05-01 17:12:04,922 - WARNING - Not Found: /api/api/conversations/recent/
+2025-05-01 17:12:04,934 - WARNING - Not Found: /api/api/conversations/recent/
+2025-05-01 17:12:04,998 - WARNING - Unauthorized: /api/messages/
+2025-05-01 17:12:05,006 - WARNING - Bad Request: /api/auth/token/refresh/
+2025-05-01 17:12:28,225 - WARNING - Too Many Requests: /api/conversations/
+2025-05-01 17:12:28,227 - WARNING - Too Many Requests: /api/conversations/recent/
+2025-05-01 17:12:28,229 - WARNING - Too Many Requests: /api/conversations/
+2025-05-01 17:12:28,236 - WARNING - Too Many Requests: /api/conversations/recent/
+2025-05-01 17:24:09,752 - WARNING - Not Found: /api/conversations/recent/
+2025-05-01 17:24:09,758 - WARNING - Not Found: /api/conversations/recent/
+2025-05-01 17:24:09,899 - WARNING - Unauthorized: /api/messages/
+2025-05-01 17:24:09,902 - WARNING - Unauthorized: /api/messages/
+2025-05-01 17:24:09,932 - WARNING - Bad Request: /api/auth/token/refresh/
+2025-05-01 17:24:09,934 - WARNING - Bad Request: /api/auth/token/refresh/
+2025-05-01 17:28:07,972 - WARNING - Not Found: /api/chat/conversations/
+2025-05-01 17:28:07,976 - WARNING - Not Found: /api/chat/conversations/
+2025-05-01 17:28:07,983 - WARNING - Not Found: /api/chat/conversations/
+2025-05-01 17:28:07,988 - WARNING - Not Found: /api/chat/conversations/
+2025-05-01 17:28:29,301 - WARNING - Not Found: /api/chat/conversations/
+2025-05-01 17:28:29,307 - WARNING - Not Found: /api/chat/conversations/
+2025-05-01 17:28:29,312 - WARNING - Not Found: /api/chat/conversations/
+2025-05-01 17:28:29,318 - WARNING - Not Found: /api/chat/conversations/
+2025-05-01 17:37:32,024 - WARNING - Unauthorized: /api/messages/
+2025-05-01 17:37:32,027 - WARNING - Unauthorized: /api/messages/
+2025-05-01 17:37:32,047 - WARNING - Bad Request: /api/auth/token/refresh/
+2025-05-01 17:37:32,051 - WARNING - Bad Request: /api/auth/token/refresh/
+2025-05-01 17:38:44,320 - WARNING - Unauthorized: /api/messages/
+2025-05-01 17:38:44,330 - WARNING - Unauthorized: /api/messages/
+2025-05-01 17:38:44,392 - WARNING - Bad Request: /api/auth/token/refresh/
+2025-05-01 17:38:44,395 - WARNING - Bad Request: /api/auth/token/refresh/
+2025-05-01 17:41:25,143 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\chatbot\urls.py changed, reloading.
+2025-05-01 17:41:25,313 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\chatbot\urls.py changed, reloading.
+2025-05-01 17:41:35,744 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-01 17:41:35,753 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-01 17:41:39,091 - INFO - Embeddings initialized successfully
+2025-05-01 17:41:39,610 - INFO - Embeddings initialized successfully
+2025-05-01 17:41:44,160 - INFO - Successfully loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-01 17:41:44,664 - INFO - Successfully loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-01 17:41:50,324 - INFO - Successfully loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-01 17:41:50,608 - INFO - Successfully loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-01 17:41:50,869 - INFO - Successfully loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-01 17:41:50,933 - INFO - Successfully loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-01 17:41:51,166 - INFO - Successfully loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-01 17:41:51,917 - INFO - Successfully loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-01 17:43:32,626 - INFO - Loading faiss with AVX2 support.
+2025-05-01 17:43:32,657 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-01 17:43:32,666 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-01 17:43:32,728 - INFO - Knowledge base reloaded with 1970 chunks from 853 documents
+2025-05-01 17:43:53,788 - WARNING - Not Found: /api/chat/conversations/
+2025-05-01 17:43:53,788 - WARNING - Not Found: /api/chat/conversations/
+2025-05-01 17:43:53,793 - WARNING - Not Found: /api/chat/conversations/
+2025-05-01 17:43:53,810 - WARNING - Not Found: /api/chat/conversations/
+2025-05-01 17:51:18,842 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\chatbot\chatbot_views.py changed, reloading.
+2025-05-01 17:51:36,609 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-01 17:51:40,626 - INFO - Embeddings initialized successfully
+2025-05-01 17:51:53,381 - INFO - Successfully loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-01 17:52:11,071 - INFO - Successfully loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-01 17:52:12,126 - INFO - Successfully loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-01 17:52:13,180 - INFO - Successfully loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-01 17:54:33,507 - INFO - Loading faiss with AVX2 support.
+2025-05-01 17:54:33,566 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-01 17:54:33,582 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-01 17:54:33,719 - INFO - Knowledge base reloaded with 1970 chunks from 853 documents
+2025-05-01 17:56:52,697 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\myproject\settings.py changed, reloading.
+2025-05-01 17:57:09,835 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-01 17:57:13,742 - INFO - Embeddings initialized successfully
+2025-05-01 17:57:26,944 - INFO - Successfully loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-01 17:57:44,946 - INFO - Successfully loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-01 17:57:45,161 - INFO - Successfully loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-01 17:57:45,457 - INFO - Successfully loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-01 18:00:01,461 - INFO - Loading faiss with AVX2 support.
+2025-05-01 18:00:01,613 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-01 18:00:01,681 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-01 18:00:02,064 - INFO - Knowledge base reloaded with 1970 chunks from 853 documents
+2025-05-01 18:01:00,443 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\chatbot\urls.py changed, reloading.
+2025-05-01 18:01:25,786 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-01 18:01:30,518 - INFO - Embeddings initialized successfully
+2025-05-01 18:01:49,608 - INFO - Successfully loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-01 18:02:11,019 - INFO - Successfully loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-01 18:02:12,063 - INFO - Successfully loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-01 18:02:13,136 - INFO - Successfully loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-01 18:04:32,887 - INFO - Loading faiss with AVX2 support.
+2025-05-01 18:04:32,942 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-01 18:04:32,959 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-01 18:04:33,107 - INFO - Knowledge base reloaded with 1970 chunks from 853 documents
+2025-05-01 20:50:30,519 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-01 20:50:39,014 - INFO - Embeddings initialized successfully
+2025-05-01 20:50:49,634 - INFO - Successfully loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-01 20:51:01,610 - INFO - Successfully loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-01 20:51:05,442 - INFO - Successfully loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-01 20:51:06,932 - INFO - Successfully loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-01 20:53:22,286 - INFO - Loading faiss with AVX2 support.
+2025-05-01 20:53:22,349 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-01 20:53:22,364 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-01 20:53:22,491 - INFO - Knowledge base reloaded with 1970 chunks from 853 documents
+2025-05-01 20:55:56,421 - WARNING - Not Found: /api/chat/conversations/recent/
+2025-05-01 20:55:56,432 - WARNING - Not Found: /api/chat/conversations/recent/
+2025-05-01 20:55:56,453 - WARNING - Not Found: /api/chat/conversations/recent/
+2025-05-01 21:02:52,989 - WARNING - Not Found: /api/chat/conversations/recent/
+2025-05-01 21:02:52,993 - WARNING - Not Found: /api/chat/conversations/recent/
+2025-05-01 21:03:06,040 - WARNING - Unauthorized: /api/
+2025-05-01 21:03:12,942 - WARNING - Not Found: /favicon.ico
+2025-05-01 21:03:36,429 - WARNING - Not Found: /api/chat/conversations/recent/
+2025-05-01 21:03:36,434 - WARNING - Not Found: /api/chat/conversations/recent/
+2025-05-01 21:08:00,514 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\myproject\settings.py changed, reloading.
+2025-05-01 21:08:24,155 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-01 21:08:31,163 - INFO - Embeddings initialized successfully
+2025-05-01 21:08:47,874 - INFO - Successfully loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-01 21:08:58,693 - INFO - Successfully loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-01 21:08:58,906 - INFO - Successfully loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-01 21:08:59,124 - INFO - Successfully loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-01 21:11:18,859 - INFO - Loading faiss with AVX2 support.
+2025-05-01 21:11:18,885 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-01 21:11:18,890 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-01 21:11:18,936 - INFO - Knowledge base reloaded with 1970 chunks from 853 documents
+2025-05-01 21:12:11,852 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\chatbot\chatbot_views.py changed, reloading.
+2025-05-01 21:12:25,520 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-01 21:12:33,135 - INFO - Embeddings initialized successfully
+2025-05-01 21:12:43,320 - INFO - Successfully loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-01 21:12:53,994 - INFO - Successfully loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-01 21:12:54,257 - INFO - Successfully loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-01 21:12:54,492 - INFO - Successfully loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-01 21:15:20,591 - INFO - Loading faiss with AVX2 support.
+2025-05-01 21:15:20,648 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-01 21:15:20,664 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-01 21:15:20,801 - INFO - Knowledge base reloaded with 1970 chunks from 853 documents
+2025-05-01 21:18:28,213 - WARNING - Not Found: /api/chat/conversations/recent/
+2025-05-01 21:18:28,220 - WARNING - Not Found: /api/chat/conversations/recent/
+2025-05-01 21:19:15,614 - WARNING - Not Found: /api/chat/conversations/recent/
+2025-05-01 21:19:27,927 - WARNING - Not Found: /api/chat/conversations/recent/
+2025-05-01 21:19:41,597 - WARNING - Not Found: /api/chat/conversations/recent/
+2025-05-01 21:26:24,348 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\chatbot\models.py changed, reloading.
+2025-05-01 21:26:43,353 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-01 21:26:51,233 - INFO - Embeddings initialized successfully
+2025-05-01 21:27:01,630 - INFO - Successfully loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-01 21:27:13,420 - INFO - Successfully loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-01 21:27:14,505 - INFO - Successfully loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-01 21:27:15,738 - INFO - Successfully loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-01 21:29:35,799 - INFO - Loading faiss with AVX2 support.
+2025-05-01 21:29:35,975 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-01 21:29:36,024 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-01 21:29:36,396 - INFO - Knowledge base reloaded with 1970 chunks from 853 documents
+2025-05-01 21:29:57,871 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\chatbot\llm_integration.py changed, reloading.
+2025-05-01 21:30:19,760 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-01 21:30:37,452 - INFO - Embeddings initialized successfully
+2025-05-01 21:30:53,175 - INFO - Successfully loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-01 21:31:09,028 - INFO - Successfully loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-01 21:31:09,242 - INFO - Successfully loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-01 21:31:09,495 - INFO - Successfully loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-01 21:33:26,442 - INFO - Loading faiss with AVX2 support.
+2025-05-01 21:33:26,480 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-01 21:33:26,487 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-01 21:33:26,536 - INFO - Knowledge base reloaded with 1970 chunks from 853 documents
+2025-05-01 21:33:52,940 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\chatbot\chatbot_views.py changed, reloading.
+2025-05-01 21:34:11,886 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-01 21:34:17,537 - INFO - Embeddings initialized successfully
+2025-05-01 21:34:31,946 - INFO - Successfully loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-01 21:34:45,076 - INFO - Successfully loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-01 21:34:49,035 - INFO - Successfully loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-01 21:34:51,911 - INFO - Successfully loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-01 21:37:18,099 - INFO - Loading faiss with AVX2 support.
+2025-05-01 21:37:18,164 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-01 21:37:18,183 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-01 21:37:18,340 - INFO - Knowledge base reloaded with 1970 chunks from 853 documents
+2025-05-01 21:37:24,063 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\chatbot\chatbot_views.py changed, reloading.
+2025-05-01 21:41:17,974 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-01 21:41:23,231 - INFO - Embeddings initialized successfully
+2025-05-01 21:41:46,172 - INFO - Successfully loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-01 21:42:03,343 - INFO - Successfully loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-01 21:42:05,095 - INFO - Successfully loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-01 21:42:08,104 - INFO - Successfully loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-01 21:43:33,221 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-01 21:43:42,671 - INFO - Embeddings initialized successfully
+2025-05-01 21:44:21,335 - INFO - Loading faiss with AVX2 support.
+2025-05-01 21:44:21,357 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-01 21:44:21,362 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-01 21:44:21,399 - INFO - Knowledge base reloaded with 1970 chunks from 853 documents
+2025-05-01 21:44:21,484 - INFO - Successfully loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-01 21:44:38,569 - INFO - Successfully loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-01 21:44:38,780 - INFO - Successfully loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-01 21:44:38,986 - INFO - Successfully loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-01 21:46:05,507 - WARNING - Not Found: /api/chat/conversations/recent/
+2025-05-01 21:46:05,526 - WARNING - Not Found: /api/chat/conversations/recent/
+2025-05-01 21:47:12,958 - INFO - Loading faiss with AVX2 support.
+2025-05-01 21:47:13,119 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-01 21:47:13,163 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-01 21:47:13,545 - INFO - Knowledge base reloaded with 1970 chunks from 853 documents
+2025-05-01 21:48:45,961 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\chatbot\chatbot_views.py changed, reloading.
+2025-05-01 21:49:07,165 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-01 21:49:12,708 - INFO - Embeddings initialized successfully
+2025-05-01 21:49:27,942 - INFO - Successfully loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-01 21:49:40,330 - INFO - Successfully loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-01 21:49:43,371 - INFO - Successfully loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-01 21:49:44,345 - INFO - Successfully loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-01 21:52:10,229 - INFO - Loading faiss with AVX2 support.
+2025-05-01 21:52:10,251 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-01 21:52:10,256 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-01 21:52:10,293 - INFO - Knowledge base reloaded with 1970 chunks from 853 documents
+2025-05-01 21:53:05,188 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-01 21:53:15,292 - INFO - Embeddings initialized successfully
+2025-05-01 21:53:31,573 - INFO - Successfully loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-01 21:53:46,034 - INFO - Successfully loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-01 21:53:47,761 - INFO - Successfully loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-01 21:53:47,979 - INFO - Successfully loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-01 21:56:37,998 - INFO - Loading faiss with AVX2 support.
+2025-05-01 21:56:38,062 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-01 21:56:38,078 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-01 21:56:38,219 - INFO - Knowledge base reloaded with 1970 chunks from 853 documents
+2025-05-01 21:57:11,292 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-01 21:57:15,771 - INFO - Embeddings initialized successfully
+2025-05-01 21:57:45,182 - INFO - Successfully loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-01 21:58:09,502 - INFO - Successfully loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-01 21:58:10,625 - INFO - Successfully loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-01 21:58:10,867 - INFO - Successfully loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-01 22:00:33,134 - INFO - Loading faiss with AVX2 support.
+2025-05-01 22:00:33,189 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-01 22:00:33,204 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-01 22:00:33,320 - INFO - Knowledge base reloaded with 1970 chunks from 853 documents
+2025-05-01 22:01:09,514 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-01 22:01:13,817 - INFO - Embeddings initialized successfully
+2025-05-01 22:01:23,554 - INFO - Successfully loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-01 22:01:40,591 - INFO - Successfully loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-01 22:01:40,797 - INFO - Successfully loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-01 22:01:41,022 - INFO - Successfully loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-01 22:03:55,643 - INFO - Loading faiss with AVX2 support.
+2025-05-01 22:03:55,664 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-01 22:03:55,668 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-01 22:03:55,709 - INFO - Knowledge base reloaded with 1970 chunks from 853 documents
+2025-05-01 22:04:40,876 - WARNING - Unauthorized: /api/chat/conversations/
+2025-05-01 22:04:40,882 - WARNING - Unauthorized: /api/chat/conversations/
+2025-05-01 22:04:40,892 - WARNING - Unauthorized: /api/auth/token/refresh/
+2025-05-01 22:04:40,894 - WARNING - Unauthorized: /api/auth/token/refresh/
+2025-05-01 22:56:23,979 - WARNING - Unauthorized: /api/chat/conversations/
+2025-05-01 22:56:23,985 - WARNING - Unauthorized: /api/chat/conversations/
+2025-05-01 22:56:24,005 - WARNING - Unauthorized: /api/auth/token/refresh/
+2025-05-01 22:56:24,011 - WARNING - Unauthorized: /api/auth/token/refresh/
+2025-05-01 22:56:27,036 - WARNING - Unauthorized: /api/chat/conversations/
+2025-05-01 22:56:27,040 - WARNING - Unauthorized: /api/chat/conversations/
+2025-05-01 22:56:27,054 - WARNING - Unauthorized: /api/auth/token/refresh/
+2025-05-01 22:56:27,060 - WARNING - Unauthorized: /api/auth/token/refresh/
+2025-05-01 22:57:05,317 - WARNING - Bad Request: /api/auth/login/
+2025-05-01 23:01:26,806 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-01 23:01:30,372 - INFO - Embeddings initialized successfully
+2025-05-01 23:01:34,965 - INFO - Successfully loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-01 23:01:40,292 - INFO - Successfully loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-01 23:01:40,542 - INFO - Successfully loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-01 23:01:40,769 - INFO - Successfully loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-01 23:03:01,799 - INFO - Loading faiss with AVX2 support.
+2025-05-01 23:03:01,843 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-01 23:03:01,857 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-01 23:03:01,960 - INFO - Knowledge base reloaded with 1970 chunks from 853 documents
+2025-05-01 23:05:10,229 - ERROR - DeepSeek API call failed: 402 Client Error: Payment Required for url: https://api.deepseek.com/v1/chat/completions
+2025-05-01 23:05:52,555 - WARNING - Not Found: /api/messages/
+2025-05-01 23:05:53,676 - WARNING - Not Found: /api/messages/
+2025-05-01 23:05:53,836 - WARNING - Not Found: /api/messages/
+2025-05-01 23:05:54,007 - WARNING - Not Found: /api/messages/
+2025-05-01 23:08:48,490 - ERROR - DeepSeek API call failed: 402 Client Error: Payment Required for url: https://api.deepseek.com/v1/chat/completions
+2025-05-01 23:10:22,403 - ERROR - DeepSeek API call failed: 402 Client Error: Payment Required for url: https://api.deepseek.com/v1/chat/completions
+2025-05-01 23:10:22,776 - ERROR - DeepSeek API call failed: 402 Client Error: Payment Required for url: https://api.deepseek.com/v1/chat/completions
+2025-05-01 23:11:05,533 - ERROR - DeepSeek API call failed: 402 Client Error: Payment Required for url: https://api.deepseek.com/v1/chat/completions
+2025-05-01 23:11:05,840 - ERROR - DeepSeek API call failed: 402 Client Error: Payment Required for url: https://api.deepseek.com/v1/chat/completions
+2025-05-01 23:12:04,577 - ERROR - DeepSeek API call failed: 402 Client Error: Payment Required for url: https://api.deepseek.com/v1/chat/completions
+2025-05-01 23:12:04,578 - ERROR - DeepSeek API call failed: 402 Client Error: Payment Required for url: https://api.deepseek.com/v1/chat/completions
+2025-05-02 00:04:59,753 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\chatbot\llm_integration.py changed, reloading.
+2025-05-02 00:05:57,631 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-02 00:06:06,905 - INFO - Embeddings initialized successfully
+2025-05-02 00:06:18,139 - INFO - Successfully loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-02 00:06:29,959 - INFO - Successfully loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-02 00:06:31,126 - INFO - Successfully loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-02 00:06:34,768 - INFO - Successfully loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-02 00:08:53,951 - INFO - Loading faiss with AVX2 support.
+2025-05-02 00:08:54,248 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-02 00:08:54,252 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-02 00:08:54,289 - INFO - Knowledge base reloaded with 1970 chunks from 853 documents
+2025-05-02 00:28:21,308 - ERROR - DeepSeek API call failed: 402 Client Error: Payment Required for url: https://api.deepseek.com/v1/chat/completions
+2025-05-02 00:34:23,970 - WARNING - Not Found: /ws/chat/
+2025-05-02 00:34:24,021 - WARNING - Not Found: /ws/chat/
+2025-05-02 14:11:10,781 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-02 14:11:17,759 - INFO - Embeddings initialized successfully
+2025-05-02 14:11:22,274 - INFO - Successfully loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-02 14:11:26,937 - INFO - Successfully loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-02 14:11:27,190 - INFO - Successfully loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-02 14:11:27,416 - INFO - Successfully loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-02 14:12:14,182 - INFO - Loading faiss with AVX2 support.
+2025-05-02 14:12:14,412 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-02 14:12:14,423 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-02 14:12:14,462 - INFO - Knowledge base reloaded with 1970 chunks from 853 documents
+2025-05-02 14:15:37,864 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-02 14:15:43,029 - INFO - Embeddings initialized successfully
+2025-05-02 14:15:52,003 - INFO - Successfully loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-02 14:16:03,228 - INFO - Successfully loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-02 14:16:03,840 - INFO - Successfully loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-02 14:16:04,399 - INFO - Successfully loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-02 14:17:05,939 - INFO - Loading faiss with AVX2 support.
+2025-05-02 14:17:05,986 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-02 14:17:06,001 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-02 14:17:06,090 - INFO - Knowledge base reloaded with 1970 chunks from 853 documents
+2025-05-02 14:18:20,684 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-02 14:18:26,408 - INFO - Embeddings initialized successfully
+2025-05-02 14:18:37,306 - INFO - Successfully loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-02 14:18:46,783 - INFO - Successfully loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-02 14:18:46,997 - INFO - Successfully loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-02 14:18:47,212 - INFO - Successfully loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-02 14:19:56,385 - INFO - Loading faiss with AVX2 support.
+2025-05-02 14:19:56,419 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-02 14:19:56,428 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-02 14:19:56,486 - INFO - Knowledge base reloaded with 1970 chunks from 853 documents
+2025-05-02 14:44:31,036 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-02 14:44:35,299 - INFO - Embeddings initialized successfully
+2025-05-02 14:44:39,274 - INFO - Successfully loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-02 14:44:43,732 - INFO - Successfully loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-02 14:44:43,937 - INFO - Successfully loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-02 14:44:44,153 - INFO - Successfully loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-02 14:45:29,813 - INFO - Loading faiss with AVX2 support.
+2025-05-02 14:45:29,839 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-02 14:45:29,844 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-02 14:45:29,892 - INFO - Knowledge base reloaded with 1970 chunks from 853 documents
+2025-05-02 14:45:30,000 - INFO - File watcher initialized
+2025-05-02 14:45:53,436 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-02 14:45:57,738 - INFO - Embeddings initialized successfully
+2025-05-02 14:46:01,807 - INFO - Successfully loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-02 14:46:06,449 - INFO - Successfully loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-02 14:46:06,671 - INFO - Successfully loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-02 14:46:06,888 - INFO - Successfully loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-02 14:46:58,429 - INFO - Loading faiss with AVX2 support.
+2025-05-02 14:46:58,456 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-02 14:46:58,463 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-02 14:46:58,513 - INFO - Knowledge base reloaded with 1970 chunks from 853 documents
+2025-05-02 14:46:58,617 - INFO - File watcher initialized
+2025-05-02 15:17:01,729 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-02 15:17:06,975 - INFO - Embeddings initialized successfully
+2025-05-02 15:17:11,166 - INFO - Successfully loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-02 15:17:23,383 - INFO - Successfully loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-02 15:17:23,607 - INFO - Successfully loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-02 15:17:23,838 - INFO - Successfully loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-02 15:19:20,549 - INFO - Loading faiss with AVX2 support.
+2025-05-02 15:19:20,658 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-02 15:19:20,673 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-02 15:19:20,803 - INFO - Knowledge base reloaded with 1970 chunks from 853 documents
+2025-05-02 15:19:21,200 - INFO - File watcher initialized
+2025-05-02 15:20:46,551 - WARNING - Not Found: /chat/sse/chat/
+2025-05-02 15:26:22,106 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\chatbot\sse.py changed, reloading.
+2025-05-02 15:26:36,401 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-02 15:26:40,138 - INFO - Embeddings initialized successfully
+2025-05-02 15:26:50,621 - INFO - Successfully loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-02 15:27:01,121 - INFO - Successfully loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-02 15:27:01,344 - INFO - Successfully loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-02 15:27:01,589 - INFO - Successfully loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-03 17:02:04,172 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-03 17:02:08,306 - INFO - Embeddings initialized successfully
+2025-05-03 17:02:19,960 - INFO - Successfully loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-03 17:02:30,818 - INFO - Successfully loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-03 17:02:31,389 - INFO - Successfully loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-03 17:02:31,943 - INFO - Successfully loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-03 17:04:03,246 - INFO - Loading faiss with AVX2 support.
+2025-05-03 17:04:03,625 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-03 17:04:03,634 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-03 17:04:03,685 - INFO - Knowledge base reloaded with 1970 chunks from 853 documents
+2025-05-03 17:04:03,837 - INFO - File watcher initialized
+2025-05-03 17:18:45,982 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\chatbot\sse.py changed, reloading.
+2025-05-03 17:19:28,308 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-03 17:19:32,693 - INFO - Embeddings initialized successfully
+2025-05-03 17:19:42,638 - INFO - Successfully loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-03 17:19:54,870 - INFO - Successfully loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-03 17:19:55,743 - INFO - Successfully loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-03 17:19:56,631 - INFO - Successfully loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-03 17:21:27,929 - INFO - Loading faiss with AVX2 support.
+2025-05-03 17:21:27,958 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-03 17:21:27,966 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-03 17:21:28,025 - INFO - Knowledge base reloaded with 1970 chunks from 853 documents
+2025-05-03 17:21:28,137 - INFO - File watcher initialized
+2025-05-03 17:21:28,668 - WARNING - Not Found: /sse/chat/
+2025-05-03 17:21:58,159 - ERROR - Internal Server Error: /api/sse/chat/
+Traceback (most recent call last):
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: The view chatbot.sse.chat_stream didn't return an HttpResponse object. It returned None instead.
+2025-05-03 17:25:03,847 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\chatbot\sse.py changed, reloading.
+2025-05-03 17:25:11,601 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-03 17:25:15,452 - INFO - Embeddings initialized successfully
+2025-05-03 17:25:23,556 - INFO - Successfully loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-03 17:25:29,635 - INFO - Successfully loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-03 17:25:29,913 - INFO - Successfully loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-03 17:25:30,234 - INFO - Successfully loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-03 17:27:03,136 - INFO - Loading faiss with AVX2 support.
+2025-05-03 17:27:03,166 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-03 17:27:03,179 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-03 17:27:03,247 - INFO - Knowledge base reloaded with 1970 chunks from 853 documents
+2025-05-03 17:27:03,356 - INFO - File watcher initialized

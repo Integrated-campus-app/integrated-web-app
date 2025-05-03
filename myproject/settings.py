@@ -49,6 +49,9 @@ REST_FRAMEWORK = {
     'EXCEPTION_HANDLER': 'rest_framework.views.exception_handler',
     'DEFAULT_THROTTLE_RATES': {
         'anon': '10/minute',  # 10 requests/minute for anonymous users
+    },
+    'DEFAULT_THROTTLE_RATES': {
+        'anon': '5/minute',  # Prevent abuse
     }
 }
 
@@ -190,8 +193,14 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-CORS_ALLOW_ALL_ORIGINS = True  # For development only!
+# CORS_ALLOW_ALL_ORIGINS = True  # For development only!
 CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+    "http://localhost:5173",  # Add this
+    "http://127.0.0.1:5173",  # Add this
+]
 from dotenv import load_dotenv
 load_dotenv()
 
