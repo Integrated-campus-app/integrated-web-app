@@ -60,6 +60,7 @@ class CustomUser(AbstractUser):
     """
     Custom user model that uses university email as primary identifier.
     """
+    pass
     university_email = models.EmailField(
         _('university email'),
         unique=True,

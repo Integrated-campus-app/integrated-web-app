@@ -1,17 +1,7 @@
-from django.urls import path, include
-from rest_framework.routers import DefaultRouter
-from .chatbot_views import ConversationViewSet, MessageViewSet
-from .chatbot_views import ConversationListView
-from rest_framework.routers import DefaultRouter
+from django.urls import path
+from django.views.decorators.http import require_http_methods
 from . import sse
 
-router = DefaultRouter()
-router.register(r'chat/conversations', ConversationViewSet)
-router.register(r'chat/messages', MessageViewSet)
-
 urlpatterns = [
-    path('', include(router.urls)),
-    path('sse/chat/', sse.chat_stream, name='chat-sse'),
-    # path('chat/conversations/recent/', ConversationListView.as_view(), name='recent-conversations'),
-    
+    path('sse/chat/', require_http_methods(["GET", "OPTIONS"])(sse.chat_stream), name='chat-sse'),
 ]

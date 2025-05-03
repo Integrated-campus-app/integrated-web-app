@@ -19,6 +19,7 @@ import logging
 from time import time as current_time
 from glob import glob
 from django.core.cache import caches
+from .models import Conversation, Message
 
 cache = caches["default"]
 
@@ -151,29 +152,35 @@ def query_deepseek(prompt: str) -> str:
         logging.error(f"DeepSeek API call failed: {e}")
         return None
     
-def stream_response(query: str):
-    """Yields dicts with keys: type, content, [source]"""
+def stream_response(query: str, conversation=None):
+    """Handles SSE streaming and saves messages to DB."""
     try:
+        # Save user message if conversation is provided
+        if conversation:
+            Message.objects.create(
+                conversation=conversation,
+                content=query,
+                is_user=True
+            )
+
         yield {"type": "status", "status": "typing"}
         
-        # Get context from documents
-        if vector_store:
-            docs = vector_store.similarity_search(query, k=CONFIG["search_k"])
-            for doc in docs:
-                yield {
-                    "type": "context",
-                    "content": doc.page_content,
-                    "source": os.path.basename(doc.metadata["source"])
-                }
-                time.sleep(0.1)  # Simulate streaming
-        
-        # Generate final answer
-        answer = generate_response(query)
-        yield {"type": "message", "content": answer}
-        
+        # Generate AI response
+        ai_response = generate_response(query)  # Reuse existing function
+
+        # Save AI response if conversation exists
+        if conversation:
+            Message.objects.create(
+                conversation=conversation,
+                content=ai_response,
+                is_user=False
+            )
+
+        yield {"type": "message", "content": ai_response}
+
     except Exception as e:
-        logging.error(f"Stream error: {e}")
-        yield {"type": "error", "message": CONFIG["fallback_response"]}
+        yield {"type": "error", "message": str(e)}
+
 
 def generate_response(user_query: str) -> str:
     # Handle greetings

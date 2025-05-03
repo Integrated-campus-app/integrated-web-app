@@ -6,6 +6,7 @@ from .llm_integration import generate_response
 from rest_framework.throttling import AnonRateThrottle
 from rest_framework.permissions import AllowAny , IsAuthenticated
 from rest_framework.views import APIView
+from .llm_integration import generate_response 
 
     
 class ConversationViewSet(viewsets.ModelViewSet):
