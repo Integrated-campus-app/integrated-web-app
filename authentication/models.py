@@ -60,7 +60,6 @@ class CustomUser(AbstractUser):
     """
     Custom user model that uses university email as primary identifier.
     """
-    pass
     university_email = models.EmailField(
         _('university email'),
         unique=True,
@@ -94,6 +93,27 @@ class CustomUser(AbstractUser):
     EMAIL_FIELD = 'university_email'
     USERNAME_FIELD = 'university_email'
     REQUIRED_FIELDS = ['username']
+    
+    # Add these fields to resolve the reverse accessor conflicts
+    groups = models.ManyToManyField(
+        'auth.Group',
+        verbose_name=_('groups'),
+        blank=True,
+        help_text=_(
+            'The groups this user belongs to. A user will get all permissions '
+            'granted to each of their groups.'
+        ),
+        related_name="customuser_set",  # Changed from 'user_set'
+        related_query_name="customuser",
+    )
+    user_permissions = models.ManyToManyField(
+        'auth.Permission',
+        verbose_name=_('user permissions'),
+        blank=True,
+        help_text=_('Specific permissions for this user.'),
+        related_name="customuser_set",  # Changed from 'user_set'
+        related_query_name="customuser",
+    )
     
     def clean(self):
         """

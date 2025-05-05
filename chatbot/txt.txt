@@ -1,0 +1,15 @@
+/api/auth/current-user/ authentication.auth_views.current_user  current-user
+/api/auth/login/        authentication.auth_views.CustomTokenObtainPairView     login
+/api/auth/register/     authentication.auth_views.RegisterView  register
+/api/auth/token/refresh/        rest_framework_simplejwt.views.TokenRefreshView token-refresh
+/api/chat/stream/       chatbot.sse.chat_stream chat-stream
+/api/conversations/     chatbot.views.ConversationListCreateView        conversation-list
+/api/conversations/<int:pk>/    chatbot.views.ConversationDetailView    conversation-detail
+/forum/ forum.views.question_list       question_list
+/forum/ask/     forum.views.ask_question        ask_question
+/forum/q/<int:question_id>/     forum.views.question_detail     question_detail
+/map/categories/        location.location_views.LocationCategoryList    category-list
+/map/favorites/ location.location_views.UserFavoriteLocationList        favorite-list
+/map/favorites/<int:pk>/        location.location_views.UserFavoriteLocationDetail      favorite-detail
+/map/locations/ location.location_views.LocationList    location-list
+/map/locations/<int:pk>/        location.location_views.LocationDetail  location-detail
