@@ -35,6 +35,8 @@ class LocationSearchView(generics.ListAPIView):
 
 # Get navigation route (using Mapbox Directions API)
 class NavigationView(APIView):
+    permission_classes = [permissions.AllowAny]  # Added this line to make it public
+    
     def get(self, request):
         required_params = ['from_lat', 'from_lng', 'to_lat', 'to_lng']
         if any(param not in request.query_params for param in required_params):

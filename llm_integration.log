@@ -3410,3 +3410,15 @@ AssertionError: The field 'type' was declared on serializer LocationSerializer, 
 2025-05-07 23:04:23,482 - INFO - Loaded 1970 chunks from 853 documents
 2025-05-07 23:04:23,487 - INFO - File watcher initialized
 2025-05-07 23:05:26,606 - WARNING - Unauthorized: /api/navigation/
+2025-05-07 23:11:45,558 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\location\views.py changed, reloading.
+2025-05-07 23:12:08,684 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-07 23:12:19,840 - INFO - Embeddings initialized successfully
+2025-05-07 23:12:41,424 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-07 23:13:05,503 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-07 23:13:10,357 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-07 23:13:11,701 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-07 23:15:45,312 - INFO - Loading faiss with AVX2 support.
+2025-05-07 23:15:45,384 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-07 23:15:45,408 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-07 23:15:45,795 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-07 23:15:45,800 - INFO - File watcher initialized
