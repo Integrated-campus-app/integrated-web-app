@@ -1,41 +1,34 @@
 from django.db import models
-from django.conf import settings
-from django.contrib.postgres.fields import ArrayField
 
-class LocationCategory(models.Model):
-    name = models.CharField(max_length=100)
-    icon_class = models.CharField(max_length=50)
-    
+class Building(models.Model):
+    name = models.CharField(max_length=100, unique=True, null=True, blank=True)
+    latitude = models.FloatField(null=True, blank=True)
+    longitude = models.FloatField(null=True, blank=True)
+
     def __str__(self):
         return self.name
 
 class Location(models.Model):
-    name = models.CharField(max_length=255)
-    category = models.ForeignKey(LocationCategory, on_delete=models.PROTECT)
-    description = models.TextField(blank=True)
-    coordinates = ArrayField(models.FloatField(), size=2)  # [longitude, latitude]
-    is_common = models.BooleanField(default=False)
-    
-    def __str__(self):
-        return self.name
+    CATEGORY_CHOICES = [
+        ('ENTRANCE', 'Entrance'),
+        ('LOUNGE', 'Lounge'),
+        ('CAFE', 'Cafe'),
+        ('COURT', 'Court'),
+        ('STADIUM', 'Stadium'),
+        ('AMPHI', 'Amphitheater'),
+        ('SCHOOL', 'School'),
+        ('DEPARTMENT', 'Department'),
+        ('LAB', 'Lab'),
+        ('STEM', 'STEM Center'),
+        ('CLASSROOM', 'Classroom'),
+    ]
 
-class UserFavoriteLocation(models.Model):
-    user = models.ForeignKey(
-        settings.AUTH_USER_MODEL,
-        on_delete=models.CASCADE,
-        related_name='favorite_locations'
-    )
-    location = models.ForeignKey(
-        'Location',  # Reference to Location model
-        on_delete=models.CASCADE,
-        related_name='favorited_by'
-    )
-    created_at = models.DateTimeField(auto_now_add=True)
-    
-    class Meta:
-        unique_together = ('user', 'location')
-        verbose_name = 'Favorite Location'
-        verbose_name_plural = 'Favorite Locations'
-    
+    name = models.CharField(max_length=200)
+    description = models.TextField(blank=True)
+    latitude = models.FloatField()
+    longitude = models.FloatField()
+    category = models.CharField(max_length=50, choices=CATEGORY_CHOICES)  # Changed from 'type' to 'category'
+    building = models.ForeignKey(Building, on_delete=models.SET_NULL, null=True, blank=True)
+
     def __str__(self):
-        return f"{self.user.username}'s favorite: {self.location.name}"
+        return f"{self.name} ({self.get_category_display()})"

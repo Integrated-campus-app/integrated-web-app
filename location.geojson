@@ -1,0 +1,214 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [39.29460, 8.56900] 
+      },
+      "properties": {
+        "name": "Adama Science and Technology University - ASTU Gada Gate",
+        "category": "Entrance"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",  
+        "coordinates": [39.2857, 8.55915] 
+      },
+      "properties": {
+        "name": "Adama Science and Technology University - ASTU Main Gate",
+        "category": "Entrance"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",  
+        "coordinates": [39.29206, 8.56295] 
+      },
+      "properties": {
+        "name": "ASTU Staff Lounge",
+        "category": "Lounge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",  
+        "coordinates": [39.2912, 8.56466] 
+      },
+      "properties": {
+        "name": "ASTU Student Lounge",
+        "category": "Lounge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",  
+        "coordinates": [39.29043, 8.56568] 
+      },
+      "properties": {
+        "name": "Student Lounge Cafe 1",
+        "category": "Cafe"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",  
+        "coordinates": [39.29351, 8.56504] 
+      },
+      "properties": {
+        "name": "ASTU Basketball Court",
+        "category": "Court"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",  
+        "coordinates": [39.29467, 8.56543] 
+      },
+      "properties": {
+        "name": "Adama Science and Technology Univeristy Stadium",
+        "category": "Stadium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",  
+        "coordinates": [39.29344, 8.56566] 
+      },
+      "properties": {
+        "name": "KT Tennis Court",
+        "category": "Court"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",  
+        "coordinates": [39.29168, 8.56427] 
+      },
+      "properties": {
+        "name": "ASTU Amphitheater",
+        "category": "Amphi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",  
+        "coordinates": [39.29072, 8.56308] 
+      },
+      "properties": {
+        "name": "ASTU Cafe (Pro Cafe)",
+        "category": "Cafe"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",  
+        "coordinates": [39.28963, 8.5638] 
+      },
+      "properties": {
+        "name": "ASTU School of Electrical Engineering and Computing",
+        "category": "School"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",  
+        "coordinates": [39.28947, 8.56414] 
+      },
+      "properties": {
+        "name": "Department of Computer Science and Engineering",
+        "category": "Department"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",  
+        "coordinates": [39.28908, 8.56416] 
+      },
+      "properties": {
+        "name": "ASTU Block 510 (Python Lab)",
+        "category": "Lab"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",  
+        "coordinates": [39.28859, 8.56392] 
+      },
+      "properties": {
+        "name": "STEMpower Center, Adama Scinece and Technology University",
+        "category": "stem"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",  
+        "coordinates": [39.28881, 8.56401] 
+      },
+      "properties": {
+        "name": "LAB 5",
+        "category": "Lab"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",  
+        "coordinates": [39.28819, 8.56359] 
+      },
+      "properties": {
+        "name": "B-511",
+        "category": "classroom"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",  
+        "coordinates": [39.28794, 8.56333] 
+      },
+      "properties": {
+        "name": "ASTU Block 514",
+        "category": "classroom"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",  
+        "coordinates": [39.28761, 8.56308] 
+      },
+      "properties": {
+        "name": "ASTU Block 515",
+        "category": "Classroom"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",  
+        "coordinates": [39.28794, 8.56273] 
+      },
+      "properties": {
+        "name": "ASTU Block 513",
+        "category": "Classroom"
+      }
+    }
+  ]
+}

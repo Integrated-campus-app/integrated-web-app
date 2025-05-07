@@ -2646,3 +2646,767 @@ LINE 1: ...e"."source_hint", "chatbot_message"."created_at", "chatbot_m...
 2025-05-05 18:55:19,275 - WARNING - Method Not Allowed: /api/conversations/3/messages/
 2025-05-05 18:55:26,048 - WARNING - Not Found: /api/messages/1746460519266/
 2025-05-05 18:58:59,699 - WARNING - Method Not Allowed: /api/conversations/1/messages/
+2025-05-05 23:05:42,691 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-05 23:05:48,920 - INFO - Embeddings initialized successfully
+2025-05-05 23:06:00,407 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-05 23:06:22,549 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-05 23:06:23,670 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-05 23:06:24,984 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-05 23:08:28,726 - INFO - Loading faiss with AVX2 support.
+2025-05-05 23:08:28,756 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-05 23:08:28,762 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-05 23:08:29,284 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-05 23:08:29,295 - INFO - File watcher initialized
+2025-05-05 23:09:25,586 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-05 23:09:34,119 - INFO - Embeddings initialized successfully
+2025-05-05 23:09:50,275 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-05 23:09:59,082 - WARNING - Method Not Allowed: /api/conversations/8/messages/
+2025-05-05 23:10:03,703 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-05 23:10:06,358 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-05 23:10:06,635 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-05 23:10:11,526 - WARNING - Method Not Allowed: /api/conversations/8/messages/
+2025-05-05 23:10:15,017 - WARNING - Attempt 1 failed: 402 Client Error: Payment Required for url: https://api.deepseek.com/v1/chat/completions
+2025-05-05 23:10:16,951 - WARNING - Attempt 2 failed: 402 Client Error: Payment Required for url: https://api.deepseek.com/v1/chat/completions
+2025-05-05 23:10:21,682 - WARNING - Attempt 3 failed: 402 Client Error: Payment Required for url: https://api.deepseek.com/v1/chat/completions
+2025-05-05 23:12:25,155 - INFO - Loading faiss with AVX2 support.
+2025-05-05 23:12:25,218 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-05 23:12:25,235 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-05 23:12:25,644 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-05 23:12:25,649 - INFO - File watcher initialized
+2025-05-06 16:32:15,661 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-06 16:32:21,801 - INFO - Embeddings initialized successfully
+2025-05-06 16:32:29,640 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-06 16:32:38,104 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-06 16:32:38,593 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-06 16:32:38,911 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-06 16:33:48,205 - INFO - Loading faiss with AVX2 support.
+2025-05-06 16:33:48,443 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-06 16:33:48,466 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-06 16:33:48,861 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-06 16:33:48,867 - INFO - File watcher initialized
+2025-05-06 16:35:43,068 - WARNING - Unauthorized: /api/auth/register/
+2025-05-06 16:35:43,073 - WARNING - Unauthorized: /api/auth/token/refresh/
+2025-05-06 16:39:00,174 - WARNING - Method Not Allowed: /api/conversations/9/messages/
+2025-05-06 16:39:12,306 - WARNING - Method Not Allowed: /api/conversations/9/messages/
+2025-05-06 16:39:14,610 - WARNING - Attempt 1 failed: 402 Client Error: Payment Required for url: https://api.deepseek.com/v1/chat/completions
+2025-05-06 16:39:17,037 - WARNING - Attempt 2 failed: 402 Client Error: Payment Required for url: https://api.deepseek.com/v1/chat/completions
+2025-05-06 16:39:20,551 - WARNING - Attempt 3 failed: 402 Client Error: Payment Required for url: https://api.deepseek.com/v1/chat/completions
+2025-05-06 16:42:52,661 - WARNING - Not Found: /api/questions/
+2025-05-06 16:42:52,675 - WARNING - Not Found: /api/questions/
+2025-05-06 16:43:10,734 - WARNING - Not Found: /api/questions/
+2025-05-06 16:43:10,748 - WARNING - Not Found: /api/questions/
+2025-05-06 16:45:34,953 - WARNING - Not Found: /api/questions/
+2025-05-06 16:45:34,964 - WARNING - Not Found: /api/questions/
+2025-05-06 16:57:45,905 - WARNING - Not Found: /api/questions/
+2025-05-06 16:57:45,918 - WARNING - Not Found: /api/questions/
+2025-05-06 21:23:55,261 - WARNING - Method Not Allowed: /api/conversations/9/messages/
+2025-05-06 21:24:17,950 - WARNING - Method Not Allowed: /api/conversations/9/messages/
+2025-05-06 21:24:22,953 - WARNING - Attempt 1 failed: 402 Client Error: Payment Required for url: https://api.deepseek.com/v1/chat/completions
+2025-05-06 21:24:26,743 - WARNING - Attempt 2 failed: 402 Client Error: Payment Required for url: https://api.deepseek.com/v1/chat/completions
+2025-05-06 21:24:33,348 - WARNING - Attempt 3 failed: 402 Client Error: Payment Required for url: https://api.deepseek.com/v1/chat/completions
+2025-05-06 21:25:19,330 - WARNING - Method Not Allowed: /api/conversations/9/messages/
+2025-05-06 21:25:21,535 - WARNING - Attempt 1 failed: 402 Client Error: Payment Required for url: https://api.deepseek.com/v1/chat/completions
+2025-05-06 21:25:23,884 - WARNING - Attempt 2 failed: 402 Client Error: Payment Required for url: https://api.deepseek.com/v1/chat/completions
+2025-05-06 21:25:27,468 - WARNING - Attempt 3 failed: 402 Client Error: Payment Required for url: https://api.deepseek.com/v1/chat/completions
+2025-05-06 21:31:16,853 - WARNING - Not Found: /api/questions/
+2025-05-06 21:31:16,869 - WARNING - Not Found: /api/questions/
+2025-05-06 21:31:23,981 - WARNING - Not Found: /api/questions/
+2025-05-06 21:31:23,991 - WARNING - Not Found: /api/questions/
+2025-05-06 21:31:43,311 - WARNING - Not Found: /api/questions/
+2025-05-06 21:31:43,322 - WARNING - Not Found: /api/questions/
+2025-05-06 21:34:22,656 - WARNING - Method Not Allowed: /api/conversations/9/messages/
+2025-05-06 21:34:28,160 - WARNING - Attempt 1 failed: 402 Client Error: Payment Required for url: https://api.deepseek.com/v1/chat/completions
+2025-05-06 21:34:31,125 - WARNING - Attempt 2 failed: 402 Client Error: Payment Required for url: https://api.deepseek.com/v1/chat/completions
+2025-05-06 21:34:35,161 - WARNING - Attempt 3 failed: 402 Client Error: Payment Required for url: https://api.deepseek.com/v1/chat/completions
+2025-05-07 09:09:27,597 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-07 09:09:52,398 - INFO - Embeddings initialized successfully
+2025-05-07 09:10:03,347 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-07 09:10:18,435 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-07 09:10:21,287 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-07 09:10:22,402 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-07 09:12:43,257 - INFO - Loading faiss with AVX2 support.
+2025-05-07 09:12:44,823 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-07 09:12:44,877 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-07 09:12:46,098 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-07 09:12:46,122 - INFO - File watcher initialized
+2025-05-07 09:18:39,144 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-07 09:29:46,231 - INFO - Embeddings initialized successfully
+2025-05-07 09:29:58,317 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-07 09:30:11,959 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-07 09:30:14,532 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-07 09:30:15,026 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-07 09:32:30,118 - INFO - Loading faiss with AVX2 support.
+2025-05-07 09:32:30,268 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-07 09:32:30,311 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-07 09:32:31,285 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-07 09:32:31,298 - INFO - File watcher initialized
+2025-05-07 09:33:13,745 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-07 09:33:18,265 - INFO - Embeddings initialized successfully
+2025-05-07 09:33:27,492 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-07 09:33:38,064 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-07 09:33:39,039 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-07 09:33:40,622 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-07 09:35:40,483 - INFO - Loading faiss with AVX2 support.
+2025-05-07 09:35:40,503 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-07 09:35:40,508 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-07 09:35:40,608 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-07 09:35:40,610 - INFO - File watcher initialized
+2025-05-07 09:43:10,750 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-07 09:43:19,360 - INFO - Embeddings initialized successfully
+2025-05-07 09:43:29,076 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-07 09:43:43,037 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-07 09:43:45,470 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-07 09:43:46,056 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-07 09:45:51,267 - INFO - Loading faiss with AVX2 support.
+2025-05-07 09:45:51,288 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-07 09:45:51,292 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-07 09:45:51,392 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-07 09:45:51,395 - INFO - File watcher initialized
+2025-05-07 09:53:35,268 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-07 09:53:40,231 - INFO - Embeddings initialized successfully
+2025-05-07 09:53:44,266 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-07 09:53:48,818 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-07 09:53:49,032 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-07 09:53:49,259 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-07 09:54:34,456 - INFO - Loading faiss with AVX2 support.
+2025-05-07 09:54:34,481 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-07 09:54:34,487 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-07 09:54:34,615 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-07 09:54:34,617 - INFO - File watcher initialized
+2025-05-07 09:57:44,444 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-07 09:57:49,994 - INFO - Embeddings initialized successfully
+2025-05-07 09:58:02,834 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-07 09:58:11,914 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-07 09:58:12,184 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-07 09:58:12,481 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-07 09:59:02,391 - INFO - Loading faiss with AVX2 support.
+2025-05-07 09:59:02,420 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-07 09:59:02,427 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-07 09:59:02,608 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-07 09:59:02,610 - INFO - File watcher initialized
+2025-05-07 10:00:22,763 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-07 10:00:27,196 - INFO - Embeddings initialized successfully
+2025-05-07 10:00:31,161 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-07 10:00:35,692 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-07 10:00:35,900 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-07 10:00:36,114 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-07 10:01:22,289 - INFO - Loading faiss with AVX2 support.
+2025-05-07 10:01:22,314 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-07 10:01:22,320 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-07 10:01:22,449 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-07 10:01:22,451 - INFO - File watcher initialized
+2025-05-07 10:01:47,941 - WARNING - Not Found: /api/locations/
+2025-05-07 10:03:22,427 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\myproject\urls.py changed, reloading.
+2025-05-07 10:03:29,974 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-07 10:03:35,470 - INFO - Embeddings initialized successfully
+2025-05-07 10:03:40,110 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-07 10:03:45,586 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-07 10:03:45,834 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-07 10:03:46,088 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-07 10:04:42,521 - INFO - Loading faiss with AVX2 support.
+2025-05-07 10:04:42,549 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-07 10:04:42,556 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-07 10:04:42,715 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-07 10:04:42,719 - INFO - File watcher initialized
+2025-05-07 10:04:48,586 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\location\urls.py changed, reloading.
+2025-05-07 10:04:57,298 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-07 10:05:02,618 - INFO - Embeddings initialized successfully
+2025-05-07 10:05:07,207 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-07 10:05:12,088 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-07 10:05:12,308 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-07 10:05:12,536 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-07 10:06:08,204 - INFO - Loading faiss with AVX2 support.
+2025-05-07 10:06:08,232 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-07 10:06:08,239 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-07 10:06:08,383 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-07 10:06:08,386 - INFO - File watcher initialized
+2025-05-07 10:06:27,432 - WARNING - Unauthorized: /api/locations/
+2025-05-07 10:07:11,616 - WARNING - Unauthorized: /api/locations/search/
+2025-05-07 10:08:14,654 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\location\views.py changed, reloading.
+2025-05-07 10:08:23,127 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-07 10:08:27,077 - INFO - Embeddings initialized successfully
+2025-05-07 10:08:31,608 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-07 10:08:36,935 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-07 10:08:37,187 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-07 10:08:37,430 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-07 10:09:49,120 - INFO - Loading faiss with AVX2 support.
+2025-05-07 10:09:49,149 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-07 10:09:49,157 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-07 10:09:49,307 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-07 10:09:49,311 - INFO - File watcher initialized
+2025-05-07 10:11:09,407 - WARNING - Unauthorized: /api/navigation/
+2025-05-07 13:11:34,525 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-07 13:11:41,898 - INFO - Embeddings initialized successfully
+2025-05-07 13:11:53,231 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-07 13:12:06,521 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-07 13:12:07,216 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-07 13:12:07,903 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-07 13:13:06,672 - INFO - Loading faiss with AVX2 support.
+2025-05-07 13:13:07,098 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-07 13:13:07,108 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-07 13:13:07,250 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-07 13:13:07,252 - INFO - File watcher initialized
+2025-05-07 13:28:28,037 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\myproject\settings.py changed, reloading.
+2025-05-07 13:28:37,099 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-07 13:28:44,579 - INFO - Embeddings initialized successfully
+2025-05-07 13:28:49,914 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-07 13:28:54,611 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-07 13:28:54,915 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-07 13:28:55,158 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-07 13:30:20,788 - INFO - Loading faiss with AVX2 support.
+2025-05-07 13:30:20,850 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-07 13:30:20,861 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-07 13:30:21,083 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-07 13:30:21,087 - INFO - File watcher initialized
+2025-05-07 14:03:31,686 - WARNING - Not Found: /api/questions/
+2025-05-07 14:03:31,702 - WARNING - Not Found: /api/questions/
+2025-05-07 14:03:44,916 - WARNING - Not Found: /api/questions/
+2025-05-07 14:03:44,928 - WARNING - Not Found: /api/questions/
+2025-05-07 14:05:42,480 - WARNING - Not Found: /api/questions/
+2025-05-07 14:05:42,492 - WARNING - Not Found: /api/questions/
+2025-05-07 17:40:50,734 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\location\models.py changed, reloading.
+2025-05-07 17:41:08,042 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-07 17:41:14,435 - INFO - Embeddings initialized successfully
+2025-05-07 17:41:27,289 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-07 17:41:43,412 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-07 17:41:44,654 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-07 17:41:48,281 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-07 17:44:02,891 - INFO - Loading faiss with AVX2 support.
+2025-05-07 17:44:02,915 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-07 17:44:02,920 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-07 17:44:03,065 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-07 17:44:03,068 - INFO - File watcher initialized
+2025-05-07 17:44:23,676 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\myproject\settings.py changed, reloading.
+2025-05-07 17:46:57,464 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-07 17:47:01,535 - INFO - Embeddings initialized successfully
+2025-05-07 17:47:13,814 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-07 17:47:24,517 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-07 17:47:24,729 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-07 17:47:24,944 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-07 17:49:27,188 - INFO - Loading faiss with AVX2 support.
+2025-05-07 17:49:27,208 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-07 17:49:27,213 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-07 17:49:27,327 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-07 17:49:27,330 - INFO - File watcher initialized
+2025-05-07 17:50:14,698 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-07 17:50:19,219 - INFO - Embeddings initialized successfully
+2025-05-07 17:50:25,063 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-07 17:50:39,543 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-07 17:50:39,767 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-07 17:50:40,009 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-07 17:52:42,187 - INFO - Loading faiss with AVX2 support.
+2025-05-07 17:52:42,329 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-07 17:52:42,376 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-07 17:52:43,421 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-07 17:52:43,424 - INFO - File watcher initialized
+2025-05-07 17:53:16,826 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-07 17:53:20,804 - INFO - Embeddings initialized successfully
+2025-05-07 17:53:37,175 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-07 17:53:47,373 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-07 17:53:47,614 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-07 17:53:47,837 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-07 17:55:54,692 - INFO - Loading faiss with AVX2 support.
+2025-05-07 17:55:54,848 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-07 17:55:54,892 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-07 17:55:55,897 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-07 17:55:55,922 - INFO - File watcher initialized
+2025-05-07 17:57:08,165 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-07 17:57:12,184 - INFO - Embeddings initialized successfully
+2025-05-07 17:57:21,896 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-07 17:57:32,430 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-07 17:57:32,640 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-07 17:57:32,849 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-07 17:59:31,256 - INFO - Loading faiss with AVX2 support.
+2025-05-07 17:59:31,415 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-07 17:59:31,456 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-07 17:59:32,361 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-07 17:59:32,378 - INFO - File watcher initialized
+2025-05-07 18:39:14,475 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\location\models.py changed, reloading.
+2025-05-07 18:40:09,158 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-07 18:40:17,833 - INFO - Embeddings initialized successfully
+2025-05-07 18:40:35,363 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-07 18:40:47,784 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-07 18:40:51,209 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-07 18:40:54,221 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-07 18:42:43,501 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-07 18:42:51,759 - INFO - Embeddings initialized successfully
+2025-05-07 18:43:09,668 - INFO - Loading faiss with AVX2 support.
+2025-05-07 18:43:09,911 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-07 18:43:09,916 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-07 18:43:10,723 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-07 18:43:10,740 - INFO - File watcher initialized
+2025-05-07 18:43:17,022 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-07 18:43:27,946 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-07 18:43:28,172 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-07 18:43:28,382 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-07 18:45:30,207 - INFO - Loading faiss with AVX2 support.
+2025-05-07 18:45:30,369 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-07 18:45:30,422 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-07 18:45:31,472 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-07 18:45:31,485 - INFO - File watcher initialized
+2025-05-07 18:45:59,777 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-07 18:46:03,715 - INFO - Embeddings initialized successfully
+2025-05-07 18:46:13,262 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-07 18:46:24,228 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-07 18:46:24,439 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-07 18:46:24,656 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-07 18:48:32,973 - INFO - Loading faiss with AVX2 support.
+2025-05-07 18:48:32,998 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-07 18:48:33,003 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-07 18:48:33,114 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-07 18:48:33,117 - INFO - File watcher initialized
+2025-05-07 19:07:22,505 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-07 19:07:26,128 - INFO - Embeddings initialized successfully
+2025-05-07 19:07:39,418 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-07 19:07:55,145 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-07 19:07:57,601 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-07 19:07:57,999 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-07 19:10:07,942 - INFO - Loading faiss with AVX2 support.
+2025-05-07 19:10:07,962 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-07 19:10:07,967 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-07 19:10:08,082 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-07 19:10:08,084 - INFO - File watcher initialized
+2025-05-07 19:10:49,686 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-07 19:10:53,866 - INFO - Embeddings initialized successfully
+2025-05-07 19:11:09,090 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-07 19:11:20,055 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-07 19:11:22,172 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-07 19:11:24,682 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-07 19:13:30,485 - INFO - Loading faiss with AVX2 support.
+2025-05-07 19:13:30,638 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-07 19:13:30,676 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-07 19:13:31,653 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-07 19:13:31,664 - INFO - File watcher initialized
+2025-05-07 19:15:22,878 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-07 19:15:26,382 - INFO - Embeddings initialized successfully
+2025-05-07 19:15:42,778 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-07 19:15:54,357 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-07 19:15:56,868 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-07 19:15:59,501 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-07 19:18:09,423 - INFO - Loading faiss with AVX2 support.
+2025-05-07 19:18:09,444 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-07 19:18:09,448 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-07 19:18:09,550 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-07 19:18:09,552 - INFO - File watcher initialized
+2025-05-07 19:29:43,162 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-07 19:29:43,449 - INFO - Embeddings initialized successfully
+2025-05-07 19:29:47,593 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-07 19:29:51,957 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-07 19:29:52,166 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-07 19:29:52,381 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-07 19:30:37,824 - INFO - Loading faiss with AVX2 support.
+2025-05-07 19:30:37,858 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-07 19:30:37,867 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-07 19:30:38,061 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-07 19:30:38,064 - INFO - File watcher initialized
+2025-05-07 19:33:59,165 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-07 19:34:03,029 - INFO - Embeddings initialized successfully
+2025-05-07 19:34:07,051 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-07 19:34:11,575 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-07 19:34:11,781 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-07 19:34:12,001 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-07 19:34:57,165 - INFO - Loading faiss with AVX2 support.
+2025-05-07 19:34:57,192 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-07 19:34:57,198 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-07 19:34:57,348 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-07 19:34:57,350 - INFO - File watcher initialized
+2025-05-07 19:35:34,464 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-07 19:35:38,981 - INFO - Embeddings initialized successfully
+2025-05-07 19:35:51,560 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-07 19:36:05,333 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-07 19:36:05,927 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-07 19:36:06,578 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-07 19:37:16,513 - INFO - Loading faiss with AVX2 support.
+2025-05-07 19:37:16,538 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-07 19:37:16,544 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-07 19:37:16,671 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-07 19:37:16,674 - INFO - File watcher initialized
+2025-05-07 19:37:25,467 - ERROR - Internal Server Error: /api/locations/
+Traceback (most recent call last):
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 525, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 386, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 1105, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ~~~~~~~~~~~~~~~~^
+        source, info, model, depth
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 1251, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 1369, in build_unknown_field
+    raise ImproperlyConfigured(
+    ...<2 lines>...
+    )
+django.core.exceptions.ImproperlyConfigured: Field name `type` is not valid for model `Location` in `location.serializers.LocationSerializer`.
+2025-05-07 19:49:05,387 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\location\models.py changed, reloading.
+2025-05-07 19:49:13,437 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-07 19:49:17,133 - INFO - Embeddings initialized successfully
+2025-05-07 19:49:25,217 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-07 19:49:30,140 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-07 19:49:30,371 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-07 19:49:30,637 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-07 19:50:31,169 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-07 19:50:36,503 - INFO - Loading faiss with AVX2 support.
+2025-05-07 19:50:36,535 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-07 19:50:36,547 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-07 19:50:36,667 - INFO - Embeddings initialized successfully
+2025-05-07 19:50:36,828 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-07 19:50:36,833 - INFO - File watcher initialized
+2025-05-07 19:50:47,062 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-07 19:50:59,160 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-07 19:50:59,830 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-07 19:51:00,347 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-07 19:52:14,498 - INFO - Loading faiss with AVX2 support.
+2025-05-07 19:52:14,526 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-07 19:52:14,533 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-07 19:52:14,689 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-07 19:52:14,692 - INFO - File watcher initialized
+2025-05-07 19:52:22,721 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-07 19:52:26,495 - INFO - Embeddings initialized successfully
+2025-05-07 19:52:30,679 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-07 19:52:35,728 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-07 19:52:35,988 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-07 19:52:36,238 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-07 19:53:41,186 - INFO - Loading faiss with AVX2 support.
+2025-05-07 19:53:41,221 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-07 19:53:41,230 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-07 19:53:41,395 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-07 19:53:41,397 - INFO - File watcher initialized
+2025-05-07 19:53:58,191 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-07 19:54:01,736 - INFO - Embeddings initialized successfully
+2025-05-07 19:54:05,849 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-07 19:54:10,563 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-07 19:54:10,803 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-07 19:54:11,047 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-07 19:55:16,362 - INFO - Loading faiss with AVX2 support.
+2025-05-07 19:55:16,391 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-07 19:55:16,398 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-07 19:55:16,554 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-07 19:55:16,558 - INFO - File watcher initialized
+2025-05-07 20:16:04,540 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\location\serializers.py changed, reloading.
+2025-05-07 20:16:12,407 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-07 20:16:16,198 - INFO - Embeddings initialized successfully
+2025-05-07 20:16:25,890 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-07 20:16:39,127 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-07 20:16:39,903 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-07 20:16:40,659 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-07 20:17:38,595 - INFO - Loading faiss with AVX2 support.
+2025-05-07 20:17:38,634 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-07 20:17:38,645 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-07 20:17:38,828 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-07 20:17:38,833 - INFO - File watcher initialized
+2025-05-07 20:19:03,010 - ERROR - Internal Server Error: /api/locations/
+Traceback (most recent call last):
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 525, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 386, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 1081, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 1177, in get_field_names
+    assert field_name in fields, (
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError: The field 'type' was declared on serializer LocationSerializer, but has not been included in the 'fields' option.
+2025-05-07 20:19:03,197 - ERROR - Internal Server Error: /api/locations/
+Traceback (most recent call last):
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 525, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 386, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 1081, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 1177, in get_field_names
+    assert field_name in fields, (
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError: The field 'type' was declared on serializer LocationSerializer, but has not been included in the 'fields' option.
+2025-05-07 20:19:07,324 - ERROR - Internal Server Error: /api/locations/
+Traceback (most recent call last):
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 525, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 386, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 1081, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 1177, in get_field_names
+    assert field_name in fields, (
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError: The field 'type' was declared on serializer LocationSerializer, but has not been included in the 'fields' option.
+2025-05-07 20:19:07,508 - ERROR - Internal Server Error: /api/locations/
+Traceback (most recent call last):
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 525, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 386, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 1081, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 1177, in get_field_names
+    assert field_name in fields, (
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError: The field 'type' was declared on serializer LocationSerializer, but has not been included in the 'fields' option.
+2025-05-07 20:24:47,221 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\location\serializers.py changed, reloading.
+2025-05-07 20:24:55,650 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-07 20:24:59,669 - INFO - Embeddings initialized successfully
+2025-05-07 20:25:04,231 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-07 20:25:10,039 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-07 20:25:10,291 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-07 20:25:10,593 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-07 20:26:01,416 - INFO - Loading faiss with AVX2 support.
+2025-05-07 20:26:01,444 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-07 20:26:01,452 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-07 20:26:01,605 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-07 20:26:01,607 - INFO - File watcher initialized
+2025-05-07 20:28:35,799 - WARNING - Unauthorized: /api/navigation/
+2025-05-07 21:34:15,439 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-07 21:34:20,517 - INFO - Embeddings initialized successfully
+2025-05-07 21:34:32,768 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-07 21:34:43,781 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-07 21:34:44,111 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-07 21:34:44,341 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-07 21:36:46,386 - INFO - Loading faiss with AVX2 support.
+2025-05-07 21:36:48,027 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-07 21:36:48,081 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-07 21:36:49,263 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-07 21:36:49,275 - INFO - File watcher initialized
+2025-05-07 21:38:45,474 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-07 21:38:49,771 - INFO - Embeddings initialized successfully
+2025-05-07 21:38:53,843 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-07 21:39:03,978 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-07 21:39:06,209 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-07 21:39:08,696 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-07 21:41:07,749 - INFO - Loading faiss with AVX2 support.
+2025-05-07 21:41:07,770 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-07 21:41:07,774 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-07 21:41:07,885 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-07 21:41:07,888 - INFO - File watcher initialized
+2025-05-07 21:41:20,730 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-07 21:41:26,102 - INFO - Embeddings initialized successfully
+2025-05-07 21:41:30,917 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-07 21:41:41,121 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-07 21:41:42,884 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-07 21:41:45,411 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-07 21:43:56,143 - INFO - Loading faiss with AVX2 support.
+2025-05-07 21:43:56,198 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-07 21:43:56,212 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-07 21:43:56,539 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-07 21:43:56,544 - INFO - File watcher initialized
+2025-05-07 23:00:47,670 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-07 23:00:59,625 - INFO - Embeddings initialized successfully
+2025-05-07 23:01:17,593 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-07 23:01:36,581 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-07 23:01:39,569 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-07 23:01:42,728 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-07 23:04:23,009 - INFO - Loading faiss with AVX2 support.
+2025-05-07 23:04:23,070 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-07 23:04:23,087 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-07 23:04:23,482 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-07 23:04:23,487 - INFO - File watcher initialized
+2025-05-07 23:05:26,606 - WARNING - Unauthorized: /api/navigation/

@@ -1,10 +1,9 @@
+# urls.py
 from django.urls import path
-from . import location_views
+from .views import LocationListView, LocationSearchView, NavigationView
 
 urlpatterns = [
-    path('locations/', location_views.LocationList.as_view(), name='location-list'),
-    path('locations/<int:pk>/', location_views.LocationDetail.as_view(), name='location-detail'),
-    path('categories/', location_views.LocationCategoryList.as_view(), name='category-list'),
-    path('favorites/', location_views.UserFavoriteLocationList.as_view(), name='favorite-list'),
-    path('favorites/<int:pk>/', location_views.UserFavoriteLocationDetail.as_view(), name='favorite-detail'),
+    path('locations/', LocationListView.as_view(), name='location-list'),
+    path('locations/search/', LocationSearchView.as_view(), name='location-search'),
+    path('navigation/', NavigationView.as_view(), name='navigation'),
 ]

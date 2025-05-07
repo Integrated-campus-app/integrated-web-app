@@ -51,6 +51,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:5173",
     "http://localhost:3000",
     "http://127.0.0.1:3000",
+    "http://localhost:3000",
 ]
 CORS_ALLOW_METHODS = [
     'GET',
@@ -138,6 +139,7 @@ REST_FRAMEWORK = {
     ),
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticated',
+        'rest_framework.permissions.AllowAny',
         
     ),
     'DEFAULT_THROTTLE_RATES': {
@@ -148,6 +150,7 @@ CHATBOT_CONFIG = {
     "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
     # ... other keys
 }
+MAPBOX_TOKEN = os.getenv('MAPBOX_TOKEN', 'pk.eyJ1IjoiZmlyYWZpciIsImEiOiJjbTg3ZGhmb3kwZHN1MmtyM2s2dmlhMHlxIn0.4loRfNexwPJTLhUROz8CGw')
 
 # JWT Settings
 SIMPLE_JWT = {
