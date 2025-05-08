@@ -3422,3 +3422,14 @@ AssertionError: The field 'type' was declared on serializer LocationSerializer, 
 2025-05-07 23:15:45,408 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
 2025-05-07 23:15:45,795 - INFO - Loaded 1970 chunks from 853 documents
 2025-05-07 23:15:45,800 - INFO - File watcher initialized
+2025-05-08 10:36:43,312 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-08 10:36:49,536 - INFO - Embeddings initialized successfully
+2025-05-08 10:37:08,715 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-08 10:37:30,740 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-08 10:37:31,104 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-08 10:37:31,349 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-08 10:40:02,913 - INFO - Loading faiss with AVX2 support.
+2025-05-08 10:40:03,188 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-08 10:40:03,210 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-08 10:40:03,635 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-08 10:40:03,640 - INFO - File watcher initialized
