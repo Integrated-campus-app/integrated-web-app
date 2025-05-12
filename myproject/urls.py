@@ -6,5 +6,6 @@ urlpatterns = [
     path('api/auth/', include('authentication.urls')),  # For authenticated features
     path('api/', include('chatbot.urls')),
     path('api/', include('location.urls')), 
-    path('forum/', include('forum.urls')),
+    path('api/forum/', include('Groupforum.urls')), 
+
 ]

@@ -27,7 +27,8 @@ INSTALLED_APPS = [
     'corsheaders',
     'chatbot',
     'location',
-    'forum',
+    'Groupforum.apps.GroupforumConfig',
+
 ]
 
 MIDDLEWARE = [
@@ -40,6 +41,8 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+SESSION_ENGINE = "django.contrib.sessions.backends.db"
+SESSION_COOKIE_AGE = 604800 
 
 ROOT_URLCONF = 'myproject.urls'
 
@@ -54,9 +57,12 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
 ]
 CORS_ALLOW_METHODS = [
+    'DELETE',
     'GET',
     'OPTIONS',
+    'PATCH',
     'POST',
+    'PUT',
 ]
 CORS_EXPOSE_HEADERS = [
     'Content-Type',
@@ -72,11 +78,15 @@ CORS_ALLOW_HEADERS = [
     'dnt',
     'origin',
     'user-agent',
+    'x-csrftoken',
     'x-requested-with',
-    'cache-control',
-    'connection',
 ]
-
+# settings.py
+SESSION_COOKIE_SAMESITE = 'Lax'
+SESSION_COOKIE_SECURE = False  # True in production with HTTPS
+SESSION_COOKIE_HTTPONLY = True
+CSRF_COOKIE_SAMESITE = 'Lax'
+CSRF_COOKIE_SECURE = False  # True in production with HTTPS
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -95,7 +105,14 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'myproject.wsgi.application'
 ASGI_APPLICATION = 'myproject.asgi.application'
-
+ASGI_APPLICATION = 'core.asgi.application'
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'channels.layers.InMemoryChannelLayer',  # For development
+        # 'BACKEND': 'channels_redis.core.RedisChannelLayer',  # For production
+        # 'CONFIG': {'hosts': [('redis', 6379)]},
+    }
+}
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -138,8 +155,9 @@ REST_FRAMEWORK = {
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ),
     'DEFAULT_PERMISSION_CLASSES': (
-        'rest_framework.permissions.IsAuthenticated',
         'rest_framework.permissions.AllowAny',
+        'rest_framework.permissions.IsAuthenticated',
+        
         
     ),
     'DEFAULT_THROTTLE_RATES': {
@@ -162,3 +180,4 @@ SIMPLE_JWT = {
 from dotenv import load_dotenv
 load_dotenv()
 HUGGINGFACEHUB_API_TOKEN = os.getenv('HUGGINGFACEHUB_API_TOKEN')
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
