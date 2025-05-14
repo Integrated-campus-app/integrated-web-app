@@ -6854,3 +6854,281 @@ AttributeError: 'NoneType' object has no attribute 'anonymous_id'
 2025-05-13 00:01:54,798 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
 2025-05-13 00:01:54,909 - INFO - Loaded 1970 chunks from 853 documents
 2025-05-13 00:01:54,912 - INFO - File watcher initialized
+2025-05-14 13:25:32,201 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-14 13:25:37,099 - INFO - Embeddings initialized successfully
+2025-05-14 13:25:42,106 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-14 13:25:53,643 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-14 13:25:53,863 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-14 13:25:54,087 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-14 13:26:51,611 - INFO - Loading faiss with AVX2 support.
+2025-05-14 13:26:52,091 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-14 13:26:52,100 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-14 13:26:52,227 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-14 13:26:52,229 - INFO - File watcher initialized
+2025-05-14 13:36:39,705 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\myproject\settings.py changed, reloading.
+2025-05-14 13:36:50,637 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-14 13:36:54,771 - INFO - Embeddings initialized successfully
+2025-05-14 13:37:05,562 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-14 13:37:18,075 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-14 13:37:18,758 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-14 13:37:19,388 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-14 13:38:26,036 - INFO - Loading faiss with AVX2 support.
+2025-05-14 13:38:26,065 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-14 13:38:26,073 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-14 13:38:26,236 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-14 13:38:26,239 - INFO - File watcher initialized
+2025-05-14 13:39:35,016 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\myproject\settings.py changed, reloading.
+2025-05-14 13:39:44,337 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-14 13:39:48,545 - INFO - Embeddings initialized successfully
+2025-05-14 13:39:57,641 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-14 13:40:08,406 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-14 13:40:08,987 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-14 13:40:09,545 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-14 13:41:21,019 - INFO - Loading faiss with AVX2 support.
+2025-05-14 13:41:21,058 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-14 13:41:21,070 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-14 13:41:21,261 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-14 13:41:21,263 - INFO - File watcher initialized
+2025-05-14 13:41:45,542 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\myproject\settings.py changed, reloading.
+2025-05-14 13:41:55,855 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-14 13:41:59,187 - INFO - Embeddings initialized successfully
+2025-05-14 13:42:03,570 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-14 13:42:08,690 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-14 13:42:08,931 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-14 13:42:09,467 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-14 13:43:29,924 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-14 13:43:33,299 - INFO - Embeddings initialized successfully
+2025-05-14 13:43:37,422 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-14 13:43:42,626 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-14 13:43:42,917 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-14 13:43:43,143 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-14 13:44:49,069 - INFO - Loading faiss with AVX2 support.
+2025-05-14 13:44:49,099 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-14 13:44:49,107 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-14 13:44:49,256 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-14 13:44:49,258 - INFO - File watcher initialized
+2025-05-14 13:46:04,981 - WARNING - Not Found: /accounts/login/
+2025-05-14 13:46:15,949 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\myproject\settings.py changed, reloading.
+2025-05-14 13:46:24,983 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-14 13:46:28,677 - INFO - Embeddings initialized successfully
+2025-05-14 13:46:38,763 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-14 13:46:49,761 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-14 13:46:50,303 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-14 13:46:50,580 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-14 13:48:00,172 - INFO - Loading faiss with AVX2 support.
+2025-05-14 13:48:00,211 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-14 13:48:00,225 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-14 13:48:00,414 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-14 13:48:00,417 - INFO - File watcher initialized
+2025-05-14 14:04:06,627 - WARNING - Not Found: /accounts/login/
+2025-05-14 14:04:06,642 - WARNING - Not Found: /accounts/login/
+2025-05-14 14:14:55,247 - WARNING - Not Found: /accounts/login/
+2025-05-14 14:14:55,272 - WARNING - Not Found: /accounts/login/
+2025-05-14 14:15:31,112 - WARNING - Not Found: /accounts/login/
+2025-05-14 14:15:31,127 - WARNING - Not Found: /accounts/login/
+2025-05-14 14:16:12,432 - WARNING - Not Found: /accounts/login/
+2025-05-14 14:16:12,443 - WARNING - Not Found: /accounts/login/
+2025-05-14 14:17:14,884 - WARNING - Not Found: /accounts/login/
+2025-05-14 14:17:30,881 - WARNING - Not Found: /accounts/login/
+2025-05-14 14:17:55,718 - WARNING - Not Found: /accounts/login/
+2025-05-14 14:17:55,728 - WARNING - Not Found: /accounts/login/
+2025-05-14 14:18:38,129 - WARNING - Not Found: /accounts/login/
+2025-05-14 14:18:38,140 - WARNING - Not Found: /accounts/login/
+2025-05-14 14:19:23,623 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\myproject\settings.py changed, reloading.
+2025-05-14 14:19:39,088 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-14 14:19:43,477 - INFO - Embeddings initialized successfully
+2025-05-14 14:19:55,399 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-14 14:21:18,389 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-14 14:21:22,332 - INFO - Embeddings initialized successfully
+2025-05-14 14:21:32,303 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-14 14:21:47,236 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-14 14:21:50,619 - INFO - Embeddings initialized successfully
+2025-05-14 14:21:54,595 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-14 14:21:59,382 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-14 14:21:59,782 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-14 14:22:00,160 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-14 14:23:07,377 - INFO - Loading faiss with AVX2 support.
+2025-05-14 14:23:07,418 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-14 14:23:07,430 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-14 14:23:07,599 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-14 14:23:07,603 - INFO - File watcher initialized
+2025-05-14 14:23:28,605 - WARNING - Unauthorized: /api/auth/current-user/
+2025-05-14 14:23:28,609 - WARNING - Unauthorized: /api/auth/current-user/
+2025-05-14 14:24:19,222 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\myproject\settings.py changed, reloading.
+2025-05-14 14:24:38,529 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-14 14:24:47,204 - INFO - Embeddings initialized successfully
+2025-05-14 14:25:08,900 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-14 14:25:27,814 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-14 14:25:29,687 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-14 14:25:32,308 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-14 14:27:30,736 - INFO - Loading faiss with AVX2 support.
+2025-05-14 14:27:30,802 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-14 14:27:30,821 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-14 14:27:31,161 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-14 14:27:31,166 - INFO - File watcher initialized
+2025-05-14 14:30:57,923 - ERROR - Internal Server Error: /api/conversations/
+Traceback (most recent call last):
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column chatbot_conversation.is_deleted does not exist
+LINE 1: ...created_at", "chatbot_conversation"."updated_at", "chatbot_c...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\generics.py", line 243, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+                                                   ^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\query.py", line 384, in __iter__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\query.py", line 1935, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1622, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column chatbot_conversation.is_deleted does not exist
+LINE 1: ...created_at", "chatbot_conversation"."updated_at", "chatbot_c...
+                                                             ^
+
+2025-05-14 14:30:58,172 - ERROR - Internal Server Error: /api/conversations/
+Traceback (most recent call last):
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column chatbot_conversation.is_deleted does not exist
+LINE 1: ...created_at", "chatbot_conversation"."updated_at", "chatbot_c...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\generics.py", line 243, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+                                                   ^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\query.py", line 384, in __iter__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\query.py", line 1935, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1622, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column chatbot_conversation.is_deleted does not exist
+LINE 1: ...created_at", "chatbot_conversation"."updated_at", "chatbot_c...
+                                                             ^
+
