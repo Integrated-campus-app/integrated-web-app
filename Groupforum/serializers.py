@@ -1,5 +1,6 @@
 from rest_framework import serializers
 from .models import *
+import uuid
 
 
 class NotificationSerializer(serializers.ModelSerializer):
@@ -7,10 +8,27 @@ class NotificationSerializer(serializers.ModelSerializer):
         model = Notification
         fields = ['id', 'message', 'created_at', 'is_read']
         read_only_fields = fields
+
 class QuestionSerializer(serializers.ModelSerializer):
     class Meta:
         model = Question
-        fields = '__all__'
+        fields = ['id', 'title', 'description', 'created_at', 'updated_at', 'anonymous_id', 'status', 'is_anonymous', 'view_count', 'last_activity']
+        read_only_fields = ['id', 'created_at', 'updated_at', 'view_count', 'last_activity']
+        extra_kwargs = {
+            'status': {'default': 'active'},
+            'is_anonymous': {'default': False},
+            'anonymous_id': {'required': False}
+        }
+
+    def create(self, validated_data):
+        # Set default values if not provided
+        if 'status' not in validated_data:
+            validated_data['status'] = 'active'
+        if 'is_anonymous' not in validated_data:
+            validated_data['is_anonymous'] = False
+        if 'anonymous_id' not in validated_data:
+            validated_data['anonymous_id'] = f"anonymous_{uuid.uuid4().hex[:8]}"
+        return super().create(validated_data)
 
 class AnswerSerializer(serializers.ModelSerializer):
     class Meta:

@@ -7132,3 +7132,1101 @@ django.db.utils.ProgrammingError: column chatbot_conversation.is_deleted does no
 LINE 1: ...created_at", "chatbot_conversation"."updated_at", "chatbot_c...
                                                              ^
 
+2025-05-14 15:01:53,279 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-14 15:01:57,835 - INFO - Embeddings initialized successfully
+2025-05-14 15:02:02,339 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-14 15:02:13,441 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-14 15:02:13,817 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-14 15:02:14,059 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-14 15:04:58,985 - INFO - Loading faiss with AVX2 support.
+2025-05-14 15:04:59,047 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-14 15:04:59,064 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-14 15:04:59,448 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-14 15:04:59,454 - INFO - File watcher initialized
+2025-05-14 15:06:39,873 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-14 15:06:43,861 - INFO - Embeddings initialized successfully
+2025-05-14 15:06:53,505 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-14 15:07:04,889 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-14 15:07:05,196 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-14 15:07:05,464 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-14 15:09:27,742 - INFO - Loading faiss with AVX2 support.
+2025-05-14 15:09:27,764 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-14 15:09:27,768 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-14 15:09:27,899 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-14 15:09:27,905 - INFO - File watcher initialized
+2025-05-14 15:11:22,411 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-14 15:11:26,766 - INFO - Embeddings initialized successfully
+2025-05-14 15:11:39,333 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-14 15:12:02,435 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-14 15:12:03,471 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-14 15:12:04,540 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-14 15:14:21,973 - INFO - Loading faiss with AVX2 support.
+2025-05-14 15:14:21,999 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-14 15:14:22,006 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-14 15:14:22,150 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-14 15:14:22,154 - INFO - File watcher initialized
+2025-05-14 15:17:44,416 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-14 15:17:49,226 - INFO - Embeddings initialized successfully
+2025-05-14 15:18:10,006 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-14 15:18:41,362 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-14 15:18:42,428 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-14 15:18:43,529 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-14 15:21:11,968 - INFO - Loading faiss with AVX2 support.
+2025-05-14 15:21:12,002 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-14 15:21:12,016 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-14 15:21:12,225 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-14 15:21:12,232 - INFO - File watcher initialized
+2025-05-14 15:25:30,927 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-14 15:25:35,117 - INFO - Embeddings initialized successfully
+2025-05-14 15:25:58,083 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-14 15:26:20,266 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-14 15:26:21,308 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-14 15:26:22,395 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-14 15:30:16,350 - INFO - Loading faiss with AVX2 support.
+2025-05-14 15:30:16,394 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-14 15:30:16,409 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-14 15:30:16,743 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-14 15:30:16,748 - INFO - File watcher initialized
+2025-05-14 15:51:32,040 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-14 15:51:35,432 - INFO - Embeddings initialized successfully
+2025-05-14 15:51:45,293 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-14 15:51:57,736 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-14 15:51:57,978 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-14 15:51:58,237 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-14 15:54:37,190 - INFO - Loading faiss with AVX2 support.
+2025-05-14 15:54:37,251 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-14 15:54:37,258 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-14 15:54:37,377 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-14 15:54:37,380 - INFO - File watcher initialized
+2025-05-14 22:27:48,624 - WARNING - Not Found: /api/discussions/
+2025-05-14 22:27:48,644 - WARNING - Not Found: /api/discussions/
+2025-05-14 22:27:59,974 - WARNING - Not Found: /api/notices/
+2025-05-14 22:28:26,402 - WARNING - Not Found: /api/forum/answers/
+2025-05-14 22:28:26,416 - WARNING - Not Found: /api/forum/answers/
+2025-05-14 22:28:38,237 - WARNING - Not Found: /api/forum/answers/
+2025-05-14 22:28:38,375 - WARNING - Not Found: /api/forum/answers/
+2025-05-14 22:29:04,397 - WARNING - Not Found: /api/forum/answers/
+2025-05-14 22:29:04,578 - WARNING - Not Found: /api/forum/answers/
+2025-05-14 22:29:06,401 - WARNING - Not Found: /api/forum/answers/
+2025-05-14 22:29:06,500 - WARNING - Not Found: /api/forum/answers/
+2025-05-14 22:31:16,657 - WARNING - Not Found: /api/forum/answers/
+2025-05-14 22:31:16,754 - WARNING - Not Found: /api/forum/answers/
+2025-05-14 22:33:39,081 - ERROR - Internal Server Error: /api/conversations/
+Traceback (most recent call last):
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column chatbot_conversation.is_deleted does not exist
+LINE 1: ...created_at", "chatbot_conversation"."updated_at", "chatbot_c...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\generics.py", line 243, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+                                                   ^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\query.py", line 384, in __iter__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\query.py", line 1935, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1622, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column chatbot_conversation.is_deleted does not exist
+LINE 1: ...created_at", "chatbot_conversation"."updated_at", "chatbot_c...
+                                                             ^
+
+2025-05-14 22:33:40,805 - ERROR - Internal Server Error: /api/conversations/
+Traceback (most recent call last):
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column chatbot_conversation.is_deleted does not exist
+LINE 1: ...created_at", "chatbot_conversation"."updated_at", "chatbot_c...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\generics.py", line 243, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+                                                   ^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\query.py", line 384, in __iter__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\query.py", line 1935, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1622, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column chatbot_conversation.is_deleted does not exist
+LINE 1: ...created_at", "chatbot_conversation"."updated_at", "chatbot_c...
+                                                             ^
+
+2025-05-14 22:33:43,320 - ERROR - Internal Server Error: /api/conversations/
+Traceback (most recent call last):
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column chatbot_conversation.is_deleted does not exist
+LINE 1: ...created_at", "chatbot_conversation"."updated_at", "chatbot_c...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\generics.py", line 243, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+                                                   ^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\query.py", line 384, in __iter__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\query.py", line 1935, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1622, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column chatbot_conversation.is_deleted does not exist
+LINE 1: ...created_at", "chatbot_conversation"."updated_at", "chatbot_c...
+                                                             ^
+
+2025-05-14 22:33:43,569 - ERROR - Internal Server Error: /api/conversations/
+Traceback (most recent call last):
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column chatbot_conversation.is_deleted does not exist
+LINE 1: ...created_at", "chatbot_conversation"."updated_at", "chatbot_c...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\generics.py", line 243, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+                                                   ^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\query.py", line 384, in __iter__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\query.py", line 1935, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1622, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column chatbot_conversation.is_deleted does not exist
+LINE 1: ...created_at", "chatbot_conversation"."updated_at", "chatbot_c...
+                                                             ^
+
+2025-05-14 22:34:02,376 - WARNING - Not Found: /api/forum/answers/
+2025-05-14 22:34:02,495 - WARNING - Not Found: /api/forum/answers/
+2025-05-14 22:38:03,048 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\Groupforum\models.py changed, reloading.
+2025-05-14 22:38:38,277 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-14 22:38:45,062 - INFO - Embeddings initialized successfully
+2025-05-14 22:39:04,164 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-14 22:39:23,065 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-14 22:39:24,106 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-14 22:39:25,209 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-14 22:40:41,766 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-14 22:40:51,078 - INFO - Embeddings initialized successfully
+2025-05-14 22:41:25,549 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-14 22:41:41,446 - INFO - Loading faiss with AVX2 support.
+2025-05-14 22:41:41,623 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-14 22:41:41,675 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-14 22:41:42,908 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-14 22:41:42,923 - INFO - File watcher initialized
+2025-05-14 22:41:56,486 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-14 22:41:57,536 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-14 22:41:58,624 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-14 22:42:22,296 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\Groupforum\models.py changed, reloading.
+2025-05-14 22:42:44,962 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-14 22:42:49,247 - INFO - Embeddings initialized successfully
+2025-05-14 22:42:57,523 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-14 22:43:12,617 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-14 22:43:12,848 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-14 22:43:13,083 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-14 22:44:23,771 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-14 22:44:32,366 - INFO - Embeddings initialized successfully
+2025-05-14 22:45:10,232 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-14 22:45:35,364 - INFO - Loading faiss with AVX2 support.
+2025-05-14 22:45:35,387 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-14 22:45:35,393 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-14 22:45:35,564 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-14 22:45:35,567 - INFO - File watcher initialized
+2025-05-14 22:45:43,074 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-14 22:45:43,306 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-14 22:45:43,543 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-14 22:48:08,853 - INFO - Loading faiss with AVX2 support.
+2025-05-14 22:48:09,035 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-14 22:48:09,094 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-14 22:48:10,115 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-14 22:48:10,130 - INFO - File watcher initialized
+2025-05-14 22:48:44,310 - ERROR - Internal Server Error: /api/forum/questions/
+Traceback (most recent call last):
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.NotNullViolation: null value in column "is_anonymous" of relation "Groupforum_question" violates not-null constraint
+DETAIL:  Failing row contains (19, id, djdddm, 2025-05-14 19:48:43.927511+00, null, 2025-05-14 19:48:44.034629+00, null, null, null, null, null).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\mixins.py", line 24, in perform_create
+    serializer.save()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 991, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\query.py", line 663, in create
+    obj.save(force_insert=True, using=self.db)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\base.py", line 902, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\base.py", line 1008, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\base.py", line 1169, in _save_table
+    results = self._do_insert(
+        cls._base_manager, using, fields, returning_fields, raw
+    )
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\base.py", line 1210, in _do_insert
+    return manager._insert(
+           ~~~~~~~~~~~~~~~^
+        [self],
+        ^^^^^^^
+    ...<3 lines>...
+        raw=raw,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\query.py", line 1854, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1881, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.IntegrityError: null value in column "is_anonymous" of relation "Groupforum_question" violates not-null constraint
+DETAIL:  Failing row contains (19, id, djdddm, 2025-05-14 19:48:43.927511+00, null, 2025-05-14 19:48:44.034629+00, null, null, null, null, null).
+
+2025-05-14 22:50:19,454 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\Groupforum\serializers.py changed, reloading.
+2025-05-14 22:50:19,794 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\Groupforum\serializers.py changed, reloading.
+2025-05-14 22:51:42,207 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-14 22:51:42,226 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-14 22:51:48,671 - INFO - Embeddings initialized successfully
+2025-05-14 22:51:50,104 - INFO - Embeddings initialized successfully
+2025-05-14 22:52:02,653 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-14 22:52:03,101 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-14 22:52:22,983 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-14 22:52:26,003 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-14 22:52:26,171 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-14 22:52:27,475 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-14 22:52:27,479 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-14 22:52:28,115 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-14 22:56:23,892 - INFO - Loading faiss with AVX2 support.
+2025-05-14 22:56:24,333 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-14 22:56:24,346 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-14 22:56:24,628 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-14 22:56:24,638 - INFO - File watcher initialized
+2025-05-14 22:56:30,924 - INFO - Loading faiss with AVX2 support.
+2025-05-14 22:56:30,946 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-14 22:56:30,951 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-14 22:56:31,073 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-14 22:56:31,075 - INFO - File watcher initialized
+2025-05-14 22:56:53,430 - ERROR - Internal Server Error: /api/forum/questions/
+Traceback (most recent call last):
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 444, in run_validation
+    value = self.to_internal_value(data)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 497, in to_internal_value
+    for field in fields:
+                 ^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 380, in _writable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 1105, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ~~~~~~~~~~~~~~~~^
+        source, info, model, depth
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 1251, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 1369, in build_unknown_field
+    raise ImproperlyConfigured(
+    ...<2 lines>...
+    )
+django.core.exceptions.ImproperlyConfigured: Field name `status` is not valid for model `Question` in `Groupforum.serializers.QuestionSerializer`.
+2025-05-14 22:59:37,139 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\Groupforum\models.py changed, reloading.
+2025-05-14 22:59:37,763 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\Groupforum\models.py changed, reloading.
+2025-05-14 23:00:16,338 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-14 23:00:16,655 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-14 23:00:21,469 - INFO - Embeddings initialized successfully
+2025-05-14 23:00:22,029 - INFO - Embeddings initialized successfully
+2025-05-14 23:00:45,841 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-14 23:00:45,973 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-14 23:01:08,633 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-14 23:01:09,568 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-14 23:01:10,708 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-14 23:01:10,890 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-14 23:01:10,979 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-14 23:01:11,416 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-14 23:05:16,844 - INFO - Loading faiss with AVX2 support.
+2025-05-14 23:05:16,891 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-14 23:05:16,905 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-14 23:05:17,044 - INFO - Loading faiss with AVX2 support.
+2025-05-14 23:05:17,070 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-14 23:05:17,076 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-14 23:05:17,089 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-14 23:05:17,092 - INFO - File watcher initialized
+2025-05-14 23:05:17,237 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-14 23:05:17,241 - INFO - File watcher initialized
+2025-05-14 23:21:40,140 - ERROR - Internal Server Error: /api/conversations/
+Traceback (most recent call last):
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column chatbot_conversation.is_deleted does not exist
+LINE 1: ...created_at", "chatbot_conversation"."updated_at", "chatbot_c...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\generics.py", line 243, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+                                                   ^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\query.py", line 384, in __iter__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\query.py", line 1935, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1622, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column chatbot_conversation.is_deleted does not exist
+LINE 1: ...created_at", "chatbot_conversation"."updated_at", "chatbot_c...
+                                                             ^
+
+2025-05-14 23:21:40,418 - ERROR - Internal Server Error: /api/conversations/
+Traceback (most recent call last):
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column chatbot_conversation.is_deleted does not exist
+LINE 1: ...created_at", "chatbot_conversation"."updated_at", "chatbot_c...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\generics.py", line 243, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+                                                   ^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\query.py", line 384, in __iter__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\query.py", line 1935, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1622, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column chatbot_conversation.is_deleted does not exist
+LINE 1: ...created_at", "chatbot_conversation"."updated_at", "chatbot_c...
+                                                             ^
+
+2025-05-14 23:21:49,132 - ERROR - Internal Server Error: /api/conversations/
+Traceback (most recent call last):
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column chatbot_conversation.is_deleted does not exist
+LINE 1: ...created_at", "chatbot_conversation"."updated_at", "chatbot_c...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\generics.py", line 243, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+                                                   ^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\query.py", line 384, in __iter__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\query.py", line 1935, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1622, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column chatbot_conversation.is_deleted does not exist
+LINE 1: ...created_at", "chatbot_conversation"."updated_at", "chatbot_c...
+                                                             ^
+
+2025-05-14 23:21:49,406 - ERROR - Internal Server Error: /api/conversations/
+Traceback (most recent call last):
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column chatbot_conversation.is_deleted does not exist
+LINE 1: ...created_at", "chatbot_conversation"."updated_at", "chatbot_c...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\generics.py", line 243, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+                                                   ^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\query.py", line 384, in __iter__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\query.py", line 1935, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1622, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column chatbot_conversation.is_deleted does not exist
+LINE 1: ...created_at", "chatbot_conversation"."updated_at", "chatbot_c...
+                                                             ^
+
+2025-05-14 23:28:15,345 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\myproject\settings.py changed, reloading.
+2025-05-14 23:28:15,461 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\myproject\settings.py changed, reloading.
+2025-05-14 23:29:08,822 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-14 23:29:14,586 - INFO - Embeddings initialized successfully
+2025-05-14 23:29:14,665 - INFO - Embeddings initialized successfully
+2025-05-14 23:29:35,325 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-14 23:29:35,425 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-14 23:29:59,862 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-14 23:29:59,932 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-14 23:30:00,181 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-14 23:30:00,250 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-14 23:30:00,570 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-14 23:30:00,625 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-14 23:34:25,511 - INFO - Loading faiss with AVX2 support.
+2025-05-14 23:34:25,544 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-14 23:34:25,552 - INFO - Loading faiss with AVX2 support.
+2025-05-14 23:34:25,553 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-14 23:34:25,576 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-14 23:34:25,582 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-14 23:34:25,711 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-14 23:34:25,715 - INFO - File watcher initialized
+2025-05-14 23:34:25,751 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-14 23:34:25,754 - INFO - File watcher initialized
+2025-05-14 23:34:26,835 - WARNING - Not Found: /ws/notifications/
+2025-05-14 23:34:32,597 - WARNING - Not Found: /ws/notifications/
+2025-05-14 23:34:35,314 - WARNING - Not Found: /ws/notifications/
+2025-05-14 23:34:42,796 - WARNING - Not Found: /ws/notifications/
+2025-05-14 23:34:44,864 - WARNING - Not Found: /ws/notifications/
+2025-05-14 23:34:50,884 - WARNING - Not Found: /ws/notifications/
+2025-05-14 23:34:53,566 - WARNING - Not Found: /ws/notifications/
+2025-05-14 23:34:56,453 - WARNING - Not Found: /ws/notifications/
+2025-05-14 23:34:59,864 - WARNING - Not Found: /ws/notifications/
+2025-05-14 23:35:02,547 - WARNING - Not Found: /ws/notifications/
+2025-05-14 23:35:06,375 - WARNING - Not Found: /ws/notifications/
+2025-05-14 23:35:09,179 - WARNING - Not Found: /ws/notifications/
+2025-05-14 23:35:16,022 - WARNING - Not Found: /ws/notifications/
+2025-05-14 23:35:19,096 - WARNING - Not Found: /ws/notifications/
+2025-05-14 23:35:23,583 - WARNING - Not Found: /ws/notifications/
+2025-05-14 23:35:26,835 - WARNING - Not Found: /ws/notifications/
+2025-05-14 23:35:32,030 - WARNING - Not Found: /ws/notifications/
+2025-05-14 23:35:34,094 - WARNING - Not Found: /ws/notifications/
+2025-05-14 23:35:41,804 - WARNING - Not Found: /ws/notifications/
+2025-05-14 23:35:43,679 - WARNING - Not Found: /ws/notifications/
+2025-05-14 23:35:50,290 - WARNING - Not Found: /ws/notifications/
+2025-05-14 23:35:51,856 - WARNING - Not Found: /ws/notifications/
+2025-05-14 23:35:59,828 - WARNING - Not Found: /ws/notifications/
+2025-05-14 23:36:00,417 - WARNING - Not Found: /ws/notifications/
+2025-05-14 23:36:06,877 - WARNING - Not Found: /ws/notifications/
+2025-05-14 23:36:10,700 - WARNING - Not Found: /ws/notifications/
+2025-05-14 23:36:14,000 - WARNING - Not Found: /ws/notifications/
+2025-05-14 23:36:19,525 - WARNING - Not Found: /ws/notifications/
+2025-05-14 23:36:23,368 - WARNING - Not Found: /ws/notifications/
+2025-05-14 23:36:29,416 - WARNING - Not Found: /ws/notifications/
+2025-05-14 23:36:30,408 - WARNING - Not Found: /ws/notifications/
+2025-05-15 10:30:37,354 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-15 10:30:44,461 - INFO - Embeddings initialized successfully
+2025-05-15 10:30:55,443 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-15 10:31:07,479 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-15 10:31:08,086 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-15 10:31:08,696 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-15 10:32:14,281 - INFO - Loading faiss with AVX2 support.
+2025-05-15 10:32:14,695 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-15 10:32:14,708 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-15 10:32:14,913 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-15 10:32:14,916 - INFO - File watcher initialized
+2025-05-15 10:32:46,506 - WARNING - Not Found: /ws/notifications/
+2025-05-15 10:32:51,455 - WARNING - Not Found: /ws/notifications/
+2025-05-15 10:32:51,832 - WARNING - Not Found: /ws/notifications/
+2025-05-15 10:32:56,785 - WARNING - Not Found: /ws/notifications/
+2025-05-15 10:32:57,152 - WARNING - Not Found: /ws/notifications/
+2025-05-15 10:33:02,107 - WARNING - Not Found: /ws/notifications/
+2025-05-15 10:33:02,461 - WARNING - Not Found: /ws/notifications/
+2025-05-15 10:33:07,423 - WARNING - Not Found: /ws/notifications/
+2025-05-15 10:33:07,784 - WARNING - Not Found: /ws/notifications/
+2025-05-15 10:33:12,769 - WARNING - Not Found: /ws/notifications/
+2025-05-15 10:33:13,102 - WARNING - Not Found: /ws/notifications/
+2025-05-15 10:33:18,109 - WARNING - Not Found: /ws/notifications/
+2025-05-15 10:33:18,423 - WARNING - Not Found: /ws/notifications/
+2025-05-15 10:33:23,442 - WARNING - Not Found: /ws/notifications/
+2025-05-15 10:33:23,775 - WARNING - Not Found: /ws/notifications/
+2025-05-15 10:33:28,782 - WARNING - Not Found: /ws/notifications/
+2025-05-15 10:33:29,120 - WARNING - Not Found: /ws/notifications/
+2025-05-15 10:33:34,119 - WARNING - Not Found: /ws/notifications/
+2025-05-15 10:33:34,468 - WARNING - Not Found: /ws/notifications/
+2025-05-15 10:33:39,526 - WARNING - Not Found: /ws/notifications/
+2025-05-15 10:33:39,941 - WARNING - Not Found: /ws/notifications/
+2025-05-15 10:33:44,904 - WARNING - Not Found: /ws/notifications/
+2025-05-15 10:33:45,333 - WARNING - Not Found: /ws/notifications/
+2025-05-15 10:33:50,476 - WARNING - Not Found: /ws/notifications/
+2025-05-15 10:33:51,041 - WARNING - Not Found: /ws/notifications/
+2025-05-15 10:33:56,102 - WARNING - Not Found: /ws/notifications/
+2025-05-15 10:33:57,143 - WARNING - Not Found: /ws/notifications/
+2025-05-15 10:34:02,808 - WARNING - Not Found: /ws/notifications/
+2025-05-15 10:34:03,675 - WARNING - Not Found: /ws/notifications/
+2025-05-15 10:34:09,683 - WARNING - Not Found: /ws/notifications/
+2025-05-15 10:34:11,975 - WARNING - Not Found: /ws/notifications/
+2025-05-15 10:34:16,620 - WARNING - Not Found: /ws/notifications/
+2025-05-15 10:34:20,666 - WARNING - Not Found: /ws/notifications/
+2025-05-15 10:34:25,661 - WARNING - Not Found: /ws/notifications/
+2025-05-15 10:34:27,825 - WARNING - Not Found: /ws/notifications/
