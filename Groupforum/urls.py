@@ -17,5 +17,6 @@ router.register(r'comments', views.CommentViewSet)
 urlpatterns = [
     path('', include(router.urls)),  # All forum API endpoints
     path('csrf/', get_csrf, name='get_csrf'),
-    path('notifications/', NotificationListView.as_view()),
+    path('notifications/', views.NotificationListView.as_view(), name='notification-list'),
+    path('notifications/stream/', views.NotificationStreamView.as_view(), name='notification-stream'),
 ]

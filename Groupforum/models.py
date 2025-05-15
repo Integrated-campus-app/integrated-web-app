@@ -154,7 +154,7 @@ class AnswerReport(models.Model):
         ordering = ['-created_at']
 
 class Comment(models.Model):
-    answer = models.ForeignKey(Answer, on_delete=models.CASCADE)
+    answer = models.ForeignKey(Answer, on_delete=models.CASCADE, null=True, blank=True)
     parent_comment = models.ForeignKey(
         'self',
         null=True,
@@ -169,6 +169,8 @@ class Comment(models.Model):
     def clean(self):
         if not self.answer and not self.parent_comment:
             raise ValidationError("A comment must be associated with either an answer or another comment")
+        if self.answer and self.parent_comment:
+            raise ValidationError("A comment cannot be associated with both an answer and another comment")
     
     def save(self, *args, **kwargs):
         self.clean()
@@ -178,4 +180,6 @@ class Comment(models.Model):
         super().save(*args, **kwargs)
         
     def __str__(self):
-        return f"Comment on: {self.answer.question.title[:20]}"
+        if self.answer:
+            return f"Comment on: {self.answer.question.title[:20]}"
+        return f"Reply to comment: {self.parent_comment.text[:20]}"

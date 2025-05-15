@@ -36,9 +36,11 @@ class AnswerSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 class CommentSerializer(serializers.ModelSerializer):
+    replies = serializers.SerializerMethodField()
+
     class Meta:
         model = Comment
-        fields = ['id', 'text', 'created_at', 'anonymous_id', 'answer', 'parent_comment']
+        fields = ['id', 'text', 'created_at', 'anonymous_id', 'answer', 'parent_comment', 'replies']
         extra_kwargs = {
             'answer': {'required': False},
             'parent_comment': {'required': False},
@@ -51,6 +53,7 @@ class CommentSerializer(serializers.ModelSerializer):
                 "A comment must be associated with either an answer or another comment"
             )
         return data  
+
     def create(self, validated_data):
         # Ensure anonymous_id is set
         if 'anonymous_id' not in validated_data or not validated_data['anonymous_id']:
@@ -58,6 +61,8 @@ class CommentSerializer(serializers.ModelSerializer):
         return super().create(validated_data)    
 
     def get_replies(self, obj):
-        if obj.replies.exists():
-            return CommentSerializer(obj.replies.all(), many=True).data
+        # Get all replies for this comment
+        replies = Comment.objects.filter(parent_comment=obj)
+        if replies.exists():
+            return CommentSerializer(replies, many=True).data
         return []

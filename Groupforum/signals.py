@@ -20,7 +20,15 @@ def notify_new_answer(sender, instance, created, **kwargs):
 @receiver(post_save, sender=Comment)
 def notify_answer_author(sender, instance, created, **kwargs):
     if created:
-        Notification.objects.create(
-            message=f"New comment on your answer",
-            anonymous_id=instance.answer.anonymous_id
-        )
+        # For direct comments on answers
+        if instance.answer:
+            Notification.objects.create(
+                message=f"New comment on your answer",
+                anonymous_id=instance.answer.anonymous_id
+            )
+        # For nested comments (replies to comments)
+        elif instance.parent_comment and instance.parent_comment.answer:
+            Notification.objects.create(
+                message=f"New reply to your comment",
+                anonymous_id=instance.parent_comment.answer.anonymous_id
+            )
