@@ -19222,3 +19222,27 @@ TypeError: CustomUserManager.create_user() missing 1 required positional argumen
 2025-05-15 20:19:10,381 - WARNING - Bad Request: /api/superadmin/admins/
 2025-05-15 20:19:19,119 - WARNING - Bad Request: /api/superadmin/admins/
 2025-05-15 20:19:21,143 - WARNING - Bad Request: /api/superadmin/admins/
+2025-05-15 20:24:57,215 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-15 20:25:03,690 - INFO - Embeddings initialized successfully
+2025-05-15 20:25:13,725 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-15 20:25:37,039 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-15 20:25:37,263 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-15 20:25:37,489 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-15 20:27:41,905 - INFO - Loading faiss with AVX2 support.
+2025-05-15 20:27:41,926 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-15 20:27:41,931 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-15 20:27:42,043 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-15 20:27:42,045 - INFO - File watcher initialized
+2025-05-15 20:28:12,731 - WARNING - Not Found: /api/locations/
+2025-05-15 20:28:12,745 - WARNING - Not Found: /api/locations/
+2025-05-15 20:28:16,167 - WARNING - Not Found: /api/locations/
+2025-05-15 20:28:16,179 - WARNING - Not Found: /api/locations/
+2025-05-15 20:28:21,280 - WARNING - Not Found: /api/locations/
+2025-05-15 20:28:21,294 - WARNING - Not Found: /api/locations/
+2025-05-15 20:29:01,875 - WARNING - Not Found: /api/locations/
+2025-05-15 20:29:21,877 - WARNING - Not Found: /api/map/locations/
+2025-05-15 20:29:34,877 - WARNING - Not Found: /api/map/locations/
+2025-05-15 20:29:46,986 - WARNING - Not Found: /api/map/locations/
+2025-05-15 20:29:47,876 - WARNING - Not Found: /api/map/locations/
+2025-05-15 20:30:36,370 - WARNING - Not Found: /api/map/locations/
+2025-05-15 20:30:36,454 - WARNING - Not Found: /api/map/locations/

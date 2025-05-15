@@ -8,10 +8,9 @@ class BuildingSerializer(serializers.ModelSerializer):
         fields = ['id', 'name', 'latitude', 'longitude']
 
 class LocationSerializer(serializers.ModelSerializer):
-    type = serializers.CharField(source='category')  # Alias category as type
     building = BuildingSerializer(read_only=True)
-    category = serializers.CharField(source='get_category_display')
+    category_display = serializers.CharField(source='get_category_display')
 
     class Meta:
         model = Location
-        fields = ['id', 'name', 'description', 'latitude', 'longitude', 'category', 'building', 'type']  # Add 'type'
+        fields = ['id', 'name', 'description', 'latitude', 'longitude', 'category', 'category_display', 'building']
