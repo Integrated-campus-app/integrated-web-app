@@ -20,6 +20,11 @@ from time import time as current_time
 from glob import glob
 from django.core.cache import caches
 from .models import Conversation, Message
+from django.utils.html import strip_tags
+from rest_framework.response import Response
+from rest_framework import status
+from typing import Dict, Generator, Optional
+import json
 
 from django.conf import settings
 CONFIG = settings.CHATBOT_CONFIG
@@ -52,6 +57,10 @@ CONFIG = {
         '*.pptx': UnstructuredPowerPointLoader
     }
 }
+
+# Rate limiting configuration
+RATE_LIMIT = 10  # requests per minute
+RATE_LIMIT_WINDOW = 60  # seconds
 
 class KnowledgeBaseHandler(FileSystemEventHandler):
     def on_modified(self, event):
@@ -158,21 +167,72 @@ def query_deepseek(prompt: str) -> str:
                 time.sleep(CONFIG["retry_delay"] * (attempt + 1))
     return None
 
+def sanitize_input(text: str) -> str:
+    """Sanitize user input to prevent XSS and other attacks."""
+    return strip_tags(text.strip())
 
-def generate_response(user_query: str) -> dict:
-    """Optimized response generation with better context handling"""
-    user_query = user_query.strip()
-    if not user_query:
-        return {"response": "Please enter a valid question.", "source_hint": None}
+def check_rate_limit(user_id: Optional[int] = None) -> bool:
+    """Check if the user has exceeded their rate limit."""
+    key = f"rate_limit_{user_id or 'anonymous'}"
+    count = cache.get(key, 0)
+    
+    if count >= RATE_LIMIT:
+        return False
+        
+    cache.set(key, count + 1, timeout=RATE_LIMIT_WINDOW)
+    return True
 
-    # Handle common greetings
-    greetings = ["hi", "hello", "hey", "greetings", "hola"]
-    if user_query.lower() in greetings:
-        return {"response": "Hello! How can I help you today?", "source_hint": None}
-    if any(word in user_query.lower() for word in ["thank", "thanks"]):
-        return {"response": "You're welcome! Is there anything else I can help with?", "source_hint": None}
+def get_recent_messages(conversation_id: int, limit: int = 5) -> list:
+    """Get recent messages for context."""
+    from .models import Message
+    return list(Message.objects.filter(
+        conversation_id=conversation_id,
+        is_deleted=False
+    ).order_by('-created_at')[:limit])
 
+def generate_response(user_query: str, conversation_id: Optional[int] = None) -> Dict:
+    """Generate a response with enhanced context and error handling."""
     try:
+        # Sanitize input
+        user_query = sanitize_input(user_query)
+        if not user_query:
+            return {
+                "response": "Please enter a valid question.",
+                "source_hint": None,
+                "status": "error"
+            }
+
+        # Get context from recent messages
+        context = ""
+        if conversation_id:
+            recent_messages = get_recent_messages(conversation_id)
+            context = "\n".join([
+                f"{'User' if msg.is_user else 'Bot'}: {msg.content}"
+                for msg in reversed(recent_messages)
+            ])
+
+        # Check cache first
+        cache_key = f"chat_response_{hash(user_query)}"
+        cached_response = cache.get(cache_key)
+        if cached_response:
+            return {**cached_response, "cached": True}
+
+        # Handle common greetings
+        greetings = ["hi", "hello", "hey", "greetings", "hola"]
+        if user_query.lower() in greetings:
+            return {
+                "response": "Hello! How can I help you today?",
+                "source_hint": None,
+                "status": "success"
+            }
+
+        if any(word in user_query.lower() for word in ["thank", "thanks"]):
+            return {
+                "response": "You're welcome! Is there anything else I can help with?",
+                "source_hint": None,
+                "status": "success"
+            }
+
         # Try knowledge base first
         if not vector_store:
             load_knowledge_base()
@@ -189,35 +249,77 @@ def generate_response(user_query: str) -> dict:
                     for i, doc in enumerate(docs)
                 ])
                 
-                prompt = f"""Using these sources, answer the question concisely:
+                prompt = f"""Context from previous messages:
 {context}
 
-Question: {user_query}
+Current question: {user_query}
+
+Using these sources, answer the question concisely:
 Guidelines:
 - Be precise and helpful
 - Reference sources like [1], [2] when applicable
 - If unsure, say so"""
                 
                 response = query_deepseek(prompt) if os.getenv("DEEPSEEK_API_KEY") else context
-                return {
+                result = {
                     "response": response or context,
-                    "source_hint": "University knowledge base"
+                    "source_hint": "University knowledge base",
+                    "status": "success"
                 }
+                
+                # Cache the response
+                cache.set(cache_key, result, timeout=3600)  # Cache for 1 hour
+                return result
 
         # Fallback to general knowledge
         if os.getenv("DEEPSEEK_API_KEY"):
             if response := query_deepseek(user_query):
-                return {"response": response, "source_hint": None}
+                result = {
+                    "response": response,
+                    "source_hint": None,
+                    "status": "success"
+                }
+                cache.set(cache_key, result, timeout=3600)
+                return result
 
-        return {"response": CONFIG["fallback_response"], "source_hint": None}
+        return {
+            "response": CONFIG["fallback_response"],
+            "source_hint": None,
+            "status": "success"
+        }
 
     except Exception as e:
-        logging.error(f"Response generation error: {e}")
-        return {"response": CONFIG["fallback_response"], "source_hint": None}
+        logging.error(f"Error generating response: {e}", exc_info=True)
+        return {
+            "response": "I apologize, but I encountered an error. Please try again.",
+            "source_hint": None,
+            "status": "error"
+        }
 
-def stream_response(query: str, conversation=None):
-    """Enhanced streaming with better state management"""
+def stream_response(query: str, conversation=None) -> Generator:
+    """Enhanced streaming with better error handling and rate limiting."""
     try:
+        # Validate input
+        if not query.strip():
+            yield {
+                "type": "error",
+                "message": "Please enter a valid question",
+                "conversation_id": conversation.id if conversation else None
+            }
+            return
+
+        # Check rate limit
+        key = f"rate_limit_anonymous"
+        count = cache.get(key, 0)
+        if count >= RATE_LIMIT:
+            yield {
+                "type": "error",
+                "message": "Rate limit exceeded. Please wait a moment before trying again.",
+                "conversation_id": conversation.id if conversation else None
+            }
+            return
+
+        # Process message
         if conversation:
             Message.objects.create(
                 conversation=conversation,
@@ -230,7 +332,8 @@ def stream_response(query: str, conversation=None):
                 "conversation_id": conversation.id
             }
 
-        response_data = generate_response(query)
+        # Generate response
+        response_data = generate_response(query, conversation.id if conversation else None)
         
         if conversation:
             Message.objects.create(
@@ -244,17 +347,18 @@ def stream_response(query: str, conversation=None):
             "type": "message",
             "content": response_data["response"],
             "source_hint": response_data.get("source_hint"),
+            "status": response_data["status"],
             "conversation_id": conversation.id if conversation else None
         }
 
     except Exception as e:
-        logging.error(f"Stream error: {e}")
+        logging.error(f"Stream error: {e}", exc_info=True)
         yield {
             "type": "error",
-            "message": str(e),
+            "message": "An error occurred. Please try again.",
             "conversation_id": conversation.id if conversation else None
-
         }
+
 from django.utils import timezone
 
 def edit_message(message_id: int, new_content: str) -> dict:
@@ -279,6 +383,7 @@ def edit_message(message_id: int, new_content: str) -> dict:
     except Exception as e:
         yield {"type": "error", "message": str(e)}
         return {"error": str(e)}
+
 # Initialize on startup
 try:
     load_knowledge_base()
@@ -297,3 +402,69 @@ if __name__ == "__main__":
             observer.stop()
     if observer:
         observer.join()
+
+def get_llm_response(message: str, conversation_id: Optional[int] = None, user_id: Optional[int] = None) -> Generator[str, None, None]:
+    """
+    Get response from LLM with rate limiting and caching.
+    """
+    # Check rate limit
+    key = f"rate_limit_anonymous"
+    count = cache.get(key, 0)
+    if count >= RATE_LIMIT:
+        yield "Rate limit exceeded. Please wait a moment before trying again."
+        return
+
+    # Get conversation context
+    context = get_conversation_context(conversation_id) if conversation_id else ""
+    
+    # Get relevant knowledge base context
+    kb_context = get_knowledge_context(message)
+    
+    # Combine contexts
+    full_context = f"{context}\n{kb_context}" if context and kb_context else context or kb_context
+    
+    # Prepare the prompt
+    prompt = f"""Context: {full_context}
+User: {message}
+Assistant: Let me help you with that."""
+    
+    # Check cache
+    cache_key = f"llm_response_{hash(prompt)}"
+    cached_response = cache.get(cache_key)
+    if cached_response:
+        yield cached_response
+        return
+    
+    try:
+        # Make API call to LLM
+        response = requests.post(
+            "http://localhost:11434/api/generate",
+            json={
+                "model": "llama2",
+                "prompt": prompt,
+                "stream": True
+            },
+            timeout=CONFIG["api_timeout"]
+        )
+        response.raise_for_status()
+        
+        # Process the streaming response
+        full_response = ""
+        for line in response.iter_lines():
+            if line:
+                try:
+                    json_response = json.loads(line)
+                    if 'response' in json_response:
+                        chunk = json_response['response']
+                        full_response += chunk
+                        yield chunk
+                except json.JSONDecodeError:
+                    continue
+        
+        # Cache the complete response
+        if full_response:
+            cache.set(cache_key, full_response, timeout=3600)  # Cache for 1 hour
+            
+    except requests.exceptions.RequestException as e:
+        logging.error(f"Error in LLM API call: {str(e)}")
+        yield CONFIG["fallback_response"]

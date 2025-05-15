@@ -46,8 +46,28 @@ class NotificationStreamView(APIView):
     permission_classes = [AllowAny]
 
     def get(self, request):
+        # Check if client accepts text/event-stream
+        accept_header = request.META.get('HTTP_ACCEPT', '')
+        if 'text/event-stream' not in accept_header and '*/*' not in accept_header:
+            return Response(
+                {'error': 'Client must accept text/event-stream'},
+                status=status.HTTP_406_NOT_ACCEPTABLE
+            )
+
+        def event_generator():
+            while True:
+                try:
+                    # Get notification from queue with timeout
+                    notification = notification_queue.get(timeout=30)
+                    if notification:
+                        # Format the SSE message properly
+                        yield f"data: {json.dumps(notification)}\n\n"
+                except queue.Empty:
+                    # Send heartbeat to keep connection alive
+                    yield f"data: {json.dumps({'type': 'heartbeat'})}\n\n"
+
         response = StreamingHttpResponse(
-            notification_generator(),
+            event_generator(),
             content_type='text/event-stream'
         )
         
@@ -56,9 +76,16 @@ class NotificationStreamView(APIView):
         response['X-Accel-Buffering'] = 'no'
         response['Connection'] = 'keep-alive'
         response['Access-Control-Allow-Origin'] = '*'
-        response['Access-Control-Allow-Methods'] = 'GET'
-        response['Access-Control-Allow-Headers'] = 'Content-Type'
+        response['Access-Control-Allow-Methods'] = 'GET, OPTIONS'
+        response['Access-Control-Allow-Headers'] = 'Content-Type, Accept'
         
+        return response
+
+    def options(self, request, *args, **kwargs):
+        response = Response()
+        response['Access-Control-Allow-Origin'] = '*'
+        response['Access-Control-Allow-Methods'] = 'GET, OPTIONS'
+        response['Access-Control-Allow-Headers'] = 'Content-Type, Accept'
         return response
 
 def send_notification(message, notification_type='info', related_question=None, related_answer=None):

@@ -10,26 +10,26 @@ class CustomUserManager(BaseUserManager):
     Custom user model manager where email is the unique identifier
     for authentication instead of username.
     """
-    def create_user(self, username, university_email, password=None, **extra_fields):
+    def create_user(self, username, email, password=None, **extra_fields):
         """
         Create and save a User with the given email and password.
         """
-        if not university_email:
-            raise ValueError(_('The University Email must be set'))
+        if not email:
+            raise ValueError(_('The Email must be set'))
         if not username:
             raise ValueError(_('Username must be set'))
         
-        email = self.normalize_email(university_email)
+        email = self.normalize_email(email)
         user = self.model(
             username=username,
-            university_email=email,
+            email=email,
             **extra_fields
         )
         user.set_password(password)
         user.save(using=self._db)
         return user
 
-    def create_superuser(self, username, university_email, password=None, **extra_fields):
+    def create_superuser(self, username, email, password=None, **extra_fields):
         """
         Create and save a SuperUser with the given email and password.
         """
@@ -45,7 +45,7 @@ class CustomUserManager(BaseUserManager):
 
         return self.create_user(
             username=username,
-            university_email=university_email,
+            email=email,
             password=password,
             **extra_fields
         )
@@ -53,20 +53,19 @@ class CustomUserManager(BaseUserManager):
     def get_by_natural_key(self, username):
         return self.get(
             models.Q(username__iexact=username) | 
-            models.Q(university_email__iexact=username)
+            models.Q(email__iexact=username)
         )
 
 class CustomUser(AbstractUser):
     """
-    Custom user model that uses university email as primary identifier.
+    Custom user model that uses email as primary identifier.
     """
-    university_email = models.EmailField(
-        _('university email'),
+    email = models.EmailField(
+        _('email address'),
         unique=True,
         error_messages={
             'unique': _("A user with that email already exists."),
-        },
-        help_text=_('Required. Must be a valid ASTU email address ending with @astu.edu.et')
+        }
     )
     is_student = models.BooleanField(
         _('student status'),
@@ -89,9 +88,9 @@ class CustomUser(AbstractUser):
     
     objects = CustomUserManager()
     
-    # Make email field point to university_email for compatibility
-    EMAIL_FIELD = 'university_email'
-    USERNAME_FIELD = 'university_email'
+    # Make email field the main identifier
+    EMAIL_FIELD = 'email'
+    USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['username']
     
     # Add these fields to resolve the reverse accessor conflicts
@@ -103,7 +102,7 @@ class CustomUser(AbstractUser):
             'The groups this user belongs to. A user will get all permissions '
             'granted to each of their groups.'
         ),
-        related_name="customuser_set",  # Changed from 'user_set'
+        related_name="customuser_set",
         related_query_name="customuser",
     )
     user_permissions = models.ManyToManyField(
@@ -111,30 +110,19 @@ class CustomUser(AbstractUser):
         verbose_name=_('user permissions'),
         blank=True,
         help_text=_('Specific permissions for this user.'),
-        related_name="customuser_set",  # Changed from 'user_set'
+        related_name="customuser_set",
         related_query_name="customuser",
     )
     
-    def clean(self):
-        """
-        Validate that the email is from ASTU domain and properly formatted.
-        """
-        super().clean()
-        
-        if not re.match(r'^[a-zA-Z0-9_.+-]+@astu\.edu\.et$', self.university_email):
-            raise ValidationError(
-                _("Only valid @astu.edu.et email addresses are allowed.")
-            )
-    
     def __str__(self):
-        return f"{self.username} ({self.university_email})"
+        return f"{self.username} ({self.email})"
 
     class Meta:
         verbose_name = _('user')
         verbose_name_plural = _('users')
         ordering = ['-date_joined']
         indexes = [
-            models.Index(fields=['university_email']),
+            models.Index(fields=['email']),
             models.Index(fields=['username']),
             models.Index(fields=['is_active']),
         ]

@@ -28,7 +28,7 @@ INSTALLED_APPS = [
     'chatbot',
     'location',
     'Groupforum.apps.GroupforumConfig',
-
+    'superadmin',
 ]
 
 MIDDLEWARE = [
@@ -50,10 +50,10 @@ ROOT_URLCONF = 'myproject.urls'
 CORS_ALLOW_ALL_ORIGINS = True  # For development only
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOWED_ORIGINS = [
-    "http://127.0.0.1:5173",
-    "http://localhost:5173",
-    "http://127.0.0.1:3000",
     "http://localhost:3000",
+    "http://127.0.0.1:3000",
+    "http://localhost:5173",
+    "http://127.0.0.1:5173"
 ]
 CORS_ALLOW_METHODS = [
     'DELETE',

@@ -1,32 +1,13 @@
-from django.urls import path
-from .views import (
-    ConversationListCreateView,
-    ConversationDetailView,
-    MessageListView,
-    MessageUpdateView,
-    MessageDeleteView,
-    
-)
+from django.urls import path, include
+from rest_framework.routers import DefaultRouter
+from .views import ConversationViewSet, MessageViewSet, NotificationStreamView
 from .sse import chat_stream
-from django.http import JsonResponse
 
-def health_check(request):
-    return JsonResponse({"status": "ok"})
+router = DefaultRouter()
+router.register(r'conversations', ConversationViewSet, basename='conversation')
+router.register(r'messages', MessageViewSet, basename='message')
 
 urlpatterns = [
-    path("health/", health_check),
-    
-    # Conversation endpoints
-    path("conversations/", ConversationListCreateView.as_view(), name="conversation-list"),
-    path("conversations/<int:pk>/", ConversationDetailView.as_view(), name="conversation-detail"),
-    
-    # Message endpoints
-    path("messages/<int:id>/", MessageUpdateView.as_view(), name="message-update"),
-    path("messages/<int:id>/delete/", MessageDeleteView.as_view(), name="message-delete"),
-    path("conversations/<int:conversation_id>/messages/", 
-        MessageListView.as_view(), 
-        name="message-list"),
-    
-    # Chat streaming
-    path("chat/stream/", chat_stream, name="chat-stream"),
+    path('', include(router.urls)),
+    path('stream/', chat_stream, name='chat-stream'),
 ]

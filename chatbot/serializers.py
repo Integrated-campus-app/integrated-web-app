@@ -21,14 +21,10 @@ class MessageSerializer(serializers.ModelSerializer):
         return data
 
 class ConversationSerializer(serializers.ModelSerializer):
-    messages = MessageSerializer(many=True, read_only=True)
-
     class Meta:
         model = Conversation
-        fields = "__all__"
+        fields = ["id", "title", "created_at", "updated_at"]
         read_only_fields = (
             "created_at", 
-            "updated_at",
-            "is_deleted",
-            "deleted_at"
+            "updated_at"
         )
