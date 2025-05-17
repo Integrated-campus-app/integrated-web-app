@@ -19246,3 +19246,528 @@ TypeError: CustomUserManager.create_user() missing 1 required positional argumen
 2025-05-15 20:29:47,876 - WARNING - Not Found: /api/map/locations/
 2025-05-15 20:30:36,370 - WARNING - Not Found: /api/map/locations/
 2025-05-15 20:30:36,454 - WARNING - Not Found: /api/map/locations/
+2025-05-15 20:37:43,439 - WARNING - Not Found: /api/map/navigation/
+2025-05-15 21:09:00,813 - WARNING - Not Acceptable: /api/forum/notifications/stream/
+2025-05-15 21:09:53,994 - WARNING - Not Acceptable: /api/forum/notifications/stream/
+2025-05-15 21:10:13,128 - INFO - Attempting to fetch conversations...
+2025-05-15 21:10:13,235 - INFO - Successfully fetched 3 conversations
+2025-05-15 21:10:13,243 - INFO - Attempting to fetch conversations...
+2025-05-15 21:10:13,322 - INFO - Successfully fetched 3 conversations
+2025-05-15 21:22:20,548 - ERROR - Error deleting message: column chatbot_message.is_deleted does not exist
+LINE 1: ...age"."created_at", "chatbot_message"."edited_at", "chatbot_m...
+                                                             ^
+Traceback (most recent call last):
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column chatbot_message.is_deleted does not exist
+LINE 1: ...age"."created_at", "chatbot_message"."edited_at", "chatbot_m...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\chatbot\views.py", line 149, in destroy
+    message = self.get_object()
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\generics.py", line 100, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\shortcuts.py", line 90, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\query.py", line 629, in get
+    num = len(clone)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\query.py", line 1935, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1622, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column chatbot_message.is_deleted does not exist
+LINE 1: ...age"."created_at", "chatbot_message"."edited_at", "chatbot_m...
+                                                             ^
+
+2025-05-15 21:22:20,702 - ERROR - Internal Server Error: /api/chatbot/messages/24/
+2025-05-15 21:22:21,361 - ERROR - Error deleting message: column chatbot_message.is_deleted does not exist
+LINE 1: ...age"."created_at", "chatbot_message"."edited_at", "chatbot_m...
+                                                             ^
+Traceback (most recent call last):
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column chatbot_message.is_deleted does not exist
+LINE 1: ...age"."created_at", "chatbot_message"."edited_at", "chatbot_m...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\chatbot\views.py", line 149, in destroy
+    message = self.get_object()
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\generics.py", line 100, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\rest_framework\generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\shortcuts.py", line 90, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\query.py", line 629, in get
+    num = len(clone)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\query.py", line 1935, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1622, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column chatbot_message.is_deleted does not exist
+LINE 1: ...age"."created_at", "chatbot_message"."edited_at", "chatbot_m...
+                                                             ^
+
+2025-05-15 21:22:21,398 - ERROR - Internal Server Error: /api/chatbot/messages/23/
+2025-05-15 21:22:24,934 - INFO - Attempting to fetch conversations...
+2025-05-15 21:22:25,054 - INFO - Successfully fetched 3 conversations
+2025-05-15 21:22:25,060 - INFO - Attempting to fetch conversations...
+2025-05-15 21:22:25,175 - INFO - Successfully fetched 3 conversations
+2025-05-15 21:22:43,505 - WARNING - Not Acceptable: /api/forum/notifications/stream/
+2025-05-15 21:28:12,362 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\chatbot\llm_integration.py changed, reloading.
+2025-05-15 21:42:52,110 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-15 21:42:57,207 - INFO - Embeddings initialized successfully
+2025-05-15 21:43:01,457 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-15 21:43:06,597 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-15 21:43:06,823 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-15 21:43:07,068 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-15 21:44:06,540 - INFO - Loading faiss with AVX2 support.
+2025-05-15 21:44:06,585 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-15 21:44:06,598 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-15 21:44:06,840 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-15 21:44:06,843 - INFO - File watcher initialized
+2025-05-15 21:46:02,345 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-15 21:46:05,605 - INFO - Embeddings initialized successfully
+2025-05-15 21:46:10,188 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-15 21:46:15,137 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-15 21:46:15,336 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-15 21:46:15,551 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-15 21:47:14,719 - INFO - Loading faiss with AVX2 support.
+2025-05-15 21:47:14,759 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-15 21:47:14,770 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-15 21:47:14,994 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-15 21:47:14,997 - INFO - File watcher initialized
+2025-05-15 21:49:05,805 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-15 21:49:10,384 - INFO - Embeddings initialized successfully
+2025-05-15 21:49:15,001 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-15 21:49:19,784 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-15 21:49:19,985 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-15 21:49:20,203 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-15 21:50:16,258 - INFO - Loading faiss with AVX2 support.
+2025-05-15 21:50:16,294 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-15 21:50:16,303 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-15 21:50:16,511 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-15 21:50:16,514 - INFO - File watcher initialized
+2025-05-15 21:55:06,687 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-15 21:55:10,210 - INFO - Embeddings initialized successfully
+2025-05-15 21:55:14,684 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-15 21:55:19,870 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-15 21:55:20,109 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-15 21:55:20,356 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-15 21:56:11,256 - INFO - Loading faiss with AVX2 support.
+2025-05-15 21:56:11,303 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-15 21:56:11,319 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-15 21:56:11,518 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-15 21:56:11,522 - INFO - File watcher initialized
+2025-05-15 21:57:12,404 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-15 21:57:16,169 - INFO - Embeddings initialized successfully
+2025-05-15 21:57:20,755 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-15 21:57:25,642 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-15 21:57:25,849 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-15 21:57:26,072 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-15 21:58:30,072 - INFO - Loading faiss with AVX2 support.
+2025-05-15 21:58:30,107 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-15 21:58:30,115 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-15 21:58:30,299 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-15 21:58:30,303 - INFO - File watcher initialized
+2025-05-15 21:59:50,016 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-15 21:59:53,737 - INFO - Embeddings initialized successfully
+2025-05-15 21:59:58,350 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-15 22:00:10,054 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-15 22:00:10,933 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-15 22:00:11,973 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-15 22:01:57,991 - INFO - Loading faiss with AVX2 support.
+2025-05-15 22:01:58,029 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-15 22:01:58,040 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-15 22:01:58,251 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-15 22:01:58,255 - INFO - File watcher initialized
+2025-05-15 22:06:40,145 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-15 22:06:44,530 - INFO - Embeddings initialized successfully
+2025-05-15 22:06:48,521 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-15 22:06:52,995 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-15 22:06:53,205 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-15 22:06:53,419 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-15 22:07:42,631 - INFO - Loading faiss with AVX2 support.
+2025-05-15 22:07:42,657 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-15 22:07:42,664 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-15 22:07:42,802 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-15 22:07:42,805 - INFO - File watcher initialized
+2025-05-15 22:08:18,307 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-15 22:08:23,521 - INFO - Embeddings initialized successfully
+2025-05-15 22:08:28,134 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-15 22:08:33,617 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-15 22:08:33,874 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-15 22:08:34,128 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-15 22:09:32,698 - INFO - Loading faiss with AVX2 support.
+2025-05-15 22:09:32,745 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-15 22:09:32,761 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-15 22:09:33,018 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-15 22:09:33,021 - INFO - File watcher initialized
+2025-05-15 22:10:07,704 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-15 22:10:11,330 - INFO - Embeddings initialized successfully
+2025-05-15 22:10:15,363 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-15 22:10:19,873 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-15 22:10:20,075 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-15 22:10:20,294 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-15 22:11:22,434 - INFO - Loading faiss with AVX2 support.
+2025-05-15 22:11:22,465 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-15 22:11:22,473 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-15 22:11:22,633 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-15 22:11:22,637 - INFO - File watcher initialized
+2025-05-15 22:11:50,588 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-15 22:11:53,830 - INFO - Embeddings initialized successfully
+2025-05-15 22:11:57,822 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-15 22:12:02,360 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-15 22:12:02,568 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-15 22:12:02,785 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-15 22:13:06,891 - INFO - Loading faiss with AVX2 support.
+2025-05-15 22:13:06,920 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-15 22:13:06,928 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-05-15 22:13:07,083 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-15 22:13:07,085 - INFO - File watcher initialized
+2025-05-15 22:13:26,699 - WARNING - Not Acceptable: /api/forum/notifications/stream/
+2025-05-15 22:13:33,979 - ERROR - Error fetching conversations: Cannot resolve keyword 'user' into field. Choices are: archived_at, created_at, deleted_at, id, is_archived, is_deleted, messages, title, updated_at
+2025-05-15 22:13:33,980 - ERROR - Internal Server Error: /api/chatbot/conversations/
+2025-05-15 22:13:33,985 - ERROR - Error fetching conversations: Cannot resolve keyword 'user' into field. Choices are: archived_at, created_at, deleted_at, id, is_archived, is_deleted, messages, title, updated_at
+2025-05-15 22:13:33,985 - ERROR - Internal Server Error: /api/chatbot/conversations/
+2025-05-15 22:16:27,594 - ERROR - Error fetching conversations: Cannot resolve keyword 'user' into field. Choices are: archived_at, created_at, deleted_at, id, is_archived, is_deleted, messages, title, updated_at
+2025-05-15 22:16:27,595 - ERROR - Internal Server Error: /api/chatbot/conversations/
+2025-05-15 22:16:27,598 - ERROR - Error fetching conversations: Cannot resolve keyword 'user' into field. Choices are: archived_at, created_at, deleted_at, id, is_archived, is_deleted, messages, title, updated_at
+2025-05-15 22:16:27,599 - ERROR - Internal Server Error: /api/chatbot/conversations/
+2025-05-15 22:18:04,996 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\chatbot\llm_integration.py changed, reloading.
+2025-05-15 22:18:18,359 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-15 22:18:22,474 - INFO - Embeddings initialized successfully
+2025-05-15 22:18:38,583 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-15 22:18:57,164 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-15 22:18:58,091 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-15 22:18:59,299 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-15 22:20:40,949 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-15 22:20:40,956 - INFO - File watcher initialized
+2025-05-15 22:20:58,007 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-15 22:21:01,400 - INFO - Embeddings initialized successfully
+2025-05-15 22:21:06,733 - INFO - Loaded: knowledge_base\ASTUlegislation2017.pdf
+2025-05-15 22:21:17,715 - INFO - Loaded: knowledge_base\Course_catalogue_Final.pdf
+2025-05-15 22:21:18,365 - INFO - Loaded: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf
+2025-05-15 22:21:18,962 - INFO - Loaded: knowledge_base\Program_Accreditations.pdf
+2025-05-15 22:21:41,075 - ERROR - Error fetching conversations: Cannot resolve keyword 'user' into field. Choices are: archived_at, created_at, deleted_at, id, is_archived, is_deleted, messages, title, updated_at
+2025-05-15 22:21:41,076 - ERROR - Internal Server Error: /api/chatbot/conversations/
+2025-05-15 22:21:41,082 - ERROR - Error fetching conversations: Cannot resolve keyword 'user' into field. Choices are: archived_at, created_at, deleted_at, id, is_archived, is_deleted, messages, title, updated_at
+2025-05-15 22:21:41,083 - ERROR - Internal Server Error: /api/chatbot/conversations/
+2025-05-15 22:22:44,544 - INFO - Loaded 1970 chunks from 853 documents
+2025-05-15 22:22:44,548 - INFO - File watcher initialized
+2025-05-15 22:23:25,882 - ERROR - Error fetching conversations: Cannot resolve keyword 'user' into field. Choices are: archived_at, created_at, deleted_at, id, is_archived, is_deleted, messages, title, updated_at
+2025-05-15 22:23:25,883 - ERROR - Internal Server Error: /api/chatbot/conversations/
+2025-05-15 22:23:25,890 - ERROR - Error fetching conversations: Cannot resolve keyword 'user' into field. Choices are: archived_at, created_at, deleted_at, id, is_archived, is_deleted, messages, title, updated_at
+2025-05-15 22:23:25,891 - ERROR - Internal Server Error: /api/chatbot/conversations/
+2025-05-15 22:26:38,864 - ERROR - Error fetching conversations: Cannot resolve keyword 'user' into field. Choices are: archived_at, created_at, deleted_at, id, is_archived, is_deleted, messages, title, updated_at
+2025-05-15 22:26:38,865 - ERROR - Internal Server Error: /api/chatbot/conversations/
+2025-05-15 22:27:57,636 - ERROR - Error fetching conversations: Cannot resolve keyword 'user' into field. Choices are: archived_at, created_at, deleted_at, id, is_archived, is_deleted, messages, title, updated_at
+2025-05-15 22:27:57,636 - ERROR - Internal Server Error: /api/chatbot/conversations/
+2025-05-15 22:27:57,641 - ERROR - Error fetching conversations: Cannot resolve keyword 'user' into field. Choices are: archived_at, created_at, deleted_at, id, is_archived, is_deleted, messages, title, updated_at
+2025-05-15 22:27:57,641 - ERROR - Internal Server Error: /api/chatbot/conversations/
+2025-05-15 22:27:59,842 - ERROR - Error fetching conversations: Cannot resolve keyword 'user' into field. Choices are: archived_at, created_at, deleted_at, id, is_archived, is_deleted, messages, title, updated_at
+2025-05-15 22:27:59,842 - ERROR - Internal Server Error: /api/chatbot/conversations/
+2025-05-15 22:27:59,846 - ERROR - Error fetching conversations: Cannot resolve keyword 'user' into field. Choices are: archived_at, created_at, deleted_at, id, is_archived, is_deleted, messages, title, updated_at
+2025-05-15 22:27:59,847 - ERROR - Internal Server Error: /api/chatbot/conversations/
+2025-05-15 22:31:12,176 - ERROR - Error fetching conversations: Cannot resolve keyword 'user' into field. Choices are: archived_at, created_at, deleted_at, id, is_archived, is_deleted, messages, title, updated_at
+2025-05-15 22:31:12,177 - ERROR - Internal Server Error: /api/chatbot/conversations/
+2025-05-15 22:31:12,863 - ERROR - Error fetching conversations: Cannot resolve keyword 'user' into field. Choices are: archived_at, created_at, deleted_at, id, is_archived, is_deleted, messages, title, updated_at
+2025-05-15 22:31:12,863 - ERROR - Internal Server Error: /api/chatbot/conversations/
+2025-05-15 22:42:16,610 - ERROR - Error fetching conversations: Cannot resolve keyword 'user' into field. Choices are: archived_at, created_at, deleted_at, id, is_archived, is_deleted, messages, title, updated_at
+2025-05-15 22:42:16,611 - ERROR - Internal Server Error: /api/chatbot/conversations/
+2025-05-15 22:42:16,615 - ERROR - Error fetching conversations: Cannot resolve keyword 'user' into field. Choices are: archived_at, created_at, deleted_at, id, is_archived, is_deleted, messages, title, updated_at
+2025-05-15 22:42:16,616 - ERROR - Internal Server Error: /api/chatbot/conversations/
+2025-05-16 07:36:54,059 - INFO - Use pytorch device_name: cpu
+2025-05-16 07:36:54,059 - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en
+2025-05-16 07:37:04,778 - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-05-16 07:37:33,953 - INFO - Successfully initialized all components
+2025-05-16 07:37:51,207 - INFO - Processed: knowledge_base\ASTUlegislation2017.pdf (632 chunks)
+2025-05-16 07:37:58,398 - INFO - Processed: knowledge_base\Course_catalogue_Final.pdf (1219 chunks)
+2025-05-16 07:38:02,034 - INFO - Processed: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf (59 chunks)
+2025-05-16 07:38:02,886 - INFO - Processed: knowledge_base\Program_Accreditations.pdf (60 chunks)
+2025-05-16 07:38:04,792 - INFO - HTTP Request: GET https://chroma-onnx-models.s3.amazonaws.com/all-MiniLM-L6-v2/onnx.tar.gz "HTTP/1.1 200 OK"
+2025-05-16 07:45:46,927 - INFO - Loaded 1970 chunks from knowledge base
+2025-05-16 07:49:17,365 - INFO - Use pytorch device_name: cpu
+2025-05-16 07:49:17,366 - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en
+2025-05-16 07:49:23,698 - INFO - Successfully initialized all components
+2025-05-16 07:49:44,301 - INFO - Processed: knowledge_base\ASTUlegislation2017.pdf (632 chunks)
+2025-05-16 07:50:06,005 - INFO - Processed: knowledge_base\Course_catalogue_Final.pdf (1219 chunks)
+2025-05-16 07:50:07,079 - INFO - Processed: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf (59 chunks)
+2025-05-16 07:50:08,164 - INFO - Processed: knowledge_base\Program_Accreditations.pdf (60 chunks)
+2025-05-16 07:52:46,580 - INFO - Loaded 1970 chunks from knowledge base
+2025-05-16 07:54:22,899 - INFO - Use pytorch device_name: cpu
+2025-05-16 07:54:22,899 - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en
+2025-05-16 07:54:27,350 - INFO - Successfully initialized all components
+2025-05-16 07:54:37,852 - INFO - Processed: knowledge_base\ASTUlegislation2017.pdf (632 chunks)
+2025-05-16 07:55:07,036 - INFO - Processed: knowledge_base\Course_catalogue_Final.pdf (1219 chunks)
+2025-05-16 07:55:08,108 - INFO - Processed: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf (59 chunks)
+2025-05-16 07:55:09,240 - INFO - Processed: knowledge_base\Program_Accreditations.pdf (60 chunks)
+2025-05-16 07:57:59,151 - INFO - Loaded 1970 chunks from knowledge base
+2025-05-16 08:00:55,636 - INFO - Use pytorch device_name: cpu
+2025-05-16 08:00:55,636 - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en
+2025-05-16 08:01:01,393 - INFO - Successfully initialized all components
+2025-05-16 08:01:20,924 - INFO - Processed: knowledge_base\ASTUlegislation2017.pdf (632 chunks)
+2025-05-16 08:01:41,937 - INFO - Processed: knowledge_base\Course_catalogue_Final.pdf (1219 chunks)
+2025-05-16 08:01:42,335 - INFO - Processed: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf (59 chunks)
+2025-05-16 08:01:42,777 - INFO - Processed: knowledge_base\Program_Accreditations.pdf (60 chunks)
+2025-05-16 08:04:42,648 - INFO - Loaded 1970 chunks from knowledge base
+2025-05-16 08:07:24,996 - INFO - Use pytorch device_name: cpu
+2025-05-16 08:07:24,998 - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en
+2025-05-16 08:07:35,657 - INFO - Successfully initialized all components
+2025-05-16 08:07:53,182 - INFO - Processed: knowledge_base\ASTUlegislation2017.pdf (632 chunks)
+2025-05-16 08:08:15,564 - INFO - Processed: knowledge_base\Course_catalogue_Final.pdf (1219 chunks)
+2025-05-16 08:08:15,807 - INFO - Processed: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf (59 chunks)
+2025-05-16 08:08:16,046 - INFO - Processed: knowledge_base\Program_Accreditations.pdf (60 chunks)
+2025-05-16 08:10:57,289 - INFO - Loaded 1970 chunks from knowledge base
+2025-05-16 08:11:42,338 - INFO - Use pytorch device_name: cpu
+2025-05-16 08:11:42,340 - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en
+2025-05-16 08:11:46,825 - INFO - Successfully initialized all components
+2025-05-16 08:12:08,557 - INFO - Processed: knowledge_base\ASTUlegislation2017.pdf (632 chunks)
+2025-05-16 08:12:37,189 - INFO - Processed: knowledge_base\Course_catalogue_Final.pdf (1219 chunks)
+2025-05-16 08:12:38,259 - INFO - Processed: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf (59 chunks)
+2025-05-16 08:12:39,358 - INFO - Processed: knowledge_base\Program_Accreditations.pdf (60 chunks)
+2025-05-16 08:15:04,410 - INFO - Loaded 1970 chunks from knowledge base
+2025-05-16 08:18:55,603 - INFO - Use pytorch device_name: cpu
+2025-05-16 08:18:55,604 - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en
+2025-05-16 08:19:02,857 - INFO - Successfully initialized all components
+2025-05-16 08:19:27,044 - INFO - Processed: knowledge_base\ASTUlegislation2017.pdf (632 chunks)
+2025-05-16 08:19:48,857 - INFO - Processed: knowledge_base\Course_catalogue_Final.pdf (1219 chunks)
+2025-05-16 08:19:49,888 - INFO - Processed: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf (59 chunks)
+2025-05-16 08:19:50,996 - INFO - Processed: knowledge_base\Program_Accreditations.pdf (60 chunks)
+2025-05-16 08:22:19,993 - INFO - Loaded 1970 chunks from knowledge base
+2025-05-16 08:24:27,066 - INFO - Use pytorch device_name: cpu
+2025-05-16 08:24:27,066 - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en
+2025-05-16 08:24:30,999 - INFO - Successfully initialized all components
+2025-05-16 08:24:41,145 - INFO - Processed: knowledge_base\ASTUlegislation2017.pdf (632 chunks)
+2025-05-16 08:24:55,931 - INFO - Processed: knowledge_base\Course_catalogue_Final.pdf (1219 chunks)
+2025-05-16 08:24:56,175 - INFO - Processed: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf (59 chunks)
+2025-05-16 08:24:56,435 - INFO - Processed: knowledge_base\Program_Accreditations.pdf (60 chunks)
+2025-05-16 08:27:51,142 - INFO - Loaded 1970 chunks from knowledge base
+2025-05-16 08:29:16,869 - INFO - Use pytorch device_name: cpu
+2025-05-16 08:29:16,869 - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en
+2025-05-16 08:29:23,014 - INFO - Successfully initialized all components
+2025-05-16 08:29:33,160 - INFO - Processed: knowledge_base\ASTUlegislation2017.pdf (632 chunks)
+2025-05-16 08:29:49,931 - INFO - Processed: knowledge_base\Course_catalogue_Final.pdf (1219 chunks)
+2025-05-16 08:29:50,172 - INFO - Processed: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf (59 chunks)
+2025-05-16 08:29:50,408 - INFO - Processed: knowledge_base\Program_Accreditations.pdf (60 chunks)
+2025-05-16 08:41:22,858 - INFO - Loaded 1970 chunks from knowledge base
+2025-05-16 08:44:30,059 - INFO - Use pytorch device_name: cpu
+2025-05-16 08:44:30,060 - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en
+2025-05-16 08:44:46,637 - INFO - Successfully initialized all components
+2025-05-16 08:44:58,081 - INFO - Processed: knowledge_base\ASTUlegislation2017.pdf (632 chunks)
+2025-05-16 08:45:08,989 - INFO - Processed: knowledge_base\Course_catalogue_Final.pdf (1219 chunks)
+2025-05-16 08:45:09,225 - INFO - Processed: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf (59 chunks)
+2025-05-16 08:45:09,470 - INFO - Processed: knowledge_base\Program_Accreditations.pdf (60 chunks)
+2025-05-16 08:49:06,264 - INFO - Loaded 1970 chunks from knowledge base
+2025-05-16 08:49:39,290 - INFO - Use pytorch device_name: cpu
+2025-05-16 08:49:39,290 - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en
+2025-05-16 08:49:44,659 - INFO - Successfully initialized all components
+2025-05-16 08:49:59,139 - INFO - Processed: knowledge_base\ASTUlegislation2017.pdf (632 chunks)
+2025-05-16 08:50:10,121 - INFO - Processed: knowledge_base\Course_catalogue_Final.pdf (1219 chunks)
+2025-05-16 08:50:10,358 - INFO - Processed: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf (59 chunks)
+2025-05-16 08:50:10,607 - INFO - Processed: knowledge_base\Program_Accreditations.pdf (60 chunks)
+2025-05-16 08:52:56,749 - INFO - Loaded 1970 chunks from knowledge base
+2025-05-16 08:53:27,134 - INFO - Use pytorch device_name: cpu
+2025-05-16 08:53:27,134 - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en
+2025-05-16 08:53:31,230 - INFO - Successfully initialized all components
+2025-05-16 08:53:41,732 - INFO - Processed: knowledge_base\ASTUlegislation2017.pdf (632 chunks)
+2025-05-16 08:53:55,360 - INFO - Processed: knowledge_base\Course_catalogue_Final.pdf (1219 chunks)
+2025-05-16 08:53:58,249 - INFO - Processed: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf (59 chunks)
+2025-05-16 08:53:59,499 - INFO - Processed: knowledge_base\Program_Accreditations.pdf (60 chunks)
+2025-05-16 08:58:32,050 - INFO - Loaded 1970 chunks from knowledge base
+2025-05-16 08:59:00,822 - INFO - Use pytorch device_name: cpu
+2025-05-16 08:59:00,822 - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en
+2025-05-16 08:59:04,843 - INFO - Successfully initialized all components
+2025-05-16 08:59:19,734 - INFO - Processed: knowledge_base\ASTUlegislation2017.pdf (632 chunks)
+2025-05-16 08:59:33,407 - INFO - Processed: knowledge_base\Course_catalogue_Final.pdf (1219 chunks)
+2025-05-16 08:59:33,616 - INFO - Processed: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf (59 chunks)
+2025-05-16 08:59:33,842 - INFO - Processed: knowledge_base\Program_Accreditations.pdf (60 chunks)
+2025-05-17 11:11:18,756 - INFO - Use pytorch device_name: cpu
+2025-05-17 11:11:18,757 - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en
+2025-05-17 11:11:21,861 - INFO - Successfully initialized all components
+2025-05-17 11:11:33,746 - INFO - Processed: knowledge_base\ASTUlegislation2017.pdf (632 chunks)
+2025-05-17 11:11:43,943 - INFO - Processed: knowledge_base\Course_catalogue_Final.pdf (1219 chunks)
+2025-05-17 11:11:44,254 - INFO - Processed: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf (59 chunks)
+2025-05-17 11:11:44,564 - INFO - Processed: knowledge_base\Program_Accreditations.pdf (60 chunks)
+2025-05-17 11:14:44,452 - INFO - Loaded 1970 chunks from knowledge base
+2025-05-17 11:21:29,711 - WARNING - Not Found: /api/conversations/
+2025-05-17 11:21:29,784 - WARNING - Not Found: /api/conversations/
+2025-05-17 11:21:54,998 - WARNING - Not Found: /api/conversations/
+2025-05-17 11:21:55,072 - WARNING - Not Found: /api/conversations/
+2025-05-17 11:29:43,662 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\chatbot\llm_integration.py changed, reloading.
+2025-05-17 11:30:49,850 - INFO - Use pytorch device_name: cpu
+2025-05-17 11:30:49,850 - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en
+2025-05-17 11:30:55,341 - INFO - Successfully initialized all components
+2025-05-17 11:31:05,275 - INFO - Processed: knowledge_base\ASTUlegislation2017.pdf (632 chunks)
+2025-05-17 11:31:09,826 - INFO - Processed: knowledge_base\Course_catalogue_Final.pdf (1219 chunks)
+2025-05-17 11:31:10,074 - INFO - Processed: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf (59 chunks)
+2025-05-17 11:31:10,322 - INFO - Processed: knowledge_base\Program_Accreditations.pdf (60 chunks)
+2025-05-17 11:33:41,426 - INFO - Loaded 1970 chunks from knowledge base
+2025-05-17 11:34:25,892 - WARNING - Not Found: /api/conversations/
+2025-05-17 11:34:25,911 - WARNING - Not Found: /api/conversations/
+2025-05-17 11:34:52,726 - WARNING - Not Found: /api/conversations/
+2025-05-17 11:34:52,737 - WARNING - Not Found: /api/conversations/
+2025-05-17 11:35:39,578 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\chatbot\views.py changed, reloading.
+2025-05-17 11:36:16,686 - INFO - Use pytorch device_name: cpu
+2025-05-17 11:36:16,686 - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en
+2025-05-17 11:36:26,246 - INFO - Successfully initialized all components
+2025-05-17 11:36:39,952 - INFO - Processed: knowledge_base\ASTUlegislation2017.pdf (632 chunks)
+2025-05-17 11:37:03,232 - INFO - Processed: knowledge_base\Course_catalogue_Final.pdf (1219 chunks)
+2025-05-17 11:37:04,014 - INFO - Processed: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf (59 chunks)
+2025-05-17 11:37:04,407 - INFO - Processed: knowledge_base\Program_Accreditations.pdf (60 chunks)
+2025-05-17 11:40:02,694 - INFO - Loaded 1970 chunks from knowledge base
+2025-05-17 11:41:59,705 - ERROR - Error fetching conversations: Cannot resolve keyword 'user' into field. Choices are: created_at, deleted_at, id, is_deleted, messages, title, updated_at
+2025-05-17 11:41:59,707 - ERROR - Internal Server Error: /api/chatbot/conversations/
+2025-05-17 11:41:59,711 - ERROR - Error fetching conversations: Cannot resolve keyword 'user' into field. Choices are: created_at, deleted_at, id, is_deleted, messages, title, updated_at
+2025-05-17 11:41:59,711 - ERROR - Internal Server Error: /api/chatbot/conversations/
+2025-05-17 11:42:05,489 - WARNING - Not Acceptable: /api/chatbot/chat/
+2025-05-17 11:42:05,665 - ERROR - Message processing failed: column "source_documents" of relation "chatbot_message" does not exist
+LINE 1: ...ersation_id", "content", "is_user", "created_at", "source_do...
+                                                             ^
+
+2025-05-17 11:42:13,421 - ERROR - Error fetching conversations: Cannot resolve keyword 'user' into field. Choices are: created_at, deleted_at, id, is_deleted, messages, title, updated_at
+2025-05-17 11:42:13,422 - ERROR - Internal Server Error: /api/chatbot/conversations/
+2025-05-17 11:42:13,426 - ERROR - Error fetching conversations: Cannot resolve keyword 'user' into field. Choices are: created_at, deleted_at, id, is_deleted, messages, title, updated_at
+2025-05-17 11:42:13,426 - ERROR - Internal Server Error: /api/chatbot/conversations/
+2025-05-17 11:45:05,151 - INFO - Use pytorch device_name: cpu
+2025-05-17 11:45:05,152 - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en
+2025-05-17 11:45:12,256 - INFO - Successfully initialized all components
+2025-05-17 11:45:32,365 - INFO - Processed: knowledge_base\ASTUlegislation2017.pdf (632 chunks)
+2025-05-17 11:45:56,160 - INFO - Processed: knowledge_base\Course_catalogue_Final.pdf (1219 chunks)
+2025-05-17 11:45:58,192 - INFO - Processed: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf (59 chunks)
+2025-05-17 11:45:59,327 - INFO - Processed: knowledge_base\Program_Accreditations.pdf (60 chunks)
+2025-05-17 11:49:09,036 - INFO - Loaded 1970 chunks from knowledge base
+2025-05-17 11:52:00,625 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\venv\Lib\site-packages\_distutils_hack\__init__.py changed, reloading.
+2025-05-17 11:53:11,052 - INFO - Use pytorch device_name: cpu
+2025-05-17 11:53:11,052 - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en
+2025-05-17 11:53:23,947 - INFO - Successfully initialized all components
+2025-05-17 11:53:54,352 - INFO - Processed: knowledge_base\ASTUlegislation2017.pdf (632 chunks)
+2025-05-17 11:54:27,424 - INFO - Processed: knowledge_base\Course_catalogue_Final.pdf (1219 chunks)
+2025-05-17 11:54:28,525 - INFO - Processed: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf (59 chunks)
+2025-05-17 11:54:29,643 - INFO - Processed: knowledge_base\Program_Accreditations.pdf (60 chunks)
+2025-05-17 11:57:15,696 - INFO - Loaded 1970 chunks from knowledge base
+2025-05-17 12:06:23,277 - INFO - C:\Users\urjii\OneDrive\Desktop\project\integrated-web-app\chatbot\views.py changed, reloading.
+2025-05-17 12:06:51,645 - INFO - Use pytorch device_name: cpu
+2025-05-17 12:06:51,646 - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en
+2025-05-17 12:06:57,515 - INFO - Successfully initialized all components
+2025-05-17 12:07:28,358 - INFO - Processed: knowledge_base\ASTUlegislation2017.pdf (632 chunks)
+2025-05-17 12:08:00,990 - INFO - Processed: knowledge_base\Course_catalogue_Final.pdf (1219 chunks)
+2025-05-17 12:08:01,389 - INFO - Processed: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf (59 chunks)
+2025-05-17 12:08:01,675 - INFO - Processed: knowledge_base\Program_Accreditations.pdf (60 chunks)
+2025-05-17 12:09:46,394 - INFO - Use pytorch device_name: cpu
+2025-05-17 12:09:46,394 - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en
+2025-05-17 12:10:00,603 - INFO - Successfully initialized all components
+2025-05-17 12:10:39,316 - INFO - Processed: knowledge_base\ASTUlegislation2017.pdf (632 chunks)
+2025-05-17 12:11:11,053 - INFO - Loaded 1970 chunks from knowledge base
+2025-05-17 12:11:16,244 - INFO - Processed: knowledge_base\Course_catalogue_Final.pdf (1219 chunks)
+2025-05-17 12:11:17,320 - INFO - Processed: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf (59 chunks)
+2025-05-17 12:11:18,417 - INFO - Processed: knowledge_base\Program_Accreditations.pdf (60 chunks)
+2025-05-17 12:14:58,462 - INFO - Loaded 1970 chunks from knowledge base
+2025-05-17 12:16:09,052 - INFO - Use pytorch device_name: cpu
+2025-05-17 12:16:09,052 - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en
+2025-05-17 12:16:17,338 - INFO - Successfully initialized all components
+2025-05-17 12:16:28,509 - INFO - Processed: knowledge_base\ASTUlegislation2017.pdf (632 chunks)
+2025-05-17 12:16:55,021 - INFO - Processed: knowledge_base\Course_catalogue_Final.pdf (1219 chunks)
+2025-05-17 12:16:56,131 - INFO - Processed: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf (59 chunks)
+2025-05-17 12:16:57,215 - INFO - Processed: knowledge_base\Program_Accreditations.pdf (60 chunks)
+2025-05-17 12:19:23,064 - INFO - Loaded 1970 chunks from knowledge base
+2025-05-17 12:24:31,852 - WARNING - Not Acceptable: /api/forum/notifications/stream/
+2025-05-17 12:24:37,120 - ERROR - Error fetching conversations: Cannot resolve keyword 'user' into field. Choices are: created_at, deleted_at, id, is_deleted, messages, title, updated_at
+2025-05-17 12:24:37,121 - ERROR - Internal Server Error: /api/chatbot/conversations/
+2025-05-17 12:24:37,125 - ERROR - Error fetching conversations: Cannot resolve keyword 'user' into field. Choices are: created_at, deleted_at, id, is_deleted, messages, title, updated_at
+2025-05-17 12:24:37,125 - ERROR - Internal Server Error: /api/chatbot/conversations/
+2025-05-17 13:22:45,923 - WARNING - Not Found: /api/locations/
+2025-05-17 13:22:45,940 - WARNING - Not Found: /api/locations/
+2025-05-17 13:37:22,153 - WARNING - Not Acceptable: /api/forum/notifications/stream/
+2025-05-17 13:37:45,006 - WARNING - Not Found: /api/map/navigation/
+2025-05-17 13:37:49,528 - ERROR - Error fetching conversations: Cannot resolve keyword 'user' into field. Choices are: created_at, deleted_at, id, is_deleted, messages, title, updated_at
+2025-05-17 13:37:49,528 - ERROR - Internal Server Error: /api/chatbot/conversations/
+2025-05-17 13:37:49,532 - ERROR - Error fetching conversations: Cannot resolve keyword 'user' into field. Choices are: created_at, deleted_at, id, is_deleted, messages, title, updated_at
+2025-05-17 13:37:49,533 - ERROR - Internal Server Error: /api/chatbot/conversations/
+2025-05-17 13:37:53,871 - WARNING - Not Acceptable: /api/chatbot/chat/
+2025-05-17 13:37:53,948 - ERROR - Message processing failed: column "source_documents" of relation "chatbot_message" does not exist
+LINE 1: ...ersation_id", "content", "is_user", "created_at", "source_do...
+                                                             ^
+
+2025-05-17 13:38:15,204 - WARNING - Not Acceptable: /api/forum/notifications/stream/
+2025-05-17 13:59:35,819 - WARNING - Bad Request: /api/superadmin/admins/
+2025-05-17 14:01:53,651 - INFO - Use pytorch device_name: cpu
+2025-05-17 14:01:53,651 - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en
+2025-05-17 14:01:58,223 - INFO - Successfully initialized all components
+2025-05-17 14:02:03,042 - INFO - Processed: knowledge_base\ASTUlegislation2017.pdf (632 chunks)
+2025-05-17 14:02:10,017 - INFO - Processed: knowledge_base\Course_catalogue_Final.pdf (1219 chunks)
+2025-05-17 14:02:10,280 - INFO - Processed: knowledge_base\PEOs_and_POs_ASTUs_Programs.pdf (59 chunks)
+2025-05-17 14:02:10,563 - INFO - Processed: knowledge_base\Program_Accreditations.pdf (60 chunks)
+2025-05-17 14:03:23,343 - INFO - Loaded 1970 chunks from knowledge base
